@@ -1,4 +1,4 @@
-<a name="top-of-page">![Party CHef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-readme-logo.png)</a>
+<a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-readme-logo.png)</a>
 
 # PartyChefs.ie - Professional Private Caterers :cocktail: #
 ## Code Institute - Dip. in Software Development - Milestone Project 2 - Interactive Frontend Development Milestone Project ##
