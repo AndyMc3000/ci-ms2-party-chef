@@ -1,6 +1,6 @@
 <a name="top-of-page">![Party CHef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-readme-logo.png)</a>
 
-# PartyChefs.ie - Professional Private Caterers :cookie: #
+# PartyChefs.ie - Professional Private Caterers :cocktail: #
 ## Code Institute - Dip. in Software Development - Milestone Project 2 - Interactive Frontend Development Milestone Project ##
 #### Student: Andrew McDonald - Contact me on GitHub :octocat: - <a href="https://github.com/AndyMc3000"><strong>AndyMc3000</strong></a> ####
 
