@@ -145,12 +145,10 @@ Based on the structure decided upon, The Skeleton Plane ".. The skeleton is desi
 
 With this in min the following wireframes were created to detail the layput of the website pages and individual sections/containers. Please click the following links to view these wireframes.
 
-1. <a href="assets/readme-assets/maxfit-homepage-wireframe.png"><strong>Homepage Wireframe</strong></a>
-1. <a href="assets/readme-assets/maxfit-services-page-wireframe.png"><strong>Services page Wireframe</strong></a>
-1. <a href="assets/readme-assets/maxfit-classes-page-wireframes.png"><strong>Classes Wireframe</strong></a>
-1. <a href="assets/readme-assets/maxfit-membership-page-wireframes.png"><strong>Membership Wireframe</strong></a>
-1. <a href="assets/readme-assets/maxfit-team-page-wireframes.png"><strong>Team Wireframe</strong></a>
-1. <a href="assets/readme-assets/maxfit-contact-page-wireframes.png"><strong>Contact Wireframe</strong></a>
+1. <a href="assets/readme-assets/party-chef-homepage.png"><strong>Homepage Wireframe</strong></a>
+1. <a href="assets/readme-assets/party-chef-contact-page.png"><strong>Contact page Wireframe</strong></a>
+1. <a href="assets/readme-assets/party-chef-mymenu-modal.png"><strong>'MyMenu' Modal Wireframe</strong></a>
+
 
 #### 5. The Surface Plane ####
 
@@ -335,4 +333,4 @@ I also received help and support from;
 
 #### [Back To Top ^ ](#top-of-page) ####
 
-<a name="top-of-page">![M A X F I T Logo created using FreeLogoDesign.org](/assets/readme-assets/maxfit-logo-readme.png)</a>
+<a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-readme-logo.png)</a>
