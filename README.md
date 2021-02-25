@@ -22,9 +22,9 @@
 
 ## 1. <a name="introduction-heading">Introduction</a> ##
 
-The MaxFit website is my Milestone Project 1 (MS1) for my Diploma in Software Engineering course at Code Institute. The below refers to MaxFit as a fictional client of mine, where I have been hired to develop a website for them to meet certain requirements (see UX section below). However the underlying goal of the project is to meet and exceed the requirements laid out for the MS1 by Code Institute. The main goal of the MS1 is to "..build a static front-end site to present useful information to users, using all the technologies that you have learned about so far." Those principle technologies being HTML5, CSS3, and Bootstrap front-end framework.
+This Party Chef website is my Milestone 2 (MS2) project for my Diploma in Fullstack Software Development course at Code Institute. This Readme refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owner to meet certain criteria (see UX section below). However, the underlying goal of the project is to meet and exceed the requirements laid out for the MS2 project by Code Institute. The main goal of the MS2 is to "..build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals." The principle technologies being used are HTML5, CSS3, JavaScript. Other technologies being used are; Bootstrap front-end framework, jQuery library, and EmailJS.
 
-MaxFit is a Gym and Fitness Club based on the beautiful shores of Lough Leane, Killarney. MaxFit is run by a passionate and inclusive group of fitness experts and professionals, and boasts state-of-the-art equipment and facilities. At MaxFit, their goal is to maximise the potential within their members.
+Party Chef is a private catering business with multiple office locations around Ireland. Party Chef is run by a professional team of chef's, service personnel, and party planners.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
@@ -32,7 +32,7 @@ MaxFit is a Gym and Fitness Club based on the beautiful shores of Lough Leane, K
 
 ## 2. <a name="user-experience-design">User Experience Design (UX)</a> ##
 
-The design of this website was determined by assessing and quantifying the goals and objectives of the website owners, as well as the requirements of end users who will visit and use the website. Following the determination of 'Client' and 'User' stories and their subsequent technical requirments, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each plane is outlinined below.
+The design of this website was determined by assessing and quantifying the goals and objectives of the business owner, as well as the requirements of end users who will visit and use the website. Following the determination of 'Client' and 'User' stories and their subsequent technical requirements, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each design plane is outlinined below.
 
 ### The 5 Planes of UX Design: ###
 
@@ -40,33 +40,32 @@ The design of this website was determined by assessing and quantifying the goals
 
 The Strategy Plane is, as defined by Jesse James Garrett "..incorporates not only what the people running the site want to get out of it but what the users want to get out of the site as well." 
 
-Please see below details of 'Client Stories' to detail the requirements of the MAXFIT business owners, and 'User Stories' which highlight the requiremnts of end users of the MAXFIT website.
+Please see below details of the 'Client Stories' to detail the requirements of the Pary Chef business owner, and the 'User Stories' which highlight the requiremnts of end users of the Party Chef website.
 
 #### Client Stories ####
-> - [x] “The main goal of the website is to attract new customers, and provide value to existing customers in the information is provides.”
-> - [x] “The website must show and promote the quality of the facilities at MAXFIT.”
-> - [x] “The website must detail Membership costs and features (Gold & Silver Passes, each with 3-month, 6-month, 12-month, student/senior pricing).” 
-> - [x] “The website must allow people to easily contact MAXFIT to arrange a free fitness consultation.”
-> - [x] “The website must promote details about MAXFIT’s 1-month free trial membership offer.”
-> - [x] “The website must promote MAXFIT’s Personal Training services.”
-> - [x] “The website must detail the classes MAXFIT currently offer and highlight their costs and schedule/frequency.”
-> - [x] “The website must visually appeal to potential customers from all walks of life. MAXFIT is not just a ‘hard-core workout’ gym, it is an fitness and wellness centre too. MAXFIT’s range of services appeal to customers of all age groups, male and female.”
-> - [x] “The website must promote the fact that MAXFIT offers 24-hour access.”
-> - [x] “The website must promote MAXFIT’s social media channels” 
-> - [x] “The website must show some testimonial quotes”
-> - [x] “There must be a system in place to track website usage statistics and end user interactions. All MAXFIT owned internet-connected computers, routers, or devices should be automatically excluded from website statistics/reports.”
+> - [x] “The main goal of the website is to attract new business, and provide value to visitors in the information is provides.”
+> - [x] “The website must show and promote the service which Party Chef provides.”
+> - [x] “The website must detail the various menu's on offer, and the cost of items each menu.” 
+> - [x] “The website must allow people to easily contact Party Chef to arrange a perty planning consultation.”
+> - [x] “The website must allow users to create their own menu from the items available in order to get an idea of food/drinks costs for thier party.”
+> - [x] “The website must allow users to send a copy of thier personal menu to email. A copy of this should also be sent to the business owner.”
+> - [x] “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote request information should be sent by email to the business owner. A copy of the request should also be sent to the user.”
+> - [x] “The website must allow users to find contact details for their local office using an interactive Google Map (called a 'kitchen' on the website).”
+> - [x] “The website must promote Party Chef's social media channels.”
+> - [x] “The website must show photos of previous events.” 
+> - [x] “The website must show some customer testimonial quotes.”
 > - [x] “The website must be mobile-friendly.”
 
 #### User Stories ####
-> - [x] “I want to see what kind of facilities MAXFIT have.”
-> - [x] “I want to find about the different classes MAXFIT run.”
-> - [x] “I want to find out when certain classes are on at.”
-> - [x] “I want to be able to see where MAXFIT is located.”
-> - [x] “I am interested in a membership and want talk to someone about what is best for me.”
-> - [x] “I am interested in a membership and want to understand what the costs are.”
-> - [x] “I want to find out a little bit about the people who work at MAXFIT.”
-> - [x] “I want to see what other people say about MAXFIT”.
-> - [x] “I want to find the MAXFIT social media channels.”
+> - [x] “I want to see what kind of services Party Chef offers”
+> - [x] “I want to see what kind of Menu's Party Chef offer.”
+> - [x] “I want to find out where they are located, and which is the closest office to me.”
+> - [x] “I want to see photo's of the dishes in Party Chef menu's.”
+> - [x] “I want to see photo's of previous events services by Party Chef.”
+> - [x] “I want to be able to see pricing for menu items.”
+> - [x] “I want to be able to create my own menu from the menu's of items offerred. And I wnat to be able to email a copy of my menu to myself.”
+> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef in order to confirm their availability to service my event, and to get a quote inclusive of all costs”.
+> - [x] “I want to find the Party Chef social media channels.”
 
 #### 2. The Scope Plane ####
 
