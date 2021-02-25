@@ -22,9 +22,9 @@
 
 ## 1. <a name="introduction-heading">Introduction</a> ##
 
-This Party Chef website is my Milestone 2 (MS2) project for my Diploma in Fullstack Software Development course at Code Institute. This Readme refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owner to meet certain criteria (see UX section below). However, the underlying goal of the project is to meet and exceed the requirements laid out for the MS2 project by Code Institute. The main goal of the MS2 is to "..build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals." The principle technologies being used are HTML5, CSS3, JavaScript. Other technologies being used are; Bootstrap front-end framework, jQuery library, and EmailJS.
+This Party Chef website is my Milestone 2 (MS2) project for my Diploma in Fullstack Software Development course at Code Institute. This README refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owner to meet certain criteria (see UX section below). However, the underlying goal of the project is to meet and exceed the requirements laid out for the MS2 project by Code Institute. The high-level requirement of the MS2 is to "..build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals." The principle technologies to be used are HTML5, CSS3, JavaScript. Other technologies being used are; Bootstrap front-end framework, jQuery library, and EmailJS.
 
-Party Chef is a private catering business with multiple office locations around Ireland. Party Chef is run by a professional team of chef's, service personnel, and party planners.
+Party Chef is a private catering business with multiple office locations around Ireland. Party Chef is run by a professional team of chef's, service personnel, and party planners. The offices are referred to as 'kitchens' on the website, as this is where food is prepared. Customers can also vists the kitchens in order to discuss and plan their their events with the Party Chef team. 
 
 #### [Back To Top ^ ](#top-of-page) ####
 
@@ -50,36 +50,37 @@ Please see below details of the 'Client Stories' to detail the requirements of t
 > - [x] “The website must allow users to create their own menu from the items available in order to get an idea of food/drinks costs for thier party.”
 > - [x] “The website must allow users to send a copy of thier personal menu to email. A copy of this should also be sent to the business owner.”
 > - [x] “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote request information should be sent by email to the business owner. A copy of the request should also be sent to the user.”
-> - [x] “The website must allow users to find contact details for their local office using an interactive Google Map (called a 'kitchen' on the website).”
+> - [x] “The website must allow users to find contact details for their local office using an interactive Google Map (offices are called a 'kitchens' on the website).”
 > - [x] “The website must promote Party Chef's social media channels.”
 > - [x] “The website must show photos of previous events.” 
 > - [x] “The website must show some customer testimonial quotes.”
 > - [x] “The website must be mobile-friendly.”
 
 #### User Stories ####
-> - [x] “I want to see what kind of services Party Chef offers”
-> - [x] “I want to see what kind of Menu's Party Chef offer.”
+> - [x] “I want to see what kind of services Party Chef offers.”
+> - [x] “I want to see what kind of menu's (food & drink) Party Chef offer.”
 > - [x] “I want to find out where they are located, and which is the closest office to me.”
 > - [x] “I want to see photo's of the dishes in Party Chef menu's.”
-> - [x] “I want to see photo's of previous events services by Party Chef.”
+> - [x] “I want to see photo's of previous events serviced by Party Chef.”
 > - [x] “I want to be able to see pricing for menu items.”
-> - [x] “I want to be able to create my own menu from the menu's of items offerred. And I wnat to be able to email a copy of my menu to myself.”
-> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef in order to confirm their availability to service my event, and to get a quote inclusive of all costs”.
+> - [x] “I want to be able to create my own menu from the menu's of items offerred. And I want to be able to email a copy of my menu to myself.”
+> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs”.
 > - [x] “I want to find the Party Chef social media channels.”
 
 #### 2. The Scope Plane ####
 
-Based on the outcomes the Strategy Plane, The Scope Plane determines what features, functionality, and types of content, should be included within the scope of the project. Listed below are the functional specifications and content requirements decided upon for the MAXFIT website. 
+Based on the outcomes from the Strategy Plane, The Scope Plane determines what features, functionality, and types of content should be included within the scope of the project. Listed below are the functional specifications and content requirements decided upon for the Party Chef website. 
 
 #### Functional Specifications: ####
-* Build a esponsive Website with 6 pages - Home, Services, Classes, Membership, Team, Contact.
-* Use photo/image carousel at top of homepage.
-* Homepage carousel to include link to free consultation contact form.
+* Build a esponsive Website with 2 pages - Homepage and Contact page.
+* Both pages will have a Jumbotron at the top of the page with relevant call-out messaging.
+* Build in shopping cart functionality so that menu items can be added to a 'MyMenu' list of items. MyMenu is accessed via links in the Nav bar and Footer. Once clicked the MyMenu list of items appears on a modal. User can then ammend quantites of items in the MyMenu to get a total price for their requirement.
+* MyMenu should also have the facility to request a quote for an event. The request should include the food/drink items in MyMenu plus additional infromation about the event (date/time, location, etc.).
+* Homepage Jumbotron to include link to contact page in order to arrange a meeting for a no-obligation consultation.
 * Contact form required for free trial sign-up form.
 * Contact form required for membership sign-up.
-* A main photo Gallery using a pop-out modal carousel, and similar galleries for indivudual services and classes.
-* Use a bootstrap Jumbotron for the top of all other pages to promote contact.
-* Google Analytics integration.
+* A photo Gallery using a carousel on the Homepage to show menu items. A similar gallery on the contact page showing photos from past events.
+
 
 #### Content Requirements: ####
 * Inspirational images & messaging throughout.
