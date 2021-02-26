@@ -90,11 +90,7 @@ Based on the outcomes from the Strategy Plane, The Scope Plane determines what f
 * The features section on the Homepage should briefly, but completely, convey what the main services are and the the benefits of using them.
 * Menu items should include a photo, a description, and the price per single serving of each item on the menu's.
 * Both photo galleries should show quality photos of impressive food layouts (Homepage Gallery) and recent events (Contact page gallery).
-<<<<<<< HEAD
-* Homepage should show the most glowing but brief Testimonial along quotes with the customer details.
-=======
 * Homepage should show the most glowing but brief Testimonial quotes along with the customer details.
->>>>>>> c0456eca1ead9d633a19ad633ca568ca40b96826
 
 
 #### 3. The Structure Plane ####
