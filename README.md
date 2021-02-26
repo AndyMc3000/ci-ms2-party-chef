@@ -90,69 +90,58 @@ Based on the outcomes from the Strategy Plane, The Scope Plane determines what f
 * The features section on the Homepage should briefly, but completely, convey what the main services are and the the benefits of using them.
 * Menu items should include a photo, a description, and the price per single serving of each item on the menu's.
 * Both photo galleries should show quality photos of impressive food layouts (Homepage Gallery) and recent events (Contact page gallery).
+<<<<<<< HEAD
 * Homepage should show the most glowing but brief Testimonial along quotes with the customer details.
+=======
+* Homepage should show the most glowing but brief Testimonial quotes along with the customer details.
+>>>>>>> c0456eca1ead9d633a19ad633ca568ca40b96826
 
 
 #### 3. The Structure Plane ####
 
 #### Interaction Design: ####
 
-Interaction design is defined as the "..development of application flows to facilitate user tasks, defining how the user interacts with site functionality" Inline with this principle, the pages were designed as follows;
+Interaction design is defined as the "..development of application flows to facilitate user tasks, defining how the user interacts with site functionality". Inline with this principle, the pages were designed as follows;
 
 1. The Homepage;
-* It should have a navigation bar with individual links to each page.
-* It should contain a call-to-action to promote the free fitness consultation offer. This should link to a contact form on the contact page.
-* It should contain a section to promote free trial offer. This should link to a contact form on the contact page.
-* It should also contain a ‘why us’ section highlighting 4 main features/benefits of using MAXFIT - The Gym/equipment, Personal Training, Classes, and Membership benfits. The would link to relevant pages via buttons.
+* It should have a navigation bar with individual links to each page and a 'MyMenu' modal. The navigation bar should also be fixed to the top of the page view.
+* It should contain a call-to-action to promote a no-oblidgation consultation. This should link to the contact page.
+* It should contain a features/benefits section containing 4 principle featires under the following headings; 'Who We Are', 'Our Services', 'Our Menu's', and 'Talk to us'.
+* It should contain a list of menu's (each within its own accordion) under the following headings; 'Canapés', 'Starters', 'Main Course', 'Something Sweet', and 'Drinks'. 
+* The menu accordions should contain a list of menu item to include a photo, description, and an 'Add to MyMenu' button. When the 'Add to MyMenu' button is clicked, an item is added to the users MyMenu (i.e. shopping cart). 
+* The users MyMenu (a modal) can be accessed by clicking on the MyModal button in the Nav bar and Footer. Within the MyMenu modal, a user can change the quantity of an item, remove and item, or send a copy of the menu to an email address. A copy of the email is also sent to Party Chef.
+* A user can also send a copy of the menu to Party Chef, along with additional information which must be included, in order to request a quote an confirm availablity. The extra information will come from a form in the MyMenu modal which a user must complete. The from will ask for; Name, Email, Telephone number, Party date, Party start time, Location, Service Type. A copy of the quote request will also be sent to the user by email.
+* It should contain a gallery of photographs highlighting recent events and food displays.
 * It should contain a section to show Testimonial quotes.
-* It should have a furthe navigation section in the footer. The footer will also contain links to all MAXFIT's social media channels.
+* It should have a further navigation section in the footer. The footer will also contain links to all Party Chef's social media channels.
 
-2. The Services page;
-* It should have the same navigation bar and footer as described un The Homepage section above.
+2. The Contact page;
+* It should have a navigation bar with individual links to each page and a 'MyMenu' modal.
+* It should contain a section to show the address and phone number of the Party Chef Headquarters.
+* It should include a Google Map with markers to show the individual Party Chef offices around the country. And when a user clicks on a marker, and 'info window' should popup to show the contacts details and address for that office.
+* It should contain a contact form with a dropdown to allow users to indicate their are of interest: 'Request a party planning consultation', 'Check our availability to service your event', or 'Ask us anything'.
 * It should have 3 main sections focusing on; The Gym/equipment, Personal Training Services, and the Studio/class facilities.
-* The sections should show detailed text information and a gallery of photographs.
-
-3. The Classes page;
-* It should have the same navigation bar and footer as described un The Homepage section above.
-* It should contain a short section giving details of what each class is, a link how much it costs, what the current timetable for the class is, and who runs the class.
-* Each section should also contain images/gallery relevant to the class.
-
-4. The Membership page;
-* It should have the same navigation bar and footer as described un The Homepage section above.
-* It should contain pricing information for the different offerings/packages.
-* It should contain a 'hero' section which details the Free Trial offer. This should link to the Free Trial sign-up form.
-
-5. The Team page;
-* It should have the same navigation bar and footer as described un The Homepage section above.
-* It should contain contain information about the site management team and personal trainers.
-* It shoud offer a quoick bio, a photo, and qualification details for each team member.
-* It should contain messaging around a mission statement.
-
-6. The Contact page;
-* It should have the same navigation bar and footer as described un The Homepage section above.
-* It should contain address and contact information.
-* It should include a Google Map.
-* It should contain a contact form with a dropdown to allow users to indicate their are of interest: Sign-up to a plan, Free Trial, or Free Consultation.
+* It should contain a gallery of photographs titled 'Our Team'.
 
 #### Information Architecture: ####
 
-Infromation Architechture is defined as; "The structural design of the information space to facilitate intuitive access to content" (Copyright 2000 James Garrett). As such MaxFit was designed to allows a user to find the information they need easily. For example, the navigation bar is fixed to the top of the page view so is always immediately accessible, and buttons and links are clearly visible and communicate their purpose in an unambiguous way.
+Infromation Architechture is defined as; "The structural design of the information space to facilitate intuitive access to content" (Copyright 2000 James Garrett). As such Party Chef was designed to allows a user to find the information they need easily. For example, the navigation bar is fixed to the top of the page view so is always immediately accessible, and buttons and links are clearly visible and communicate their purpose in an unambiguous way.
 
 The structure of the website and outline of page sections is outlined in the Sitemap. Click the link to view the <a href="assets/readme-assets/party-chef-sitemap.png"><strong>Sitemap.</strong></a>
 
 
 #### 4. The Skeleton Plane ####
 
-Based on the structure decided upon, The Skeleton Plane ".. The skeleton is designed to optimize the arrangement of these elements (such as the placement of buttons, tabs, photos's and blockd of text) for maximum effect and efficiency..".
+Following on from the tasks decided upon in the Structure Plane, the Skeleton Plane is defined as follows; ".. The skeleton is designed to optimize the arrangement of these elements (such as the placement of buttons, tabs, photos's and blocks of text) for maximum effect and efficiency..".
 
-With this in min the following wireframes were created to detail the layput of the website pages and individual sections/containers. Please click the following links to view these wireframes.
+With this in mind the following wireframes were created to detail the layput of the website pages and individual sections/containers. Please click the following links to view these wireframes.
 
 1. <a href="assets/readme-assets/party-chef-homepage.png"><strong>Homepage Wireframe</strong></a>
 1. <a href="assets/readme-assets/party-chef-contact-page.png"><strong>Contact page Wireframe</strong></a>
 1. <a href="assets/readme-assets/party-chef-mymenu-modal.png"><strong>'MyMenu' Modal Wireframe</strong></a>
 
 
-#### 5. The Surface Plane ####
+#### 5. The Surface Plane - TO EDIT ####
 
 Having completed the previous 4 stages in the UX design process, I moved on to making decisions around the design and styling of the website. The Surface Plane focuses on the styling of images, backgrounds, fonts, and colours used on a website. The details of these decisions are listed here;
 
@@ -172,49 +161,49 @@ Having completed the previous 4 stages in the UX design process, I moved on to m
 
 <hr>
 
-## 3. <a name="development-process">Development Process</a> ##
+## 3. <a name="development-process">Development Process - TO EDIT</a> ##
 
-I drew up a process to follow for developing the MAXFIT website. This is listed in sequence below.
+I drew up a process to follow for developing the Party Chef website. This is listed in sequence below.
 
 1. Design - I firstly designed the site based on the Client/User Stories requirements, by getting ideas from fitness club/gym websites, and by creating wireframes/sketches.
 1. Structure - I then wrote the HTML code for all pages including; navigation, footers, sections, galleries, forms, iframes.
-1. Content - I then added text content to sections (lorem ipsum/placeholder text), and images to galleries. 
-1. Style - I then added colours and fonts and wrote CSS rule sets and media queries in order to style the website.
-1. Responsive - I made sure all texts/headings, images, and container elements transform approprately and look good when viewed on different devices such as: mobile phones, tablets, laptops, large screen computers (PC's), and large TV's. 
-1. Review - I did a last review of all code (formatting, besutifying etc) and content, fixing anys bugs/typo's etc as I did so.
-1. Testing - And finally I validated my HTML and CSS code, and tested functionality of site elements across a range of different devices and browsers.
+2. Interactive Functionality - JavaScript
+3. Content - I then added text content to sections (lorem ipsum/placeholder text), and images to galleries. 
+4. Style - I then added colours and fonts and wrote CSS rule sets and media queries in order to style the website.
+5. Responsive - I made sure all texts/headings, images, and container elements transform approprately and look good when viewed on different devices such as: mobile phones, tablets, laptops, large screen computers (PC's), and large TV's. 
+6. Review - I did a last review of all code (formatting, besutifying etc) and content, fixing anys bugs/typo's etc as I did so.
+7. Testing - And finally I validated my HTML and CSS code, and tested functionality of site elements across a range of different devices and browsers.
 
 
 #### [Back To Top ^ ](#top-of-page) ####
 
 <hr>
 
-## 4. <a name="website-features">Website Features</a> ##
+## 4. <a name="website-features">Website Features - TO EDIT</a> ##
 * Bootstrap navigation bar
-* Image Carousel 
-* Gallery Modals
-* Free Trial signup form
-* Free Consultation call-back form
-* Membership sign-up form
+* Jumbotron 
 * Bootstrap responsive grid
+* JS Accordion
+* JScart/MyMenu/EmailJS
+* Carousel slider modal gallery
+* Google Map/Markers/InfoWindow
+* Contact Form/EmailJS
 * Social Links in footer
 * Navigation links in Footer
-* Accordian on Classes page
-* Google map on Contact page
-* Google Analytics
 
 #### [Back To Top ^ ](#top-of-page) ####
 
 <hr>
 
-## 5. <a name="technologies-used">Technologies Used</a> ##
+## 5. <a name="technologies-used">Technologies Used - TO EDIT</a> ##
 
 <img src="assets/readme-assets/maxfit-tech-logos-readme-2.png" width="430">
 
-I used the following technologies, services, and devices to develop, style, deploy, and test the MAXFIT website;
+I used the following technologies, services, and devices to develop, style, deploy, and test the Pary Chef website;
 <br>
 * HTML5 - The site was develop using HTML5 markup language.
 * CSS3 - The site was styled and in some cases made responsive using CSS3.
+* JavaScript/jQuery
 * Bootstrap - I used the Bootstrap framework for implementing some sections and features.
 * GitHub - I set up a free repository on GitHub.com to maintain a master of all website files, content, and resources.
 * GitPod - I used the free GitPod.io Integrated Development Environment to write and develop the code for the website.
@@ -257,7 +246,7 @@ I tested all functionality of links, navigation, buttons, galleries, and site fe
 
 <hr>
 
-## 7. <a name="deployment">Deployment</a> ##
+## 7. <a name="deployment">Deployment - TO EDIT</a> ##
 
 This site was developed by firstly setting up a GitHub repository to store the website files. GitHub is a free online code hosting platform for websites or web applications, which enables version control and collaboration during the development of a project. A repository on GitHub containes all of a project's files and each file's revision history. You can learn more about GitHub and repositories here: [Click here to go to GitHub](https://docs.github.com/en/free-pro-team@latest/github)
 
