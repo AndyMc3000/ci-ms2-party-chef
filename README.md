@@ -22,9 +22,9 @@
 
 ## 1. <a name="introduction-heading">Introduction</a> ##
 
-The MaxFit website is my Milestone Project 1 (MS1) for my Diploma in Software Engineering course at Code Institute. The below refers to MaxFit as a fictional client of mine, where I have been hired to develop a website for them to meet certain requirements (see UX section below). However the underlying goal of the project is to meet and exceed the requirements laid out for the MS1 by Code Institute. The main goal of the MS1 is to "..build a static front-end site to present useful information to users, using all the technologies that you have learned about so far." Those principle technologies being HTML5, CSS3, and Bootstrap front-end framework.
+This Party Chef website is my Milestone 2 (MS2) project for my Diploma in Fullstack Software Development course at Code Institute. This README refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owner to meet certain criteria (see UX section below). However, the underlying goal of the project is to meet and exceed the requirements laid out for the MS2 project by Code Institute. The high-level requirement of the MS2 is to "..build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals." The principle technologies to be used are HTML5, CSS3, and JavaScript. Other technologies being used are; the Bootstrap front-end framework, the jQuery library, and EmailJS.
 
-MaxFit is a Gym and Fitness Club based on the beautiful shores of Lough Leane, Killarney. MaxFit is run by a passionate and inclusive group of fitness experts and professionals, and boasts state-of-the-art equipment and facilities. At MaxFit, their goal is to maximise the potential within their members.
+Party Chef is a private catering business with multiple office locations around Ireland. Party Chef is run by a professional team of chef's, service personnel, and party planners. The offices are referred to as 'kitchens' on the website, as this is where food is prepared before being delivered to event/party sites. Customers can vists the kitchens in order to discuss and plan their events with the Party Chef team. 
 
 #### [Back To Top ^ ](#top-of-page) ####
 
@@ -32,64 +32,66 @@ MaxFit is a Gym and Fitness Club based on the beautiful shores of Lough Leane, K
 
 ## 2. <a name="user-experience-design">User Experience Design (UX)</a> ##
 
-The design of this website was determined by assessing and quantifying the goals and objectives of the website owners, as well as the requirements of end users who will visit and use the website. Following the determination of 'Client' and 'User' stories and their subsequent technical requirments, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each plane is outlinined below.
+The design of this website was determined by assessing and quantifying the goals and objectives of the business owner, as well as the requirements of end users who will visit and use the website. Following the determination of 'Client' and 'User' stories and their subsequent technical requirements, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each design plane is outlinined below.
 
-### The 5 Planes of UX Design: ###
 
 #### 1. The Strategy Plane ####
 
 The Strategy Plane is, as defined by Jesse James Garrett "..incorporates not only what the people running the site want to get out of it but what the users want to get out of the site as well." 
 
-Please see below details of 'Client Stories' to detail the requirements of the MAXFIT business owners, and 'User Stories' which highlight the requiremnts of end users of the MAXFIT website.
+Please see below details of the 'Client Stories' to detail the requirements of the Pary Chef business owner, and the 'User Stories' which highlight the requiremnts of end users of the Party Chef website.
 
 #### Client Stories ####
-> - [x] “The main goal of the website is to attract new customers, and provide value to existing customers in the information is provides.”
-> - [x] “The website must show and promote the quality of the facilities at MAXFIT.”
-> - [x] “The website must detail Membership costs and features (Gold & Silver Passes, each with 3-month, 6-month, 12-month, student/senior pricing).” 
-> - [x] “The website must allow people to easily contact MAXFIT to arrange a free fitness consultation.”
-> - [x] “The website must promote details about MAXFIT’s 1-month free trial membership offer.”
-> - [x] “The website must promote MAXFIT’s Personal Training services.”
-> - [x] “The website must detail the classes MAXFIT currently offer and highlight their costs and schedule/frequency.”
-> - [x] “The website must visually appeal to potential customers from all walks of life. MAXFIT is not just a ‘hard-core workout’ gym, it is an fitness and wellness centre too. MAXFIT’s range of services appeal to customers of all age groups, male and female.”
-> - [x] “The website must promote the fact that MAXFIT offers 24-hour access.”
-> - [x] “The website must promote MAXFIT’s social media channels” 
-> - [x] “The website must show some testimonial quotes”
-> - [x] “There must be a system in place to track website usage statistics and end user interactions. All MAXFIT owned internet-connected computers, routers, or devices should be automatically excluded from website statistics/reports.”
+> - [x] “The main goal of the website is to attract new business, and provide value to visitors in the information is provides.”
+> - [x] “The website must show and promote the services which Party Chef provides.”
+> - [x] “The website must detail the various menu's on offer, and the cost of food/drink items on each menu.” 
+> - [x] “The website must allow people to easily contact Party Chef to arrange a party planning consultation.”
+> - [x] “The website must allow users to create their own menu from the items available, in order to get an idea of food/drinks costs for their party.”
+> - [x] “The website must allow users to send a copy of their personal menu to an email address. A copy of this should also be sent to the business owner so they can better understan what items users prefer.”
+> - [x] “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
+> - [x] “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called a 'kitchens' on the website).”
+> - [x] “The website must promote Party Chef's social media channels.”
+> - [x] “The website must show photos of previous events.” 
+> - [x] “The website must show customer testimonial quotes.”
 > - [x] “The website must be mobile-friendly.”
 
 #### User Stories ####
-> - [x] “I want to see what kind of facilities MAXFIT have.”
-> - [x] “I want to find about the different classes MAXFIT run.”
-> - [x] “I want to find out when certain classes are on at.”
-> - [x] “I want to be able to see where MAXFIT is located.”
-> - [x] “I am interested in a membership and want talk to someone about what is best for me.”
-> - [x] “I am interested in a membership and want to understand what the costs are.”
-> - [x] “I want to find out a little bit about the people who work at MAXFIT.”
-> - [x] “I want to see what other people say about MAXFIT”.
-> - [x] “I want to find the MAXFIT social media channels.”
+> - [x] “I want to see what kind of services Party Chef offers.”
+> - [x] “I want to see what kind of menu's (food & drink) Party Chef offer.”
+> - [x] “I want to find out where they are located, and which is the closest office to me.”
+> - [x] “I want to see photo's of the dishes in Party Chef menu's.”
+> - [x] “I want to see photo's of previous events serviced by Party Chef.”
+> - [x] “I want to be able to see pricing for menu items.”
+> - [x] “I want to be able to create my own menu from the menu's of items offerred. And I want to be able to email a copy of my menu to myself.”
+> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs”.
+> - [x] “I want to find the Party Chef social media channels.”
+
 
 #### 2. The Scope Plane ####
 
-Based on the outcomes the Strategy Plane, The Scope Plane determines what features, functionality, and types of content, should be included within the scope of the project. Listed below are the functional specifications and content requirements decided upon for the MAXFIT website. 
+Based on the outcomes from the Strategy Plane, The Scope Plane determines what features, functionality, and types of content should be included within the scope of the project. Listed below are the functional specifications and content requirements decided upon for the Party Chef website. 
 
 #### Functional Specifications: ####
-* Build a esponsive Website with 6 pages - Home, Services, Classes, Membership, Team, Contact.
-* Use photo/image carousel at top of homepage.
-* Homepage carousel to include link to free consultation contact form.
-* Contact form required for free trial sign-up form.
-* Contact form required for membership sign-up.
-* A main photo Gallery using a pop-out modal carousel, and similar galleries for indivudual services and classes.
-* Use a bootstrap Jumbotron for the top of all other pages to promote contact.
-* Google Analytics integration.
+* Build a responsive Website with 2 pages - Homepage and Contact page.
+* Navigation bar to highlight currently accessed page.
+* Both pages should have a Jumbotron at the top of the page with relevant call-out messaging. The Homepage Jumbotron to include link to contact page in order to arrange a meeting for a no-obligation consultation.
+* The Homepage should include a 'Features' section highlighting the Party Chef services.
+* The Homepage should show various menu's (canpapes, starters, main course, something sweet, drinks) each showing menu items listed within an accordian. Items on the menu can be added to a MyMenu cart.
+* Shopping cart functionality should be built in so that menu items can be added to a 'MyMenu' list of items. The MyMenu should then be accessed via links in the Nav bar and Footer. Once clicked, the MyMenu list of items appears on a modal. User can ammend quantites of the items they have selected in the MyMenu to get a price for their food/drink selection. A copy of the MyMenu list can be sent to a users email. A copy of the email should also be sent to Paty Chef.
+* The MyMenu should also have the facility to request a quote for an event. The request should include the food/drink items in the MyMenu lis plus additional information about the event (date/time, location, etc.). The request will eb sent to Party Chef by email. A copy of the request should also be sent to the user email address.
+* The Homepage should include a photo Gallery using a carousel on the Homepage to show menu items. A similar gallery on the contact page showing photos from past events should also be included.
+* The contact page must include all contact infromation for the Party Chef headquarters.
+* The contact page should include an interactive map showing all the kitchen locations across Ireland. By implementing features of the Google Maps API, a user should be able to select an individual kitchen marker to get a pop-up of contact information for that particular kitchen.
+* The contact page should also include a section highlighting social media channels.
+* The contact page should also include a contact form with a dropdown box so a user can select the subject type of their query (i.e. arrange a consultation. special menu request, service availability at certain location etc). 
 
 #### Content Requirements: ####
-* Inspirational images & messaging throughout.
-* Photos of the facilities, equipment, and members using services.
-* Testimonial sections.
-* Pricing table.
-* Promotional sections for Free Trial and Free Consultation.
-* Personal Trainer motto’s.
-* A main Image gallery for homepage and other locations, and individual galleries for services and classes.
+* Both Jumbotrons should show images conveying people haveing fun at a great party. Appropriate messaging should also be used to convey the key values of Party Chef.
+* The features section on the Homepage should briefly, but completely, convey what the main services are and the the benefits of using them.
+* Menu items should include a photo, a description, and the price per single serving of each item on the menu's.
+* Both photo galleries should show quality photos of impressive food layouts (Homepage Gallery) and recent events (Contact page gallery).
+* Homepage should show the most glowing but brief Testimonial along quotes with the customer details.
+
 
 #### 3. The Structure Plane ####
 
@@ -136,7 +138,7 @@ Interaction design is defined as the "..development of application flows to faci
 
 Infromation Architechture is defined as; "The structural design of the information space to facilitate intuitive access to content" (Copyright 2000 James Garrett). As such MaxFit was designed to allows a user to find the information they need easily. For example, the navigation bar is fixed to the top of the page view so is always immediately accessible, and buttons and links are clearly visible and communicate their purpose in an unambiguous way.
 
-The structure of the website and outline of page sections is outlined in the Sitemap. Click the link to view the <a href="assets/readme-assets/maxfit-sitemap-final.png"><strong>Sitemap.</strong></a>
+The structure of the website and outline of page sections is outlined in the Sitemap. Click the link to view the <a href="assets/readme-assets/party-chef-sitemap.png"><strong>Sitemap.</strong></a>
 
 
 #### 4. The Skeleton Plane ####
