@@ -1,3 +1,6 @@
+
+/*----------- Navbar placeholder ----------- */
+
 .navbar {
     margin-bottom: 0;
     border-bottom: 3px solid;
@@ -5,6 +8,7 @@
     width: 100%;
     background-color: #FCBF49;
 }
+
 
 .navbar a {
     color: #2e294e;
@@ -55,3 +59,75 @@ button:focus {
     outline: 1px dotted;
     outline: 5px auto #fcbf49;
 }
+
+/*----------- END of Navbar ----------- */
+
+/*-----------JUMBOTRON placeholder ----------- */
+
+.jumbotron {
+    background-color: rgba(214, 40, 40,.55);
+    width: 70%;
+    height: 80%;
+    position: relative;
+    left: 0px;
+    top: 50%;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: #ffffff;
+}
+
+.jumbotron-container {
+    height: 550px;
+    padding: 70px;
+    border-bottom: 3px solid;
+    border-color: #2e294e;
+}
+
+.jumbotron-container-home {
+    background: url('../css/images/jumbotron/pexels-askar-abayev-5638748-1000px.jpeg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron-container-contact {
+    background: url('../css/images/jumbotron/pexels-askar-abayev-5638748-1000px.jpeg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 70px;
+    border-bottom: 3px solid;
+    border-color: #2e294e;
+}
+
+.jumbotron-col {
+    padding: 0;
+}
+
+.jumbotron hr {
+    height: 2px;
+    width: 60%;
+    background-color: #EAE2B7;
+}
+
+.jumbotron .btn {
+    font-size: 20px;
+    color: #EAE2B7;
+    z-index: 1;
+    background-color: #d62828;
+    box-shadow: 0 0 0 0.2rem rgba(247, 127, 0,.65);
+}
+
+.jumbotron .btn:hover {
+    background-color: #2e294e;
+    box-shadow: 0 0 0 0.2rem rgba(247, 127, 0,.65);
+    color: #eae2b7;
+}
+
+
+/* ---------- Services sections on services.html - Gym, Personal Training, and Studio sections ----------- */ 
