@@ -93,6 +93,43 @@ Based on the outcomes from the Strategy Plane, The Scope Plane determines what f
 * Homepage should show the most glowing but brief Testimonial along quotes with the customer details.
 
 
+
+# END OF PARTY CHEF #
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### 3. The Structure Plane ####
 
 #### Interaction Design: ####
