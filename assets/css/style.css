@@ -130,4 +130,15 @@ button:focus {
 }
 
 
-/* ---------- Services sections on services.html - Gym, Personal Training, and Studio sections ----------- */ 
+/* ---------- Accordion test ------------ */
+
+.accordionScroll {
+    max-height: 390px;
+    overflow-y: auto;
+}
+
+.card-size {
+    height: 320px;
+    width: auto;
+}
+
