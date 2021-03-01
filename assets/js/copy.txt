@@ -1,0 +1,35 @@
+function initMap() {
+    var map = new google.maps.Map(document.getElementById("map"), {
+        mapId: "cae23a2b5aab6c26",
+        zoom: 6.5,
+        center: {
+            lat: 53.430659171975954,
+            lng: -7.946188576924455
+        }
+    });
+
+    var locations = [{
+        lat: 51.91754579951517,
+        lng: -8.472666050361664
+    }, {
+        lat: 51.891463947246024,
+        lng: -8.48991998978755
+    }, {
+        lat: 40.754932,
+        lng: -73.984016
+    }];
+
+    var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+
+    var markers = locations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    new MarkerClusterer(map, markers, {
+    imagePath:
+      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  });
+}

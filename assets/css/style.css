@@ -149,5 +149,8 @@ button:focus {
     width: 100%;
 }
 
+.infoimage {
+    text-align: center;
+}
 
 
