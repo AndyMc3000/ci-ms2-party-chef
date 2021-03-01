@@ -142,3 +142,12 @@ button:focus {
     width: auto;
 }
 
+/* ---------- Map test ------------ */
+
+.mapdiv {
+    min-height: 500px;
+    width: 100%;
+}
+
+
+
