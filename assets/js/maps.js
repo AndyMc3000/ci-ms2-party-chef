@@ -61,7 +61,7 @@ function addMarkerInfo() {
                             '>' + 
                             '</img>' +
                             '</div>' +
-                            '<ul>' + 
+                            '<ul class="infoWindowList">' + 
                             '<li>' + 
                             markersOnMap[i].address1 + 
                             '</li>' + 
