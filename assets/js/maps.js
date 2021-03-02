@@ -1,5 +1,5 @@
 var map;
-var InfoOgj = [];
+var InfoObj = [];
 var centerCoords = {
     lat: 53.430659171975954,
     lng: -7.946188576924455
@@ -89,14 +89,24 @@ function addMarkerInfo() {
             map: map
         });
 
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString,
         });
 
         marker.addListener('click', function() {
-            infowindow.open(map, marker);
+            closeOtherInfo();
+            infowindow.open(marker.get('map'), marker);
+            InfoObj[0] = infowindow;
         });
     }
+}
+
+function closeOtherInfo() {
+    if( InfoObj.length > 0 ) {
+        InfoObj[0].set("marker", null);
+        InfoObj[0].close();
+        InfoObj[0].length = 0;
+    }    
 }
 
 function initMap() {
