@@ -145,7 +145,7 @@ button:focus {
 /* ---------- Map test ------------ */
 
 .mapdiv {
-    min-height: 500px;
+    min-height: 650px;
     width: 100%;
 }
 
@@ -154,12 +154,30 @@ button:focus {
 }
 
 .infoWindowList {
-  list-style-type: none;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 5px;
+    text-align: center;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 0px;
+    font-size: 16px;
 }
 
 .infoHeading {
     text-align: center;
+    padding: 10px;
+    margin: 5px;
+    color: #ffffff;
+    background-color: #d62828;
+}
+
+.infoContainer {
+    color: #ffffff;
+    background-color: #d62828;
+    padding: 10px;
+}
+
+.telField {
+    font-size: 19px;
+    padding: 3px;
 }
