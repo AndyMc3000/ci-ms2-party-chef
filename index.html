@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="icon" type="image/png" href="assets/css/images/maxfit-favicon.png"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_Pe5jUSL1Dxa5TL2sMYM0L");
+        })();
+    </script>
     <title>Party Chef Home</title>
 </head>
 <body>
@@ -35,6 +41,31 @@
                     <span class="cart-total-price">$0</span>
                 </div>
                 <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </section>
+            <section>
+                <form id="form">
+                    <div class="field">
+                        <label for="from_name">from_name</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                        <label for="to_name">to_name</label>
+                        <input type="text" name="to_name" id="to_name">
+                    </div>
+                    <div class="field">
+                        <label for="message">message</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+                    <div class="field">
+                        <label for="reply_to">reply_to</label>
+                        <input type="text" name="reply_to" id="reply_to">
+                    </div>
+                    <div class="field">
+                        <label for="from_email">from_email</label>
+                        <input type="text" name="from_email" id="from_email">
+                    </div>
+                    <input type="submit" id="button" value="Send Email" >
+                </form>
             </section>
       </div>
       <div class="modal-footer">
