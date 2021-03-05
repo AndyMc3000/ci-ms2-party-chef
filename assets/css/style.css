@@ -184,6 +184,10 @@ button:focus {
 
 /* ---------- MyMenu test ------------ */
 
+.modal-body {
+    padding: 0;
+}
+
  .cart-header {
     font-weight: bold;
     font-size: 1.25em;

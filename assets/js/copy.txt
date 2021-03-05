@@ -39,3 +39,8 @@ function initMap() {
 
 ------------------------
 (marker.get('map'), marker);
+
+
+--------------------
+var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+<img class="cart-item-image" src="${imageSrc}" width="100" height="100">
