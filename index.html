@@ -33,19 +33,19 @@
                             </button>
                             <img src="assets/readme-assets/party-chef-readme-logo.png" alt="Party Chef Logo">
                             </div>
-                        <div>
-                        <div class="row">
+                        </div>
+                        <div class="row justify-content-center">
                             <div class="col-12 text-center">
-                                <h5 class="modal-title">MyMenu</h5>
+                                <h3 class="modal-title">MyMenu</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-body">
                     <section class="container-fluid content-section">
-                        <div>
+                        <div class="text-center">
+                            <br>
                             <p>Please find the items you selected below. Here you can change the quantities of items based on the number of guests you will be catering for.</p>
-                            <p>You can also request a complete quote based on the items selected by answering some questions</p>
                         </div>
                         <div class="cart-row">
                             <div class="col-4">
@@ -64,16 +64,28 @@
                             <strong class="cart-total-title">Total</strong>
                             <span class="cart-total-price">€0</span>
                         </div>
+                        <hr>
+                        <div class="text-center">
+                            <h3>Request A Quote</h3>
+                            <p>You can also request a complete quote based on the items selected by answering some questions</p>
+                        </div>
                         <form class="needs-validation" novalidate>
                             <div class="form-group">
-                                <label for="menuFirstName">Your First Name:</label>
+                                <label for="menuFirstName">Your First Name:*</label>
                                 <input type="text" class="form-control" id="menuFirstName" name="menuFirstName" aria-describedby="Your First Name" placeholder="Enter your First Name" required>
                                 <div class="invalid-feedback">
                                     Ooops! Please enter your First Name.
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="telNumber">Your Telephone Number:</label>
+                                <label for="menuSurame">Your Surname:*</label>
+                                <input type="text" class="form-control" id="menuSurame" name="menuSurame" aria-describedby="Your Surname" placeholder="Enter your Surname" required>
+                                <div class="invalid-feedback">
+                                    Ooops! Please enter your First Name.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="telNumber">Your Telephone Number:*</label>
                                 <input type="text" class="form-control" id="telNumber" name="telNumber" aria-describedby="Your Telephone Number" placeholder="Enter your Telephone Number" required>
                                 <div class="invalid-feedback">
                                     Ooops! Please enter your Telephone Number.
@@ -81,52 +93,53 @@
                             </div>
                             <div class="form-group">
                                 <label for="menuEmailAddress">Your Email Address:*</label> 
-                                <input class="form-control" id="menuEmailAddress" name="menuEmailAddress" aria-describedby="emailAddress" required>
+                                <input class="form-control" id="menuEmailAddress" name="menuEmailAddress" aria-describedby="emailAddress" placeholder="Enter your Email Address" required>
                                 <div class="invalid-feedback">
                                     Ooops! Please enter a valied Email Address. 
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="date" id="partyDate" name="partyDate" aria-describedby="start" value="2020-12-23" min="2021-03-05" max="2021-12-31"><br>
+                                <label for="partyDate">Your Party Date:*</label>
+                                <input class="form-control" type="date" id="partyDate" name="partyDate" aria-describedby="start" value="2020-12-23" min="2021-03-05" max="2021-12-31">
                                 <div class="invalid-feedback">
                                     Ooops! Please enter a Party Date. 
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="partyLocation">Party Location:</label>
+                                <label for="partyLocation">Party Location:*</label>
                                 <input type="text" class="form-control" id="partyLocation" name="partyLocation" aria-describedby="Party Location" placeholder="Enter your Party Location" required>
                                 <div class="invalid-feedback">
-                                    Ooops! Please enter an Address for the party location..
+                                    Ooops! Please enter an Address for your party location..
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="menuFirstName">Your First Name:</label>
-                                <input type="text" class="form-control" id="menuFirstName" name="menuFirstName" aria-describedby="firstname" placeholder="Enter your first name here" required>
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter your first name.
+                            <div class="form-group options-group">
+                                    <label for="options">Choose a service option:*</label>
+                                    <select class="form-control" id="options" name="options" aria-describedby="Service Options" placeholder="Choose a Service option.." required>
+                                    <option value="" selected disabled>Choose a Service option..</option>  
+                                    <option value="I will collect my menu.">I will collect my menu.</option>
+                                    <option value="Party Chef will deliver my menu.">Party Chef will deliver my menu.</option>
+                                    <option value="Party Chef will deliver and plate up menu ready for service.">Party Chef will deliver and plate up menu ready for service.</option>
+                                    <option value="Party Chef will deliver, plate up, and serve my menu to guests.">Party Chef will deliver, plate up, and serve my menu to guests.</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                    Ooops! Please select a Service Type.
+                                    </div>
                                 </div>
-                            </div><div class="form-group">
-                                <label for="menuFirstName">Your First Name:</label>
-                                <input type="text" class="form-control" id="menuFirstName" name="menuFirstName" aria-describedby="firstname" placeholder="Enter your first name here" required>
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter your first name.
+                                <div>
+                                <small>* All fields required.</small>
                                 </div>
-                            </div>
                             <div class="form-group">
-                                <label for="menuFirstName">Your First Name:</label>
-                                <input type="text" class="form-control" id="menuFirstName" name="menuFirstName" aria-describedby="firstname" placeholder="Enter your first name here" required>
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter your first name.
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" id="button" class="btn form-control btn-purchase">Request Quote</button>
+                                <button type="submit" id="button" class="btn form-control">Send Request</button>
                             </div>
                         </form>
                     </section>
                 </div>
                 <div class="modal-footer">
-                    <p>Thank you for your interest in our services!</p>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                        <img src="assets/readme-assets/party-chef-readme-logo.png" alt="Party Chef Logo">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>        

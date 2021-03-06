@@ -124,63 +124,85 @@
             <div class="col-12 col-sm-9 justify-content-center">  
                 <div class="text-center">
                     <div id="callback-form">
-                    <i class="fas fa-phone-volume"></i><br>
+                        <hr>
+                        <i class="fas fa-phone-volume"></i><br>
+                        <h2>Request a Callback</h2>
+                        <p>Complete the form below and we will contact you to arrange a free no-oblgation 30-minute consultation by phone.</p>
+                        <p>You can use the Message box to let us know about any of our Services or Classes you are interested in, or to ask any questions you might have of us.</p>
+                        <p>We look forward to speaking with you!</p>
+                        <hr> 
                     </div>
-                    <h2>Request a Callback</h2>
-                    <p>Complete the form below and we will contact you to arrange a free no-oblgation 30-minute consultation by phone.</p>
-                    <p>You can use the Message box to let us know about any of our Services or Classes you are interested in, or to ask any questions you might have of us.</p>
-                    <p>We look forward to speaking with you!</p>
-                    <hr> 
-                </div>
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-10">
-                            <form>
-                                <div class="form-group">
-                                    <label for="validationDefault01">Your First Name:</label><br>
-                                    <input type="text" class="form-control" id="firstname" name="validationDefault01" aria-describedby="lastname" placeholder="Enter your first name"><br>
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname">Your Surname:</label><br>
-                                    <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="lastname" placeholder="Enter your surname"><br>
-                                </div>
-                                <div class="form-group">
-                                    <label for="emailAddress">Your Email Address:</label>
-                                    <input type="email" class="form-control" id="emailAddress" name="email" aria-describedby="emailAddress" placeholder="Enter your email address">
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else!</small><br>
-                                </div>
-                                <div class="form-group">
-                                    <label for="telNumber">Your Telephone Number:</label>
-                                    <input type="number" class="form-control" id="telNumber" aria-describedby="telNumber" placeholder="Enter your Telephone Number"><br>
-                                </div>
-                                <div class="form-group options-group">
-                                    <label for="options">Choose a contact option:</label>
-                                    <select class="form-control" id="cars" name="options" aria-describedby="ContactOptions">
-                                    <option value="I would like to choose">Choose..</option>
-                                    <option value="I would like a FREE Trial">Register for a FREE Trial</option>
-                                    <option value="I would like a FREE Consultation">Request a FREE Consultation</option>
-                                    <option value="Sign-up for a DAILY PASS">Sign-up for a DAILY PASS</option>
-                                    <option value="Sign-up for a GOLD PASS">Sign-up for a GOLD PASS</option>
-                                    <option value="Sign-up for a SILVER PASS">Sign-up for a SILVER PASS</option>
-                                    <option value="Sign-up for a BRONZE PASS">Sign-up for a BRONZE PASS</option>
-                                    <option value="Sign-up for a GOLD CLASS PASS">Sign-up for a GOLD CLASS PASS</option>
-                                    <option value="Sign-up for a SILVER CLASS PASS">Sign-up for a SILVER CLASS PASS</option>
-                                    </select><br>
-                                </div>
-                                <div class="form-group">
-                                    <label for="start">Your preferred contact date:</label>
-                                    <input class="form-control" type="date" id="start" name="trip-start" aria-describedby="start" value="2020-12-23" min="2020-12-23" max="2021-12-31"><br>
-                                </div>
-                                <div class="form-group">
-                                    <label for="timePicker">Your preferred contact time:</label>
-                                    <input type="time" id="timePicker" class="form-control">
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <button type="submit" value="Submit" class="btn form-control">Send</button><br>
-                                </div>
-                            </form>
+                </div>    
+                <section>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="menuFirstName">Your First Name:*</label>
+                            <input type="text" class="form-control" id="menuFirstName" name="menuFirstName" aria-describedby="Your First Name" placeholder="Enter your First Name" required>
+                            <div class="invalid-feedback">
+                                Ooops! Please enter your First Name.
+                            </div>
                         </div>
+                        <div class="form-group">
+                            <label for="menuSurame">Your Surname:*</label>
+                            <input type="text" class="form-control" id="menuSurame" name="menuSurame" aria-describedby="Your Surname" placeholder="Enter your Surname" required>
+                            <div class="invalid-feedback">
+                                Ooops! Please enter your First Name.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telNumber">Your Telephone Number:*</label>
+                            <input type="text" class="form-control" id="telNumber" name="telNumber" aria-describedby="Your Telephone Number" placeholder="Enter your Telephone Number" required>
+                            <div class="invalid-feedback">
+                                Ooops! Please enter your Telephone Number.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="menuEmailAddress">Your Email Address:*</label> 
+                            <input class="form-control" id="menuEmailAddress" name="menuEmailAddress" aria-describedby="emailAddress" placeholder="Enter your Email Address" required>
+                            <div class="invalid-feedback">
+                                Ooops! Please enter a valied Email Address. 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="partyDate">Your Party Date:*</label>
+                            <input class="form-control" type="date" id="partyDate" name="partyDate" aria-describedby="start" value="2020-12-23" min="2021-03-05" max="2021-12-31">
+                            <div class="invalid-feedback">
+                                Ooops! Please enter a Party Date. 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="partyLocation">Party Location:*</label>
+                            <input type="text" class="form-control" id="partyLocation" name="partyLocation" aria-describedby="Party Location" placeholder="Enter your Party Location" required>
+                            <div class="invalid-feedback">
+                                Ooops! Please enter an Address for your party location..
+                            </div>
+                        </div>
+                        <div class="form-group options-group">
+                            <label for="options">Choose a service option:*</label>
+                            <select class="form-control" id="options" name="options" aria-describedby="Service Options" placeholder="Choose a Service option.." required>
+                            <option value="" selected disabled>Choose a Service option..</option>  
+                            <option value="I will collect my menu.">I will collect my menu.</option>
+                            <option value="Party Chef will deliver my menu.">Party Chef will deliver my menu.</option>
+                            <option value="Party Chef will deliver and plate up menu ready for service.">Party Chef will deliver and plate up menu ready for service.</option>
+                            <option value="Party Chef will deliver, plate up, and serve my menu to guests.">Party Chef will deliver, plate up, and serve my menu to guests.</option>
+                            </select>
+                            <div class="invalid-feedback">
+                            Ooops! Please select a Service Type.
+                            </div>
+                        </div>
+                        <div>
+                        <small>* All fields required.</small>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="button" class="btn form-control">Send Request</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-12 text-center">
+                    <img src="assets/readme-assets/party-chef-readme-logo.png" alt="Party Chef Logo">
                     </div>
                 </div>
             </div>

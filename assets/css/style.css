@@ -182,7 +182,15 @@ button:focus {
     padding: 3px;
 }
 
-/* ---------- MyMenu test ------------ */
+/* ---------- MyMenu Modal test ------------ */
+
+#exampleModal {
+    padding-right: 0px;
+}
+
+.modal-footer {
+    display: inline;
+}
 
 .modal-body {
     padding: 0;
