@@ -7,7 +7,7 @@ var centerCoords = {
 
 var icons = {
     kitchen: {
-        icon: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        icon: 'assets/css/images/map-images/party-chaf-map-marker.png',
     },
 };
 
@@ -21,7 +21,7 @@ var markersOnMap = [
         postcode: 'P19 DZ32',
         tel: '021-435 7892',
         email: 'corknorth@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 51.90473191472518,
             lng: -8.455334277325122
@@ -37,7 +37,7 @@ var markersOnMap = [
         postcode: 'P19 DZ32',
         tel: '021-436 7892',
         email: 'corksouth@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 51.891463947246024,
             lng: -8.48991998978755

@@ -6,7 +6,7 @@
     border-bottom: 3px solid;
     border-color: #2e294e; 
     width: 100%;
-    background-color: #FCBF49;
+    background-color: #00296b;
 }
 
 
@@ -58,6 +58,17 @@
 button:focus {
     outline: 1px dotted;
     outline: 5px auto #fcbf49;
+}
+
+.mymenu-indicator {
+    font-size: 10px;
+    color: black;
+    background-color: #ffffff;
+    padding: 7px; 
+    border-radius: 50%;
+    position: relative;
+    top: -18px;
+    right: -15px;
 }
 
 /*----------- END of Navbar ----------- */
