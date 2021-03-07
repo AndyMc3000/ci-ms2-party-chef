@@ -133,7 +133,7 @@ button:focus {
 /* ---------- Accordion test ------------ */
 
 .accordionScroll {
-    max-height: 390px;
+    max-height: 490px;
     overflow-y: auto;
 }
 
