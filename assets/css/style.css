@@ -158,6 +158,7 @@ button:focus {
 
 .shop-item-image {
     height: 250px;
+    border-radius: 5px;
 }
 
 .shop-item-details {
