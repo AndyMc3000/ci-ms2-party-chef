@@ -53,7 +53,7 @@ var markersOnMap = [
         postcode: 'P07 DZ12',
         tel: '021-433 7899',
         email: 'kinsaleh@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 51.70434100233279,
             lng: -8.461776888984756
@@ -69,7 +69,7 @@ var markersOnMap = [
         postcode: 'P06 DZ10',
         tel: '022-411 7899',
         email: 'limerick@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 52.667714528656184,
             lng: -8.631411410288878
@@ -85,7 +85,7 @@ var markersOnMap = [
         postcode: 'P01 DZ15',
         tel: '022-412 7999',
         email: 'clare@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 52.72717028463899,
             lng: -8.81756971849219
@@ -101,7 +101,7 @@ var markersOnMap = [
         postcode: 'P21 DZ23',
         tel: '027-429 8999',
         email: 'galwaysouth@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 53.27738494987443,
             lng: -8.928646226449871
@@ -117,7 +117,7 @@ var markersOnMap = [
         postcode: 'P29 DZ37',
         tel: '029-439 9999',
         email: 'galwaynorth@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 53.38261116368219,
             lng: -9.039895637855418
@@ -133,7 +133,7 @@ var markersOnMap = [
         postcode: 'P31 DZ42',
         tel: '039-539 1999',
         email: 'galwayeast@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 53.34116398252102,
             lng: -8.218571592594921
@@ -149,7 +149,7 @@ var markersOnMap = [
         postcode: 'P01 DZ01',
         tel: '01-532 1888',
         email: 'dublincity@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 53.34670302605734,
             lng: -6.240413700964763
@@ -165,7 +165,7 @@ var markersOnMap = [
         postcode: 'P02 DZ99',
         tel: '01-566 5788',
         email: 'dublinwest@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 53.38621312882772,
             lng: -6.367385138369657
@@ -181,7 +181,7 @@ var markersOnMap = [
         postcode: 'P42 DZ98',
         tel: '041-588 5799',
         email: 'kildare@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 53.18889168951526,
             lng: -6.809530108431771
@@ -197,7 +197,7 @@ var markersOnMap = [
         postcode: 'P42 DZ98',
         tel: '031-788 0799',
         email: 'kerry@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 52.07053481702905,
             lng: -9.539468293100018
@@ -213,7 +213,7 @@ var markersOnMap = [
         postcode: 'P92 DY38',
         tel: '061-888 4799',
         email: 'sligo@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 54.27254843980587,
             lng: -8.596064398365096
@@ -229,7 +229,7 @@ var markersOnMap = [
         postcode: 'P32 DB38',
         tel: '091-777 5799',
         email: 'kilkenny@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 52.64977486985807,
             lng: -7.2517969130956175
@@ -245,7 +245,7 @@ var markersOnMap = [
         postcode: 'P11 DG72',
         tel: '067-665 6769',
         email: 'roscommon@partychef.ie',
-        image: 'https://i.ibb.co/xq9Y2X4/chef-2-icon-iconarchive.png',
+        image: 'assets/css/images/map-images/party-chaf-map-marker.png',
         LatLng: [{
             lat: 53.47537213829264,
             lng: -7.9916637210453025
