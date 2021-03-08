@@ -140,12 +140,44 @@
     color: #2e294e;
 }
 
+/* ---------- Intro & Features section ------------ */
+
+.home-intro-section {
+    padding-top: 35px;
+}
+
+.home-intro-section hr {
+    height: 2px;
+    width: 80%;
+    background-color: #ffd500;
+    margin-bottom: 35px;
+}
+
+.features-section hr {
+    height: 2px;
+    width: 60%;
+    background-color: #ffd500;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
 
 /* ---------- Accordion test ------------ */
 
+.accordion hr {
+    height: 2px;
+    width: 30%;
+    background-color: #ffd500;
+    margin-bottom: 25px;
+}
+
 .card-header {
     background-color: #ffd500;
+}
+
+.card-header .btn {
     color: #00296b;
+    border: 1px solid;
+    font-size: 20px;
 }
 
 .accordionScroll {
