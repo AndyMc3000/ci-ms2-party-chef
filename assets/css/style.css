@@ -219,13 +219,26 @@
 
 .shop-item-price {
     flex-grow: 1;
-    color: #333;
+    color:#ffffff;
+    padding-bottom: 10px;
+    font-size: 30px;
 }
 
 .shop-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.shop-item-details .btn {
+    color: #00296b;
+    background-color: #ffd500;
+}
+
+.shop-item-details p {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 10px;
 }
 
 /* ---------- Map test ------------ */
