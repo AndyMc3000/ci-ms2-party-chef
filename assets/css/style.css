@@ -95,7 +95,7 @@
 }
 
 .jumbotron-container-home {
-    background: url('../css/images/jumbotron/pexels-askar-abayev-5638748-1000px.jpeg') no-repeat center center scroll;
+    background: url('../css/images/jumbotron/kelsey-chance-ZrhtQyGFG6s-unsplash-1000px.jpeg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -106,7 +106,7 @@
 }
 
 .jumbotron-container-contact {
-    background: url('../css/images/jumbotron/pexels-askar-abayev-5638748-1000px.jpeg') no-repeat center center scroll;
+    background: url('../css/images/jumbotron/matt-hoffman-7zwyUZVrt-U-unsplash-1000px.jpeg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -233,13 +233,18 @@
     text-align: center;
     padding: 10px;
     margin: 5px;
-    color: #ffffff;
-    background-color: #d62828;
+    color: #00296b;
+    background-color: #ffd500;
+    border-radius: 10px;
+}
+
+.infoHeading h3 {
+    margin-bottom: 0;
 }
 
 .infoContainer {
     color: #ffffff;
-    background-color: #d62828;
+    background-color: #00296b;
     padding: 10px;
 }
 
