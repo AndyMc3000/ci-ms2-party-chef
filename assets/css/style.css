@@ -470,9 +470,11 @@
 }
 
 .gallery-placeholder img {
-    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     height: auto;
     width: 100%;
+    max-width: 600px;
     border-radius: 30px;
 }
 
@@ -482,6 +484,31 @@
     padding-left: 25px;
     padding-right: 25px;
     color: #ffd500;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    bottom: 70px;
+    height: 60px;
+    width: 60px;
+    background-color: #010d20;
+    border-radius: 50%;
+    border: 2px solid #ffd500;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';  
+    font-size: 35px;
+    font-style: normal;
+    color: #ffd500;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 35px;
+  font-style: normal;
+  color: #ffd500;
 }
 
 /* ---------- Testimonial test ------------ */
