@@ -161,13 +161,40 @@
     margin-bottom: 35px;
 }
 
-/* ---------- Accordion test ------------ */
+.features-section i {
+    font-size: 65px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #ffd500;
+}
+
+.feature-text {
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+/* ---------- Accordion/Menu test ------------ */
+
+.menu-header img {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.menu-header h2 {
+    padding-bottom: 10;
+} 
 
 .accordion hr {
     height: 2px;
     width: 30%;
     background-color: #ffd500;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+}
+
+.card   {
+    border: 3px solid;
+    border-color: #ffd500;
 }
 
 .card-header {
@@ -192,8 +219,22 @@
     width: auto;
 }
 
+.shop-item-container {
+    height: 500;
+    border: 3px solid;
+    border-color: #ffd500;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
 .shop-item {
-    margin: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: 50px;
 }
 
 .shop-item-title {
@@ -203,12 +244,15 @@
     font-weight: bold;
     font-size: 1.5em;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .shop-item-image {
-    height: 250px;
-    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 10px;
 }
 
 .shop-item-details {
@@ -233,6 +277,7 @@
 .shop-item-details .btn {
     color: #00296b;
     background-color: #ffd500;
+    margin-bottom: 20px;
 }
 
 .shop-item-details p {
@@ -391,16 +436,16 @@
 }
 
 .cart-total {
-    text-align: end;
+    text-align: left;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
     color: black;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .cart-total-price {
