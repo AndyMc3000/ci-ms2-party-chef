@@ -343,34 +343,54 @@
     padding: 3px;
 }
 
-.modal-header {
-    background-color: #00296b;
-}
 
 /* ---------- MyMenu Modal test ------------ */
 
-#exampleModal {
-    padding-right: 0px;
+.close {
+    color: #fff; 
+    opacity: 1;
+    font-size: 28px;
+}
+
+.close:hover {
+    color: #ffd500; 
+    opacity: 1;
+}
+
+.modal-header {
+    background-color: #00296b;
+    color: #ffffff;
+    border-bottom: 2px solid #ffd500;
 }
 
 .modal-footer {
     display: inline;
+    background-color: #00296b;
+    color: #ffffff;
 }
 
 .modal-body {
     padding: 0;
+    background-color: #00296b;
+    color: #ffffff;
 }
 
- .cart-header {
+.modal-body hr {
+    height: 2px;
+    background-color: #ffd500;
+}
+
+.cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: #ffffff;
+    justify-content: center;
 }
 
 .cart-column {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ffd500;
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -381,21 +401,21 @@
 }
 
 .cart-item {
-    width: 45%;
+    width: 50%;
 }
 
 .cart-price {
-    width: 20%;
+    width: 15%;
     font-size: 1.2em;
-    color: #333;
+    color: #ffffff;
 }
 
 .cart-quantity {
-    width: 35%;
+    width: 25%;
 }
 
 .cart-item-title {
-    color: #333;
+    color: #ffffff;
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -422,9 +442,9 @@
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #56CCF2;
-    background-color: #eee;
-    color: #333;
+    border: 1px solid #ffd500;
+    background-color: #ffffff;
+    color: #00296b;
     padding: 0;
     text-align: center;
     font-size: 1.2em;
@@ -432,7 +452,7 @@
 }
 
 .cart-row:last-child {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #ffd500;
 }
 
 .cart-row:last-child .cart-column {
@@ -440,27 +460,35 @@
 }
 
 .cart-total {
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+    color: #ffffff;
     margin-left: 20px;
 }
 
 .cart-total-price {
-    color: #333;
-    font-size: 1.1em;
+    color: #ffffff;
+    font-size: 1.6em;
+    padding-left: 10px;
 }
 
 .btn-purchase {
-    display: block;
-    margin: 40px auto 80px auto;
+    display: inline;
+    margin: 20px 20px 20px 20px;
     font-size: 1.75em;
+    color: #00296b;
+    background-color: #ffd500;
+    width: 85%;
+}
+
+.modal-footer {
+    border-top: 1px solid #ffd500;
 }
 
 /* ---------- Gallery test ------------ */
@@ -530,3 +558,43 @@
     padding-right: 25px;
     color: #ffd500;
 }
+
+/* ---------- Media Queries ------------ */
+
+/* ---------- 1. Media Query for MyMenu Modal - Remove image from list row on small devices ------------ */
+
+
+@media screen and (max-width: 600px) {
+    .cart-item-image {
+        display: none;
+    }
+}
+
+/* ---------- 2. Media Query for MyMenu Modal - remove padding for open modal and MyMenu quantity input on small devices ------------ */
+
+
+@media screen and (max-width: 600px) {
+    .modal-open {
+        padding-right: 2px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .cart-quantity-input {
+        margin-right: 2px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .cart-price {
+        margin-right: 4px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .cart-item-title {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
