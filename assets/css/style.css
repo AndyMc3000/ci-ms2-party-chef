@@ -72,7 +72,7 @@
 /*-----------JUMBOTRON placeholder ----------- */
 
 .jumbotron {
-    background-color: rgba(0, 41, 107,.45);
+    background-color: rgba(0, 80, 157,.65);
     width: 70%;
     height: 80%;
     position: relative;
@@ -113,7 +113,7 @@
     background-size: cover;
     padding: 70px;
     border-bottom: 3px solid;
-    border-color: #2e294e;
+    border-color: #ffd500;
 }
 
 .jumbotron-col {
@@ -162,10 +162,21 @@
 }
 
 .features-section i {
-    font-size: 65px;
+    font-size: 55px;
     padding-left: 25px;
     padding-right: 25px;
     color: #ffd500;
+}
+
+.features-section img {
+    font-size: 1.5rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.features-section row {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .feature-text {
@@ -192,25 +203,34 @@
     margin-bottom: 35px;
 }
 
+.accordion-button-row {
+    background-color: #00296b;
+    border-bottom: 2px solid #ffd500;
+    border-top: 2px solid #ffd500;
+}
+
 .card   {
-    border: 3px solid;
-    border-color: #ffd500;
+    border: none;
 }
 
 .card-header {
-    background-color: #ffd500;
+    background-color: #00296b;
+    align-items: center;
 }
 
 .card-header .btn {
     color: #00296b;
+    background-color: #ffd500;
     border: 1px solid;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .accordionScroll {
     max-height: 520px;
     overflow-y: auto;
-    background-color: #00296b;
+    background-color: #003f88;
     color: #ffffff;
 }
 
@@ -228,6 +248,7 @@
     margin-right: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
+    background-color: #00296b;
 }
 
 .shop-item {
