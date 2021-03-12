@@ -165,13 +165,17 @@
     font-size: 55px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 10px;
     color: #ffd500;
 }
 
 .features-section img {
-    font-size: 1.5rem;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #ffd500;
+    border-radius: 10px;
 }
 
 .features-section row {
@@ -243,12 +247,12 @@
     height: 500;
     border: 3px solid;
     border-color: #ffd500;
+    background-color: #00296b;
     border-radius: 10px;
     padding: 5px;
     margin-right: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
-    background-color: #00296b;
 }
 
 .shop-item {
