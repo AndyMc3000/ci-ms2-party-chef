@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AndyMc3000/ci-ms2-party-chef)
+
 <a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-readme-logo.png)</a>
 
 # PartyChef.ie - Professional Private Caterers :cocktail: #
