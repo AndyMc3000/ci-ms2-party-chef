@@ -518,25 +518,26 @@
 
 /* ---------- Gallery test ------------ */
 
-.gallery-placeholder {
-    background-color: #ffd500;
-}
-
 .gallery-placeholder img {
-    padding-top: 10px;
-    padding-bottom: 10px;
     height: auto;
     width: 100%;
     max-width: 600px;
+    margin-bottom: 45px;
+    border: 3px solid #ffd500;
     border-radius: 30px;
 }
 
 .gallery-container i {
     font-size: 65px;
-    margin-top: 25px;
+    margin-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
+    margin-bottom: 15px;
     color: #ffd500;
+}
+
+.gallery-img h2 {
+    margin-top: 45px;
 }
 
 .carousel-control-prev-icon,
@@ -569,11 +570,24 @@
 .testimonial-container {
     padding-top: 35px;
     padding-bottom: 35px;
+    background: url('../css/images/jumbotron/matt-hoffman-7zwyUZVrt-U-unsplash-1000px.jpeg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.testiomonial-container i {
+    font-size: 65px;
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #ffd500;
 }
 
 .testiomonial-box {
-    background-color: #ffd500;
     padding: 30px;
+    background-color: rgb(0, 80, 157,.55);
 }
 
 .testiomonial-box i {
