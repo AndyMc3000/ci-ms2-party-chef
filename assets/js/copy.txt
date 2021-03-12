@@ -17,3 +17,10 @@ function removeCartItem(event) {
 ----------------------removed this call from store.js
 
 document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+
+
+----------------taken from emailjs (code to get div into emailjs email.
+
+document.getElementById("menuFirstName", "menuSurname", "telNumber", "menuEmailAddress", "partyDate", "partyLocation", "options");
+
+document.getElementById("menuFirstName", "menuSurname", "telNumber", "menuEmailAddress", "partyDate", "partyLocation", "options").value = "";)

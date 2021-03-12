@@ -10,7 +10,7 @@ document.getElementById('form')
 
    var templateParams = {
     menuFirstName: '',
-    menuSurname: '',
+    menuSurname: '', 
     telNumber: '',
     menuEmailAddress: '',
     partyDate: '',
@@ -18,10 +18,6 @@ document.getElementById('form')
     options: '',
 };
 console.log(btn);
-
-document.getElementById("menuFirstName", "menuSurname", "telNumber", "menuEmailAddress", "partyDate", "partyLocation", "options");
-
-document.getElementById("menuFirstName", "menuSurname", "telNumber", "menuEmailAddress", "partyDate", "partyLocation", "options").value = "";
 
 emailjs.send('default_service', 'template_cewgm4l', templateParams)
     .then(function(response) {
