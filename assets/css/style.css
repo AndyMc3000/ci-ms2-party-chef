@@ -38,21 +38,19 @@ body p {
     font-size: 18px;
 } 
 
-.nav li a:hover {
-    background-color: #00296b;
-    box-shadow: 0 0 0 0.2rem rgba(0, 41, 107);
-    color: #EAE2B7;
+.nav-item:hover {
+    background-color: #ffd500;
+    border-radius: 10%;
 }
+
+.nav li a:hover {
+    color: #00296b;
+} 
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #00296b;
     box-shadow: 0 0 0 0.2rem rgb(255, 213, 0);
     color: #ffffff;
-}
-
-.nav li a i {
-    font-size: 28px;
-    color: #f77f00;
 }
 
 .navbar-toggler-icon {
