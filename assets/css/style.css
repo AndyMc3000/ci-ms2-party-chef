@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600&family=Montserrat&display=swap');
 
+/* -- Google Fonts -- */
+
 body h1, h2, h3, h4, h5, h6 {
     font-family: 'Blinker', sans-serif;
 }
 
-p {
+body p {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* -- /END of Google Fonts -- */
  
-/*----------- Navbar placeholder ----------- */
+/* -- Bootstrap Navbar -- */
 
 .navbar {
     margin-bottom: 0;
@@ -76,9 +80,9 @@ p {
     color: #00296b;
 }
 
-/*----------- END of Navbar ----------- */
+/* -- /END of Bootstrap Navbar -- */
 
-/*-----------JUMBOTRON placeholder ----------- */
+/* -- Index.html & contact.html - Bootstrap Jumbotron -- */
 
 .jumbotron {
     background-color: rgba(0, 80, 157,.65);
@@ -149,10 +153,20 @@ p {
     color: #2e294e;
 }
 
-/* ---------- Intro & Features section ------------ */
+/* -- Index.html & contact.html - Bootstrap Jumbotron -- */
+
+/* -- Introduction & Features section -- */
 
 .home-intro-section {
     padding-top: 35px;
+}
+
+.home-intro-section i {
+    font-size: 55px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    color: #ffd500;
 }
 
 .home-intro-section hr {
@@ -197,8 +211,23 @@ p {
     vertical-align: middle;
 }
 
+/* -- /END of Introduction & Features section -- */
 
-/* ---------- Accordion/Menu test ------------ */
+/* -- Index.html - Menu's introduction & Menu Accordions section -- */
+/* -- NOTE: The card structure, item class names, and 'Add to MyMenu' button -- */
+/* -- code was copied from a shopping cart plugin created by 'WebDevSimplified'. -- */
+/* -- You can find the plugin code on GitHub here;  -- */
+/* -- https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js  -- */
+/* -- There is also a video which goes through the development of the plugin code. See here; -- */
+/* -- https://www.youtube.com/watch?v=YeFzkC2awTM -- */
+
+.menus-intro i {
+    font-size: 55px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    color: #ffd500; 
+}
 
 .menu-header img {
     padding-top: 25px;
@@ -320,65 +349,9 @@ p {
     padding-top: 10px;
 }
 
-/* ---------- Map test MOVE DOWN ------------ */
+/* -- /END of Menu's introduction & Menu Accordions section -- */
 
-.section-container {
-    background-color: #00296b;
-    color: #ffffff;   
-}
-
-.map-heading img {
-    padding-bottom: 10px;
-}
-
-.mapdiv {
-    min-height: 650px;
-    width: 100%;
-    border: 5px;
-    border-color: #ffd500;
-    background-color: #00296b;
-}
-
-.infoimage {
-    text-align: center;
-}
-
-.infoWindowList {
-    text-align: center;
-    list-style-type: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 5px;
-    padding: 0px;
-    font-size: 16px;
-}
-
-.infoHeading {
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
-    color: #00296b;
-    background-color: #ffd500;
-    border-radius: 10px;
-}
-
-.infoHeading h3 {
-    margin-bottom: 0;
-}
-
-.infoContainer {
-    color: #ffffff;
-    background-color: #00296b;
-    padding: 10px;
-}
-
-.telField {
-    font-size: 19px;
-    padding: 3px;
-}
-
-
-/* ---------- MyMenu Modal test ------------ */
+/* -- Index.html - 'MyMenu' Bootstrap Modal (see button in Navbar) -- */
 
 .close {
     color: #fff; 
@@ -525,7 +498,11 @@ p {
     border-top: 1px solid #ffd500;
 }
 
-/* ---------- Gallery test ------------ */
+/* -- /END of 'MyMenu' Bootstrap Modal (see button in Navbar) -- */
+
+/* -- Index.html - Photo Gallery section -- */
+/* -- NOTE: Some code copied and edited from Bootstrap documentation -- */
+/* -- for Modal Carousel. -- */
 
 .gallery-placeholder img {
     height: auto;
@@ -574,7 +551,9 @@ p {
   color: #ffd500;
 }
 
-/* ---------- Testimonial test ------------ */
+/* -- /END of Photo Gallery section -- */
+
+/* -- Index.html - Testimonial section -- */
 
 .testimonial-container {
     padding-top: 35px;
@@ -602,9 +581,74 @@ p {
     color: #ffd500;
 }
 
-/* ---------- Media Queries ------------ */
+/* -- /END of Testimonial section -- */
 
-/* ---------- 1. Media Query for MyMenu Modal - Remove image from list row on small devices ------------ */
+/* -- Index.html & contact.html - Footer -- */
+
+/* -- /END of Footer -- */
+
+/* -- Contact.html - Google Map -- */
+
+.section-container {
+    background-color: #00296b;
+    color: #ffffff;   
+}
+
+.map-heading img {
+    padding-bottom: 10px;
+}
+
+.mapdiv {
+    min-height: 650px;
+    width: 100%;
+    border: 5px;
+    border-color: #ffd500;
+    background-color: #00296b;
+}
+
+.infoimage {
+    text-align: center;
+}
+
+.infoWindowList {
+    text-align: center;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.infoHeading {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    color: #00296b;
+    background-color: #ffd500;
+    border-radius: 10px;
+}
+
+.infoHeading h3 {
+    margin-bottom: 0;
+}
+
+.infoContainer {
+    color: #ffffff;
+    background-color: #00296b;
+    padding: 10px;
+}
+
+.telField {
+    font-size: 19px;
+    padding: 3px;
+}
+
+/* -- /END of Google Map -- */
+
+/* -- Media Queries: -- */
+
+/* -- 1. Media Query for MyMenu Modal - Removes item image from the list row on small devices -- */
 
 
 @media screen and (max-width: 600px) {
@@ -613,7 +657,9 @@ p {
     }
 }
 
-/* ---------- 2. Media Query for MyMenu Modal - remove padding for open modal and MyMenu quantity input on small devices ------------ */
+/* -- /END of Media Query 1 -- */
+
+/* -- 2. Media Query for MyMenu Modal - Removes padding for open modal and MyMenu quantity input on small devices ------------ */
 
 
 @media screen and (max-width: 600px) {
@@ -640,4 +686,6 @@ p {
         margin-right: 2px;
     }
 }
+
+/* -- /END of Media Query 2 -- */
 
