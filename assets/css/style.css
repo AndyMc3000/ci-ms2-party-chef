@@ -213,13 +213,13 @@ body p {
 
 /* -- /END of Introduction & Features section -- */
 
-/* -- Index.html - Menu's introduction & Menu Accordions section -- */
-/* -- NOTE: The card structure, item class names, and 'Add to MyMenu' button -- */
-/* -- code was copied from a shopping cart plugin created by 'WebDevSimplified'. -- */
-/* -- You can find the plugin code on GitHub here;  -- */
-/* -- https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js  -- */
-/* -- There is also a video which goes through the development of the plugin code. See here; -- */
-/* -- https://www.youtube.com/watch?v=YeFzkC2awTM -- */
+/* -- Index.html - Menu's introduction & Menu Accordions section.
+        NOTE: The card structure, item class names, and 'Add to MyMenu' button code 
+        was copied from a shopping cart plugin created by 'WebDevSimplified'. You can 
+        find the plugin code on GitHub here;
+        https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js
+        There is also a video which goes through the development of the plugin code. See here;
+        https://www.youtube.com/watch?v=YeFzkC2awTM -- */
 
 .menus-intro i {
     font-size: 55px;
@@ -351,7 +351,12 @@ body p {
 
 /* -- /END of Menu's introduction & Menu Accordions section -- */
 
-/* -- Index.html - 'MyMenu' Bootstrap Modal (see button in Navbar) -- */
+/* -- Index.html - 'MyMenu' Bootstrap Modal (see button in Navbar)
+        NOTE: The item class names and rules were copied and edited from a shopping cart plugin created 
+        by 'WebDevSimplified'. You can find the plugin code on GitHub here;
+        https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js
+        There is also a video which goes through the development of the plugin code. See here;
+        https://www.youtube.com/watch?v=YeFzkC2awTM -- */
 
 .close {
     color: #fff; 
@@ -500,9 +505,9 @@ body p {
 
 /* -- /END of 'MyMenu' Bootstrap Modal (see button in Navbar) -- */
 
-/* -- Index.html - Photo Gallery section -- */
-/* -- NOTE: Some code copied and edited from Bootstrap documentation -- */
-/* -- for Modal Carousel. -- */
+/* -- Index.html - Photo Gallery section.
+        NOTE: Some code copied and edited from Bootstrap documentation
+        for Modal Carousel. -- */
 
 .gallery-placeholder img {
     height: auto;
@@ -648,7 +653,8 @@ body p {
 
 /* -- Media Queries: -- */
 
-/* -- 1. Media Query for MyMenu Modal - Removes item image from the list row on small devices -- */
+/* -- 1. Media Query for MyMenu Modal - Removes item image 
+        from the list row on small devices -- */
 
 
 @media screen and (max-width: 600px) {
@@ -659,7 +665,8 @@ body p {
 
 /* -- /END of Media Query 1 -- */
 
-/* -- 2. Media Query for MyMenu Modal - Removes padding for open modal and MyMenu quantity input on small devices ------------ */
+/* -- 2. Media Query for MyMenu Modal - Removes padding 
+        for open modal and MyMenu quantity input on small devices -- */
 
 
 @media screen and (max-width: 600px) {
