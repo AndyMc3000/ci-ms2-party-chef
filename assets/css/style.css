@@ -101,11 +101,11 @@ button.navbar-toggler {
 
 .jumbotron {
     background-color: rgba(0, 80, 157,.65);
-    width: 70%;
-    height: 80%;
+    width: 80%;
+    height: 85%;
     position: relative;
     left: 0px;
-    top: 50%;
+    top: 40%;
     right: 0px;
     bottom: 0px;
     margin: 0 auto;
@@ -715,7 +715,7 @@ button.navbar-toggler {
         of menu dropdown and style nav-item li's.-- */
 
 @media screen and (max-width: 575px) {
-    
+
     .nav-item {
         margin-bottom: 10px;
         margin-right: 10px;
@@ -726,5 +726,105 @@ button.navbar-toggler {
         padding-right: 10px;
     }
 }
+
+/* -- /END of Media Query 3 -- */
+
+/* -- 3. Media Query for Navbar Collapse Dropdown items - Move items to right side
+        of menu dropdown and style nav-item li's.-- */
+
+@media screen and (max-width: 1250px) {
+
+    .jumbotron {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 1222px) {
+
+    .jumbotron {
+        padding-top: 15px;
+        width: auto;
+    }
+
+    .jumbotron .display-2 {
+        font-size: 60px;
+    }
+
+    .jumbotron h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+
+    .jumbotron-container {
+        padding: 35px;
+    }
+
+    .jumbotron {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .jumbotron h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .jumbotron-container {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 40px;
+        height: 500px;
+    }
+
+    .jumbotron {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .jumbotron .display-2 {
+        font-size: 55px;    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .jumbotron-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        height: 500px;
+    }
+
+    .jumbotron {
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+
+    .jumbotron .display-2 {
+        font-size: 50px;    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .jumbotron-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        height: 500px;
+    }
+
+    .jumbotron {
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .jumbotron .display-2 {
+        font-size: 40px;    }
+}
+
+
 
 /* -- /END of Media Query 3 -- */
