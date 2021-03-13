@@ -11,6 +11,8 @@ body p {
 }
 
 /* -- /END of Google Fonts -- */
+
+/* -- Site-wide Rules -- */
  
 /* -- Bootstrap Navbar -- */
 
@@ -214,7 +216,7 @@ button.nav-link.mymenu {
 
 .home-intro-section hr {
     height: 2px;
-    width: 80%;
+    width: 100%;
     background-color: #ffd500;
     margin-bottom: 35px;
 }
@@ -231,14 +233,6 @@ button.nav-link.mymenu {
 .features-section div img {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.features-section hr {
-    height: 2px;
-    width: 60%;
-    background-color: #ffd500;
-    margin-top: 25px;
-    margin-bottom: 35px;
 }
 
 .features-section i {
@@ -278,6 +272,14 @@ button.nav-link.mymenu {
         There is also a video which goes through the development of the plugin code. See here;
         https://www.youtube.com/watch?v=YeFzkC2awTM -- */
 
+.menus-intro hr {
+    height: 2px;
+    width: 80%;
+    background-color: #ffd500;
+    margin-bottom: 35px;
+}
+    
+        
 .menus-intro i {
     font-size: 55px;
     padding-left: 25px;
@@ -304,8 +306,6 @@ button.nav-link.mymenu {
 
 .accordion-button-row {
     background-color: #00296b;
-    border-bottom: 2px solid #ffd500;
-    border-top: 2px solid #ffd500;
 }
 
 .card   {
@@ -326,11 +326,17 @@ button.nav-link.mymenu {
     line-height: normal;
 }
 
+.card-header .btn:focus {
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 0 0.3rem rgb(255,255,255);
+}
+
 .accordionScroll {
     max-height: 520px;
     overflow-y: auto;
     background-color: #003f88;
     color: #ffffff;
+    border: 2px solid #ffd500;
 }
 
 .card-size {
@@ -976,62 +982,6 @@ button.nav-link.mymenu {
         padding-bottom: 35px;
         margin-bottom: 0;
     }
-}
-
-
-
-
-
-
-
-.home-intro-section div h3 {
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    margin: 0;
-}
-
-.home-intro-section hr {
-    height: 2px;
-    width: 80%;
-    background-color: #ffd500;
-    margin-bottom: 35px;
-}
-
-.features-section hr {
-    height: 2px;
-    width: 60%;
-    background-color: #ffd500;
-    margin-top: 25px;
-    margin-bottom: 35px;
-}
-
-.features-section i {
-    font-size: 55px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
-    color: #ffd500;
-}
-
-.features-section img {
-    height: auto;
-    width: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 2px solid #ffd500;
-    border-radius: 10px;
-}
-
-.features-section row {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.feature-text {
-    align-items: center;
-    vertical-align: middle;
 }
 
 /* -- /END of Media Query 4 -- */
