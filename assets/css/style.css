@@ -22,35 +22,42 @@ body p {
     background-color: #00296b;
 }
 
-.navbar a {
-    color: #ffffff;
-}
-
 .navbar button {
     color: #00296b;
     background-color: #ffd500;
-    padding-right: 0px;
-    border-radius: .25rem;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
-.nav li a {
-    color: #2e294e;
-    font-size: 18px;
-} 
-
-.nav-item:hover {
-    background-color: #ffd500;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #00296b;
+    border: 2px solid #ffd500;
     border-radius: 10%;
 }
 
-.nav li a:hover {
-    color: #00296b;
-} 
+.nav-pills li {
+    margin-right: 7px;
+}
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.inactive {
+    color: #fff;
     background-color: #00296b;
-    box-shadow: 0 0 0 0.2rem rgb(255, 213, 0);
+    border: 2px solid #00296b;
+    border-radius: 10%;
+}
+
+.nav-pills .nav-link.inactive, .nav-pills .show>.nav-link {
+    justify-content: right;
+}
+
+.nav-pills .nav-link.inactive:hover {
     color: #ffffff;
+    background-color: #00296b;
+    border: 2px solid #ffd500;
+    border-radius: 10%;
 }
 
 .navbar-toggler-icon {
@@ -68,14 +75,24 @@ body p {
     right: -15px;
 }
 
-.spacer {
+.navbar-toggler-icon {
     color: #ffffff;
-    font-size: 50px;
-    padding-right: 10px;
-    padding-left: 30px;
-    padding-bottom: 0px;
-    bottom: -40px;
-    color: #00296b;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #00296b;
+} 
+
+button.navbar-toggler {
+    background-color: #00296b;
+    border: 2px solid #ffffff;
+} 
+
+.navbar-dark .navbar-toggler {
+    border: 2px solid #ffffff;
+}
+
+.nav-link.active {
+    justify-content: end;
 }
 
 /* -- /END of Bootstrap Navbar -- */
@@ -694,3 +711,20 @@ body p {
 
 /* -- /END of Media Query 2 -- */
 
+/* -- 3. Media Query for Navbar Collapse Dropdown items - Move items to right side
+        of menu dropdown and style nav-item li's.-- */
+
+@media screen and (max-width: 575px) {
+    
+    .nav-item {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* -- /END of Media Query 3 -- */
