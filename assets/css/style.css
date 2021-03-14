@@ -297,6 +297,7 @@ button.nav-link.mymenu {
     padding-bottom: 35px;
     color: #ffffff;
     border-radius: 10px;
+    border: 2px solid #ffd500;
 }
 
 .jumbotron-container {
@@ -481,6 +482,7 @@ button.nav-link.mymenu {
 
 .card   {
     border: none;
+    background-color: #ffd500;
 }
 
 .card-body {
@@ -545,11 +547,11 @@ button.nav-link.mymenu {
     display: block;
     width: 100%;
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
+    font-family: 'Blinker', sans-serif;
+    font-size: 1.5rem;
     color: #ffffff;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .shop-item-image {
@@ -570,6 +572,11 @@ button.nav-link.mymenu {
     color:#ffffff;
     padding-bottom: 10px;
     font-size: 30px;
+}
+
+.shop-item-button {
+    font-family: 'Blinker', sans-serif;
+    font-weight: bold;
 }
 
 .shop-items {
@@ -600,19 +607,19 @@ button.nav-link.mymenu {
     height: auto;
     width: 100%;
     max-width: 650px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     border: 3px solid #ffd500;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .gallery-img hr {
-    height: 2px !important;
-    background-color: #ffd500 !important;
-    margin-bottom: 35px !important;
+    height: 2px;
+    background-color: #ffd500;
+    margin-bottom: 35px;
 }
 
 .gallery-container i {
-    font-size: 65px;
+    font-size: 55px;
     margin-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -650,34 +657,72 @@ button.nav-link.mymenu {
 /* -- Index.html - Testimonial section -- */
 
 .testimonial-container {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    background: url('../css/images/testimonials/spencer-davis-vJsj-hgOEG0-unsplash-1000px.jpeg') no-repeat center center scroll;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: url('../css/images/gallery/gallery-section-alasdair-elmes-ULHxWq8reao-unsplash-1200px.jpeg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     border: 2px solid #ffd500;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    align-items: center;
 }
 
-.testiomonial-box {
-    background-color: rgb(0, 80, 157,.55);
-    padding: 30px;
+.testimonial-box {
+    background-color: rgb(0, 80, 157,.65);
+    padding: 10px;
+    padding-bottom: 15px;
     border: 2px solid #ffd500;
+    border-radius: 10px;
     z-index: 1;
+    margin-bottom: 20px;
 }
 
-.testiomonial-box i {
-    font-size: 65px;
-    margin-top: 25px;
+.testimonial-box h3 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.testimonial-box i {
+    font-size: 55px;
+    margin-top: 5px;
     padding-left: 25px;
     padding-right: 25px;
     color: #ffd500;
 }
 
+.testimonial-container hr {
+    height: 2px;
+    width: 80%;
+    background-color: #ffd500;
+}
+
+.testimonial-title h2 {
+    padding-bottom: 0px;
+}
+
+.testimonial-title i {
+    font-size: 55px;
+    margin-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 10px;
+    color: #ffd500;
+}
+
 /* -- /END of Testimonial section -- */
 
-/* -- Index.html & contact.html - Footer -- */
+/* -- Footer - Index.html & contact.html -- */
+
+.footer {
+    border-top: 3px solid #ffd500;
+}
 
 /* -- /END of Footer -- */
 
