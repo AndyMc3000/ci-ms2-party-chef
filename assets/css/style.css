@@ -13,7 +13,171 @@ body p {
 /* -- /END of Google Fonts -- */
 
 /* -- Site-wide Rules -- */
- 
+
+/* -- 'MyMenu' Bootstrap Modal (see button in Navbar) - Index.html - 
+        NOTE: The item class names and rules were copied and edited from a shopping cart plugin created 
+        by 'WebDevSimplified'. You can find the plugin code on GitHub here;
+        https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js
+        There is also a video which goes through the development of the plugin code. See here;
+        https://www.youtube.com/watch?v=YeFzkC2awTM -- */
+
+.close {
+    color: #fff; 
+    opacity: 1;
+    font-size: 28px;
+}
+
+.close:hover {
+    color: #ffd500; 
+    opacity: 1;
+}
+
+.modal-header {
+    background-color: #00296b;
+    color: #ffffff;
+    border-bottom: 2px solid #ffd500;
+}
+
+.modal-footer {
+    display: inline;
+    background-color: #00296b;
+    color: #ffffff;
+}
+
+.modal-body {
+    padding: 0;
+    background-color: #00296b;
+    color: #ffffff;
+}
+
+.modal-body hr {
+    height: 2px;
+    background-color: #ffd500;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ffd500;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-items {
+    background-color: #ffd500;
+    color: #00296b;
+}
+
+.cart-item {
+    width: 50%;
+}
+
+.cart-price {
+    width: 15%;
+    font-size: 1.2em;
+    color: #00296b;
+}
+
+.cart-price.cart-header {
+    color: #ffffff;
+}
+
+.cart-quantity {
+    width: 25%;
+}
+
+.cart-item-title {
+    color: #00296b;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+    padding-left: 5px
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #ffd500;
+    background-color: #ffffff;
+    color: #00296b;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 2px solid #ffd500;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.cart-total-price {
+    color: #ffffff;
+    font-size: 1.6em;
+    padding-left: 10px;
+}
+
+.btn-purchase {
+    display: inline;
+    margin: 20px 20px 20px 20px;
+    font-size: 1.75em;
+    color: #00296b;
+    background-color: #ffd500;
+    width: 85%;
+}
+
+.modal-footer {
+    border-top: 1px solid #ffd500;
+}
+
+/* -- /END of 'MyMenu' Bootstrap Modal (see button in Navbar) -- */
+
 /* -- Bootstrap Navbar -- */
 
 .navbar {
@@ -22,6 +186,11 @@ body p {
     border-color: #ffd500; 
     width: 100%;
     background-color: #00296b;
+}
+
+.navbar-brand img {
+    height: auto;
+    width: 100%;
 }
 
 .navbar button {
@@ -289,8 +458,10 @@ button.nav-link.mymenu {
 }
 
 .menu-header img {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 72px;
+    width: auto;
 }
 
 .menu-header h2 {
@@ -301,7 +472,7 @@ button.nav-link.mymenu {
     height: 2px;
     width: 30%;
     background-color: #ffd500;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .accordion-button-row {
@@ -310,6 +481,10 @@ button.nav-link.mymenu {
 
 .card   {
     border: none;
+}
+
+.card-body {
+    padding: 0;
 }
 
 .card-header {
@@ -344,23 +519,26 @@ button.nav-link.mymenu {
     width: auto;
 }
 
+.items-container {
+    padding: 0;
+}
+
 .shop-item-container {
-    height: 500;
     border: 3px solid;
     border-color: #ffd500;
     background-color: #00296b;
     border-radius: 10px;
     padding: 5px;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 25px;
 }
 
 .shop-item {
-    margin-right: 30px;
+    margin-right: 20px;
     margin-top: 0;
-    margin-left: 30px;
-    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .shop-item-title {
@@ -377,7 +555,7 @@ button.nav-link.mymenu {
 .shop-item-image {
     width: 100%;
     height: auto;
-    max-width: 350px;
+    max-width: 250px;
     border-radius: 10px;
 }
 
@@ -409,186 +587,28 @@ button.nav-link.mymenu {
 .shop-item-details p {
     padding-left: 22px;
     padding-right: 22px;
-    padding-top: 10px;
+    padding-top: 18px;
 }
 
 /* -- /END of Menu's introduction & Menu Accordions section -- */
 
-/* -- 'MyMenu' Bootstrap Modal (see button in Navbar) - Index.html - 
-        NOTE: The item class names and rules were copied and edited from a shopping cart plugin created 
-        by 'WebDevSimplified'. You can find the plugin code on GitHub here;
-        https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js
-        There is also a video which goes through the development of the plugin code. See here;
-        https://www.youtube.com/watch?v=YeFzkC2awTM -- */
-
-.close {
-    color: #fff; 
-    opacity: 1;
-    font-size: 28px;
-}
-
-.close:hover {
-    color: #ffd500; 
-    opacity: 1;
-}
-
-.modal-header {
-    background-color: #00296b;
-    color: #ffffff;
-    border-bottom: 2px solid #ffd500;
-}
-
-.modal-footer {
-    display: inline;
-    background-color: #00296b;
-    color: #ffffff;
-}
-
-.modal-body {
-    padding: 0;
-    background-color: #00296b;
-    color: #ffffff;
-}
-
-.modal-body hr {
-    height: 2px;
-    background-color: #ffd500;
-}
-
-.cart-header {
-    font-weight: bold;
-    font-size: 1.25em;
-    color: #ffffff;
-    justify-content: center;
-}
-
-.cart-column {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ffd500;
-    margin-right: 1.5em;
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
-
-.cart-row {
-    display: flex;
-}
-
-.cart-items {
-    background-color: #ffd500;
-    color: #00296b;
-}
-
-.cart-item {
-    width: 50%;
-}
-
-.cart-price {
-    width: 15%;
-    font-size: 1.2em;
-    color: #00296b;
-}
-
-.cart-price.cart-header {
-    color: #ffffff;
-}
-
-.cart-quantity {
-    width: 25%;
-}
-
-.cart-item-title {
-    color: #00296b;
-    margin-left: .5em;
-    font-size: 1.2em;
-}
-
-.cart-item-image {
-    width: 75px;
-    height: auto;
-    border-radius: 10px;
-    padding-left: 5px
-}
-
-.btn-danger {
-    color: white;
-    background-color: #EB5757;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
-}
-
-.btn-danger:hover {
-    background-color: #CC4C4C;
-}
-
-.cart-quantity-input {
-    height: 34px;
-    width: 50px;
-    border-radius: 5px;
-    border: 1px solid #ffd500;
-    background-color: #ffffff;
-    color: #00296b;
-    padding: 0;
-    text-align: center;
-    font-size: 1.2em;
-    margin-right: 25px;
-}
-
-.cart-row:last-child {
-    border-bottom: 2px solid #ffd500;
-}
-
-.cart-row:last-child .cart-column {
-    border: none;
-}
-
-.cart-total {
-    text-align: center;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-.cart-total-title {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #ffffff;
-    margin-left: 20px;
-}
-
-.cart-total-price {
-    color: #ffffff;
-    font-size: 1.6em;
-    padding-left: 10px;
-}
-
-.btn-purchase {
-    display: inline;
-    margin: 20px 20px 20px 20px;
-    font-size: 1.75em;
-    color: #00296b;
-    background-color: #ffd500;
-    width: 85%;
-}
-
-.modal-footer {
-    border-top: 1px solid #ffd500;
-}
-
-/* -- /END of 'MyMenu' Bootstrap Modal (see button in Navbar) -- */
-
-/* -- Index.html - Photo Gallery section.
+/* -- Photo Gallery section - Index.html
         NOTE: Some code copied and edited from Bootstrap documentation
         for Modal Carousel. -- */
 
 .gallery-placeholder img {
     height: auto;
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     margin-bottom: 45px;
     border: 3px solid #ffd500;
     border-radius: 30px;
+}
+
+.gallery-img hr {
+    height: 2px !important;
+    background-color: #ffd500 !important;
+    margin-bottom: 35px !important;
 }
 
 .gallery-container i {
@@ -596,12 +616,8 @@ button.nav-link.mymenu {
     margin-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #ffd500;
-}
-
-.gallery-img h2 {
-    margin-top: 45px;
 }
 
 .carousel-control-prev-icon,
@@ -985,3 +1001,23 @@ button.nav-link.mymenu {
 }
 
 /* -- /END of Media Query 4 -- */
+
+/* -- 5. Media Query for Menu's Accordion section on index.html -- */
+
+@media screen and (max-width: 480px) {
+    .menu-header {
+        padding-right: 0;
+        padding-left: 0; 
+    }
+
+    .shop-item-container {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .shop-item-details p {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10px;
+    }
+}
