@@ -137,7 +137,7 @@
                                 <small>* All fields required.</small>
                                 </div>
                             <div class="form-group text-center">
-                                <button type="submit" id="email-button" value="Send Email" class="btn form-control btn-purchase">Send Request</button>
+                                <button type="submit" id="email-button" value="Send Email" class="btn btn-sm form-control btn-purchase">Let's Party!</button>
                             </div>
                         </form>
                     </section>
@@ -233,10 +233,10 @@
         <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarToggler">
             <ul class="navbar-nav nav-pills">
                 <li class="nav-item ml-auto">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" aria-current="page" href="index.html"><h6>Home</h6><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ml-auto">
-                    <a class="nav-link inactive" href="contact.html">Contact</a>
+                    <a class="nav-link inactive" href="contact.html"><h6>Contact</h6></a>
                 </li>
             </ul>
             <button type="button" class="nav-link ml-auto mymenu" data-toggle="modal" data-target="#myMenuModal">
@@ -262,7 +262,7 @@
                             <hr class="jumbotron-hr">
                             <p>Click here to find your local Party Chef kitchen.</p>
                             <a href="contact.html" class="btn button" role="button">
-                            Find Us
+                            <h5>Find Us</h5>
                             </a>
                         </div>
                     </div>
@@ -416,8 +416,9 @@
                     <div class="card-header text-center" id="canapésHeading">
                         <h2 class="mb-0 text-center">
                             <button class="btn btn-block" type="button" data-toggle="collapse" data-target="#collapseCanapés" aria-expanded="false" aria-controls="collapseCanapés">
-                            Canapés<br>
-                            <i class="fas fa-chevron-down"></i>
+                                Canapés
+                                <br>
+                                <i class="fas fa-chevron-down"></i>
                             </button>
                         </h2>
                     </div>
@@ -1223,32 +1224,41 @@
 <!-- /END of Testimonial block -->
 
 <!-- Footer block -->
-
-<footer class="section-container"> 
+<footer class="section-container">    
     <div class="container-fluid footer">
-        <div class="row footer-mobile-only-home-link">
-            <div class="col-12 text-center">
-                <a href="index.html"><i class="fas fa-home"></i></a>
+        <div class="row justify-content-center footer-mobile-only-home-link">
+            <div class="col-12 d-md-none navbar-nav nav-pills text-center">
+                <ul id="mobile-nav" class="nav-item ml-auto text-center" style="list-style-type:none;">
+                    <li>
+                    <a class="nav-link active" aria-current="page" href="index.html"><h6>Home</h6><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                    <a class="nav-link inactive" href="contact.html"><h6>Contact</h6></a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 address-box">
-                <h4>Party Chef Ltd.</h4>
-                <address>
-                Restaurant Patrick Guilbaud<br>
-                21 Upper Merrion Street<br>
-                Dublin<br>
-                D2<br>
-                Ireland<br>
-                </address> 
-                <p>Email: <a href="mailto:info@partychef.ie">info@partychef.ie</a><br>
-                Tel: <a href="tel:012828282">(01) 2828 282</a></p>
+            <div class="col-sm-3 footer-navigation-list">
+                <div>
+                    <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+                    <div class="nav-pills footer-button">
+                        <ul style="list-style-type:none;">
+                            <li>
+                                <button class="btn active" href="index.html"><h6>Home</h6></button>
+                            </li>
+                            <li>
+                                <button class="btn" href="contact.html"><h6>Contact Us</h6></button>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
             </div>
-            <div class="col-12 col-md-6 col-lg-4"> 
+            <div class="col-12 col-sm-6"> 
                 <div>
                     <div class="social-media-box text-center">
                         <div class="social-links-footer" style="vertical-align: top">
-                            <h4>Check us out on Social Media</h4>
+                            <h4>Get Social With Us</h4>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a href="https://www.facebook.com/" target="-blank">
@@ -1294,18 +1304,17 @@
                     </div> 
                 </div>
             </div>
-             <div class="col-4 d-sm-none d-md-none d-lg-block footer-navigation-list">
-                <ul style="list-style-type:none;">
-                    <li>
-                    <p><a href="index.html"><i class="fas fa-home"></i>   Home</a></p>
-                    </li>
-                    <li>
-                    <p><a href="team.html"><i class="fas fa-users"></i>   Our Team</a></p>
-                    </li>
-                    <li>
-                    <p><a href="contact.html"><i class="fas fa-phone-volume"></i>   Contact</a></p>
-                    </li>
-                </ul>  
+            <div class="col-sm-3 address-box">
+                <h3>Party Chef Ltd.</h3>
+                <address>
+                Restaurant Patrick Guilbaud<br>
+                21 Upper Merrion Street<br>
+                Dublin<br>
+                D2<br>
+                Ireland<br>
+                </address> 
+                <p>Email: <a href="mailto:info@partychef.ie">info@partychef.ie</a><br>
+                Tel: <a href="tel:012828282">(01) 2828 282</a></p>
             </div>
         </div>
     </div>

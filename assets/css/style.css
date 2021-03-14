@@ -2,7 +2,7 @@
 
 /* -- Google Fonts -- */
 
-body h1, h2, h3, h4, h5, h6 {
+body h1, h2, h3, h4, h5, h6, button {
     font-family: 'Blinker', sans-serif;
 }
 
@@ -30,6 +30,7 @@ body p {
 .close:hover {
     color: #ffd500; 
     opacity: 1;
+    transform: (1.2);
 }
 
 .modal-header {
@@ -121,6 +122,7 @@ body p {
 
 .btn-danger:hover {
     background-color: #CC4C4C;
+    transform: (1.2);
 }
 
 .cart-quantity-input {
@@ -169,7 +171,14 @@ body p {
     font-size: 1.75em;
     color: #00296b;
     background-color: #ffd500;
-    width: 85%;
+    width: 55%;
+}
+
+.btn-purchase:hover { 
+    transform: scale(1.2);
+    background-color: #00296b;
+    color: #ffffff;
+    border: 2px solid #ffd500;
 }
 
 .modal-footer {
@@ -193,6 +202,10 @@ body p {
     width: 100%;
 }
 
+.navbar-nav {
+    padding-left: 30px;
+}
+
 .navbar button {
     color: #00296b;
     background-color: #ffd500;
@@ -206,6 +219,7 @@ body p {
     color: #ffffff;
     background-color: #00296b;
     border: 2px solid #ffd500;
+    transform: (1.2);
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -217,6 +231,10 @@ body p {
 
 .nav-pills li {
     margin-right: 7px;
+}
+
+.nav-link h6 {
+    margin: 0;
 }
 
 .nav-pills .nav-link.inactive {
@@ -235,6 +253,7 @@ body p {
     background-color: #00296b;
     border: 2px solid #ffd500;
     border-radius: 10%;
+    transform: (1.2);
 }
 
 .navbar-toggler-icon {
@@ -277,6 +296,10 @@ button.nav-link.mymenu {
     font-size: 20px;
     padding-right: 0px;
     padding-left: 10px;
+}
+
+.button.nav-link.mymenu:hover {
+    transform: (1.2);
 }
 
 /* -- /END of Bootstrap Navbar -- */
@@ -343,14 +366,19 @@ button.nav-link.mymenu {
     font-size: 20px;
     color: #ffffff;
     z-index: 1;
-    background-color: #2e294e;
+    background-color: #00296b;
     border: 2px solid #ffd500;
+}
+
+.jumbotron .btn h5 {
+    margin: 0;
 }
 
 .jumbotron .btn:hover {
     background-color: #ffd500;
     border: 2px solid #fff;
-    color: #2e294e;
+    color: #00296b;
+    transform: scale(1.2);
 }
 
 /* -- /END of Bootstrap Jumbotron - Index.html & Contact.html -- */
@@ -440,7 +468,9 @@ button.nav-link.mymenu {
         find the plugin code on GitHub here;
         https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js
         There is also a video which goes through the development of the plugin code. See here;
-        https://www.youtube.com/watch?v=YeFzkC2awTM -- */
+        https://www.youtube.com/watch?v=YeFzkC2awTM 
+        This code also includes Tooltip code which was copied from W3Schools
+        https://www.w3schools.com/css/css_tooltip.asp -- */
 
 .menus-intro hr {
     height: 2px;
@@ -494,6 +524,14 @@ button.nav-link.mymenu {
     align-items: center;
 }
 
+.card-header button:hover {
+    background-color: #00296b;
+    color: #ffffff;
+    transform: scale(1.15);
+    border: 2px solid #ffd500;
+    font-size: 28px;
+}
+
 .card-header .btn {
     color: #00296b;
     background-color: #ffd500;
@@ -504,8 +542,7 @@ button.nav-link.mymenu {
 }
 
 .card-header .btn:focus {
-    border: 1px solid #ffffff;
-    box-shadow: 0 0 0 0.3rem rgb(255,255,255);
+    box-shadow: 0 0 0 0.1rem rgb(255, 213, 0);
 }
 
 .accordionScroll {
@@ -610,6 +647,11 @@ button.nav-link.mymenu {
     margin-bottom: 35px;
     border: 3px solid #ffd500;
     border-radius: 10px;
+    cursor: zoom-in;
+} 
+
+.gallery-placeholder img:hover {
+    transform: scale(1.08);
 }
 
 .gallery-img hr {
@@ -661,7 +703,7 @@ button.nav-link.mymenu {
     padding-bottom: 15px;
     padding-right: 20px;
     padding-left: 20px;
-    background: url('../css/images/gallery/gallery-section-alasdair-elmes-ULHxWq8reao-unsplash-1200px.jpeg') no-repeat center center scroll;
+    background: url('../css/images/testimonials/testimonial-section-alasdair-elmes-ULHxWq8reao-unsplash-1200px.jpeg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -675,7 +717,7 @@ button.nav-link.mymenu {
 }
 
 .testimonial-box {
-    background-color: rgb(0, 80, 157,.65);
+    background-color: rgb(0, 80, 157,.70);
     padding: 10px;
     padding-bottom: 15px;
     border: 2px solid #ffd500;
@@ -704,7 +746,7 @@ button.nav-link.mymenu {
 }
 
 .testimonial-title h2 {
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 .testimonial-title i {
@@ -722,6 +764,54 @@ button.nav-link.mymenu {
 
 .footer {
     border-top: 3px solid #ffd500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer i {
+    font-size: 35px;
+    padding: 5px;
+    color: #ffd500; 
+    font-size: 20px;
+}
+
+.footer-button {
+    padding: 10px;
+    font-family: 'Blinker', sans-serif;
+}
+
+.footer-button .btn {
+    background-color: #00296b;
+    color: #ffffff;
+    border: 2px solid #ffd500;
+    font-family: 'Blinker', sans-serif;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.footer-button h6 {
+    margin-bottom: 0;
+}
+
+.footer-button .btn:hover {
+    background-color: #ffd500;
+    color: #00296b;
+    border: 2px solid #ffffff;
+    transform: scale(1.1);
+}
+
+.address-box {
+    justify-content: right;
+    text-align: right;
+}
+
+.address-box a {
+    color: #ffd500;
+}
+
+ul#mobile-nav li {
+    display: inline;
 }
 
 /* -- /END of Footer -- */
@@ -954,12 +1044,8 @@ button.nav-link.mymenu {
 @media screen and (max-width: 260px) {
 
     .jumbotron-container {
-        height: 550px;
-    }
-
-    .jumbotron-container {
         padding-top: 35px;
-        height: 500px;
+        height: 550px;
     }
 }
 
