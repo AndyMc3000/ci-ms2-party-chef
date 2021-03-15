@@ -27,16 +27,27 @@ body p {
     font-size: 28px;
 }
 
-.close:hover {
+.close i:hover {
     color: #ffd500; 
     opacity: 1;
-    transform: (1.2);
+    transform: (1.3);
 }
 
 .modal-header {
-    background-color: #00296b;
-    color: #ffffff;
+    background-color: #ffd500;
+    color: #00296b;
     border-bottom: 2px solid #ffd500;
+}
+
+.modal-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.modal-title hr {
+    height: 2px;
+    background-color: #ffd500;
+    margin-bottom: 5px;;
 }
 
 .modal-footer {
@@ -51,9 +62,25 @@ body p {
     color: #ffffff;
 }
 
+.modal-body p {
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 25px;
+}
+
+.modal-content {
+    border: 3px solid #ffd500;
+    border-radius: 10px;
+}
+
 .modal-body hr {
-    height: 2px;
+    height: 3px;
     background-color: #ffd500;
+}
+
+.quote-intro h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .cart-header {
@@ -66,7 +93,7 @@ body p {
 .cart-column {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ffd500;
+    border-bottom: 2px solid #ffd500;
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -182,7 +209,8 @@ body p {
 }
 
 .modal-footer {
-    border-top: 1px solid #ffd500;
+    border-top: 2px solid #ffd500;
+    background-color: #ffd500;
 }
 
 /* -- /END of 'MyMenu' Bootstrap Modal (see button in Navbar) -- */
@@ -1057,8 +1085,8 @@ button.nav-link.mymenu {
 /* -- /END of Media Query 1 -- */
 
 /* -- 2. Media Query for MyMenu Modal - Removes padding 
-        for open modal and MyMenu quantity input on small devices -- */
-
+        for open modal and MyMenu quantity input on small devices. Alos
+        reduces padding for 'p' aand form elements -- */
 
 @media screen and (max-width: 600px) {
     .modal-open {
@@ -1090,6 +1118,39 @@ button.nav-link.mymenu {
 
     .cart-item.cart-column {
         margin-right: 2px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    
+    .modal-body p {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    
+    .modal-body p {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .modal-body p {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .form-div {
+        padding-right: 8px;
+        padding-left: 8px;
     }
 }
 
@@ -1340,8 +1401,5 @@ button.nav-link.mymenu {
         align-items: center;
     }
 }
-
-
-
 
 /* -- /END of Media Query 4 -- */

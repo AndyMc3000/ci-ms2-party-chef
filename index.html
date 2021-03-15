@@ -31,7 +31,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
-                            <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+                            <img src="assets/css/images/logo/party-chef-logo-blue.png" alt="Party Chef Logo">
                             </div>
                         </div>
                     </div>
@@ -40,12 +40,14 @@
                     <section class="container-fluid content-section">
                         <div class="row justify-content-center">
                             <div class="col-12 text-center">
-                                <h3 class="modal-title">MyMenu</h3>
+                                <h2 class="modal-title">MyMenu</h2>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <br>
-                            <p>Please find the items you selected below. Here you can change the quantities of items based on the number of guests you will be catering for.</p>
+                        <div row="justify-content-center">
+                            <div class="col-12 text-center">
+                                <p>Please find the items you selected below. Here you can change the quantities of items based on the number of guests you will be catering for.</p>
+                            </div>
+                            <hr>
                         </div>
                         <div class="container-fluid">
                             <div class="row cart-row">
@@ -63,89 +65,97 @@
                         <div class="cart-items">
                         </div>
                         <div class="cart-total">
-                            <h3 class="cart-total-title">Total<span class="cart-total-price">€0</span></h3>
+                            <h2 class="cart-total-title">Total<span class="cart-total-price">€0</span></h2>
                         </div>
                         <hr>
-                        <div class="text-center">
-                            <h3>Request A Quote</h3>
-                            <p>You can also request a complete quote based on the items selected by answering some questions</p>
+                    </section>
+                    <section class="container-fluid">
+                        <div class="row">
+                            <div class=" col-12 text-center quote-intro">
+                                <h2>Request A Quote</h2>
+                                <p>You can also request a complete quote based on the items selected by answering some questions</p>
+                            </div>
                         </div>
-                        <form class="needs-validation" id="form" novalidate>
-                            <div class="form-group">
-                                <label for="menuFirstName">Your First Name:*</label>
-                                <input type="text" class="form-control" id="menuFirstName" name="menuFirstName" aria-describedby="Your First Name" placeholder="Enter your First Name" required>
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter your First Name.
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="menuSurname">Your Surname:*</label>
-                                <input type="text" class="form-control" id="menuSurname" name="menuSurname" aria-describedby="Your Surname" placeholder="Enter your Surname" required>
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter your First Name.
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="telNumber">Your Telephone Number:*</label>
-                                <input type="text" class="form-control" id="telNumber" name="telNumber" aria-describedby="Your Telephone Number" placeholder="Enter your Telephone Number" required>
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter your Telephone Number.
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="menuEmailAddress">Your Email Address:*</label> 
-                                <input class="form-control" id="menuEmailAddress" name="menuEmailAddress" aria-describedby="emailAddress" placeholder="Enter your Email Address" required>
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter a valied Email Address. 
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="partyDate">Your Party Date:*</label>
-                                <input class="form-control" type="date" id="partyDate" name="partyDate" aria-describedby="start" value="2020-12-23" min="2021-03-05" max="2021-12-31">
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter a Party Date. 
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="partyLocation">Party Location:*</label>
-                                <input type="text" class="form-control" id="partyLocation" name="partyLocation" aria-describedby="Party Location" placeholder="Enter your Party Location" required>
-                                <div class="invalid-feedback">
-                                    Ooops! Please enter an Address for your party location..
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="test">Test</label>
-                                <input type="text" class="form-control" id="test" name="test" aria-describedby="test" placeholder="Test" required>
-                                <div class="invalid-feedback">
-                                    Ooops! enter Test
-                                </div>
-                            </div>
-                            <div class="form-group options-group">
-                                    <label for="options">Choose a service option:*</label>
-                                    <select class="form-control" id="options" name="options" aria-describedby="Service Options" placeholder="Choose a Service option.." required>
-                                    <option value="" selected disabled>Choose a Service option..</option>  
-                                    <option value="I will collect my menu.">I will collect my menu.</option>
-                                    <option value="Party Chef will deliver my menu.">Party Chef will deliver my menu.</option>
-                                    <option value="Party Chef will deliver and plate up menu ready for service.">Party Chef will deliver and plate up menu ready for service.</option>
-                                    <option value="Party Chef will deliver, plate up, and serve my menu to guests.">Party Chef will deliver, plate up, and serve my menu to guests.</option>
-                                    </select>
-                                    <div class="invalid-feedback">
-                                    Ooops! Please select a Service Type.
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-sm-10 col-md-9 col-lg-8 form-div">
+                                <form id="form" class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <label for="first_name">First Name:*</label>
+                                        <input type="text" class="form-control" id="irst_name" name="irst_name" aria-describedby="Your First Name" placeholder="Type your First Name here.." required>
+                                        <div class="invalid-feedback">
+                                            Ooops!..please enter your First Name.
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-                                <small>* All fields required.</small>
-                                </div>
-                            <div class="form-group text-center">
-                                <button type="submit" id="email-button" value="Send Email" class="btn btn-sm form-control btn-purchase">Let's Party!</button>
+                                    <div class="form-group">
+                                        <label for="surname">Last Name:*</label>
+                                        <input type="text" class="form-control" id="surname" name="surname" aria-describedby="Your Surname" placeholder="Type your Last Name here.." required>
+                                        <div class="invalid-feedback">
+                                            Ooops!..please enter your First Name.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tel_number">Your Telephone Number:*</label>
+                                        <input type="text" class="form-control" id="tel_number" name="tel_number" aria-describedby="Your Telephone Number" placeholder="Type your Telephone Number here.." required>
+                                        <div class="invalid-feedback">
+                                            Ooops!..please enter your Telephone Number.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email_address">Email Address:*</label> 
+                                        <input class="form-control" id="email_address" name="email_address" aria-describedby="Email Address" placeholder="Type your Email Address here.." required>
+                                        <div class="invalid-feedback">
+                                            Ooops!..please enter a valied Email Address. 
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="party_date">Party Date:*</label>
+                                        <input class="form-control" type="date" id="party_date" name="party_date" aria-describedby="start" value="2021-03-15" min="2021-03-15" max="2021-12-31">
+                                        <div class="invalid-feedback">
+                                            Ooops!..please enter a Party Date. 
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="party_location">Party Location:*</label>
+                                        <input type="text" class="form-control" id="party_location" name="party_location" aria-describedby="Party Location" placeholder="Type your Party Location Address here.." required>
+                                        <div class="invalid-feedback">
+                                            Ooops!..please enter an Address for your Party Location.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="test">Test</label>
+                                        <input type="text" class="form-control" id="test" name="test" aria-describedby="test" placeholder="Test" required>
+                                        <div class="invalid-feedback">
+                                            Ooops! enter Test
+                                        </div>
+                                    </div>
+                                    <div class="form-group options-group">
+                                            <label for="options">Choose a service option:*</label>
+                                            <select class="form-control" id="options" name="options" aria-describedby="Service Options" placeholder="Choose a Service option.." required>
+                                            <option value="" selected disabled>Choose a Service option..</option>  
+                                            <option value="I will collect my menu.">I will collect my menu.</option>
+                                            <option value="Party Chef will deliver my menu.">Party Chef will deliver my menu.</option>
+                                            <option value="Party Chef will deliver and plate up menu ready for service.">Party Chef will deliver and plate up menu ready for service.</option>
+                                            <option value="Party Chef will deliver, plate up, and serve my menu to guests.">Party Chef will deliver, plate up, and serve my menu to guests.</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                            Ooops! Please select a Service Type.
+                                            </div>
+                                        </div>
+                                        <div>
+                                        <small>* All fields required.</small>
+                                        </div>
+                                    <div class="form-group text-center">
+                                        <button type="submit" id="email-button" value="Send Email" class="btn btn-sm form-control btn-purchase">Let's Party!</button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </section>
                 </div>
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-12 text-center">
-                        <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+                        <img src="assets/css/images/logo/party-chef-logo-blue.png" alt="Party Chef Logo">
                         </div>
                     </div>
                 </div>
@@ -1204,7 +1214,7 @@
                         <h3><strong>"</strong>..I felt like I was a guest at my own party..<strong>"</strong></h3>
                         <p><strong>"</strong>I would highly recommend the MAXFIT Gym & Fitness Club to anyone looking for a gym in Kerry. The Team there are always welcoming and supportive,a nd are always willing to answer any questions I might have and offer expertise. The opening hours are brilliant (24 hours a day, 7 days a week)and allow a lot of flexibility of when you want to go. In addition, the studio classes are constantly running, so you are able to challenge yourself to try new exercises as you go. It all adds up to an excellent place where motivation and support is readily available.<strong>"</strong></p>
                         <hr>
-                        <h5><strong>Paul Maritz<br>Lough Booroughcummeenauragh<br>Kerry</strong></h5>
+                        <h5><strong>Carl Eschenbach<br>Sruffaunrulardheemore<br>Galway</strong></h5>
                     </div>
                 </div>
                 <div class="col-11 col-sm-10 col-lg-6 text-center">
