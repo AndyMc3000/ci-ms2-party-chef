@@ -379,6 +379,7 @@ button.nav-link.mymenu {
     border: 2px solid #fff;
     color: #00296b;
     transform: scale(1.2);
+    transition: all 1s;
 }
 
 /* -- /END of Bootstrap Jumbotron - Index.html & Contact.html -- */
@@ -528,6 +529,7 @@ button.nav-link.mymenu {
     background-color: #00296b;
     color: #ffffff;
     transform: scale(1.15);
+    transition: all 1s;
     border: 2px solid #ffd500;
     font-size: 28px;
 }
@@ -652,6 +654,7 @@ button.nav-link.mymenu {
 
 .gallery-placeholder img:hover {
     transform: scale(1.08);
+    transition: all 1s;
 }
 
 .gallery-img hr {
@@ -769,10 +772,9 @@ button.nav-link.mymenu {
 }
 
 .footer i {
-    font-size: 35px;
+    font-size: 20px;
     padding: 5px;
     color: #ffd500; 
-    font-size: 20px;
 }
 
 .footer-button {
@@ -788,6 +790,10 @@ button.nav-link.mymenu {
     margin-left: 5px;
     margin-top: 10px;
     padding: 8px;
+}
+
+.footer-button ul {
+    padding-left: 5px;
 }
 
 .footer-button h6 {
@@ -810,8 +816,51 @@ button.nav-link.mymenu {
     color: #ffd500;
 }
 
-ul#mobile-nav li {
-    display: inline;
+.home-link {
+    justify-content: right;
+    text-align: right;
+}
+
+.footer-mobile-only-home-link .btn {
+    padding: 8px;
+    font-family: 'Blinker', sans-serif;
+    border: 2px solid #ffd500;
+    color: #ffffff;
+    background-color: #00296b;
+}
+
+.footer-mobile-only-home-link h6 {
+    margin: 0;
+}
+
+.footer-mobile-only-home-link {
+    margin-bottom: 20px;
+}
+
+.footer-mobile-only-home-link .btn:hover {
+    background-color: #ffd500;
+    color: #00296b;
+    border: 2px solid #ffffff;
+    transform: scale(1.1);
+}
+
+.social-media-box i {
+    font-size: 50px;
+    padding: 5px;
+    color: #ffd500; 
+}
+
+.social-media-box i:hover {
+    background-color: #ffd500;
+    color: #00296b;
+    border: 2px solid #ffffff;
+    border-radius: 20%;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.copyright i {
+    font-size: 20px;
 }
 
 /* -- /END of Footer -- */
@@ -1152,3 +1201,29 @@ ul#mobile-nav li {
         padding-top: 10px;
     }
 }
+
+/* -- 4. Media Query for Introduction & Features section on index.html -- */
+
+@media screen and (max-width: 991px) {
+    .footer-navigation-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .address-box {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .social-media-box {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+/* -- /END of Media Query 4 -- */
