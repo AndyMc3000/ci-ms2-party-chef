@@ -867,6 +867,14 @@ button.nav-link.mymenu {
 
 /* -- /END of Footer -- */
 
+/* -- Introduction Section - contact.html -- */
+
+.contact-intro hr {
+    width: 80%;
+}
+
+/* -- Introduction Section - contact.html -- */
+
 /* -- Google Map - contact.html -- */
 
 .section-container {
@@ -941,6 +949,10 @@ button.nav-link.mymenu {
     padding-top: 10px;
 }
 
+.social-container hr {
+    width: 80%;
+}
+
 .social-section {
     background-color: #00296b;
 }
@@ -954,6 +966,11 @@ button.nav-link.mymenu {
     padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
+}
+
+.social-media-block div {
+    padding: 0;
+    margin-bottom: 15px;
 }
 
 .social-media-block img {
@@ -972,6 +989,11 @@ button.nav-link.mymenu {
 .contact-form-box {
     padding-top: 10px;
 }
+
+.contact-form-box hr {
+    width: 80%;
+}
+
 .contact-form-box i {
     font-size: 55px;
     margin-top: 5px;
