@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="icon" type="image/png" href="assets/css/images/map-images/party-chaf-map-marker.png"/>
     <script src="assets/js/maps.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_Pe5jUSL1Dxa5TL2sMYM0L");
+        })();
+    </script>
     <title>Contact | Party Chef</title>
 </head>
 
@@ -103,7 +109,7 @@
 <!-- Social Media Block -->
 
 <section class="section-container">
-    <div class="container-fluid home-intro-section">
+    <div class="container-fluid home-intro-section social-container">
         <div class="row justify-content-center">
             <div class="col-11 col-md-9 text-center">
                 <hr>
@@ -164,77 +170,60 @@
                         <hr>
                         <i class="fas fa-at"></i>
                         <h2>Ask Us Anything!</h2>
-                        <p>Complete the form below and we will contact you to arrange a free no-oblgation 30-minute consultation by phone.</p>
-                        <p>You can use the Message box to let us know about any of our Services or Classes you are interested in, or to ask any questions you might have of us.</p>
-                        <p>We look forward to speaking with you!</p>
+                        <p>Complete the form below and we will reply to you as soon as possible.</p>
                     </div>
-                </div>    
-                <section>
-                    <form class="needs-validation" novalidate>
-                        <div class="form-group">
-                            <label for="menuFirstName">Your First Name:*</label>
-                            <input type="text" class="form-control" id="menuFirstName" name="menuFirstName" aria-describedby="Your First Name" placeholder="Enter your First Name" required>
-                            <div class="invalid-feedback">
-                                Ooops! Please enter your First Name.
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="menuSurame">Your Surname:*</label>
-                            <input type="text" class="form-control" id="menuSurame" name="menuSurame" aria-describedby="Your Surname" placeholder="Enter your Surname" required>
-                            <div class="invalid-feedback">
-                                Ooops! Please enter your First Name.
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="telNumber">Your Telephone Number:*</label>
-                            <input type="text" class="form-control" id="telNumber" name="telNumber" aria-describedby="Your Telephone Number" placeholder="Enter your Telephone Number" required>
-                            <div class="invalid-feedback">
-                                Ooops! Please enter your Telephone Number.
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="menuEmailAddress">Your Email Address:*</label> 
-                            <input class="form-control" id="menuEmailAddress" name="menuEmailAddress" aria-describedby="emailAddress" placeholder="Enter your Email Address" required>
-                            <div class="invalid-feedback">
-                                Ooops! Please enter a valied Email Address. 
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="partyDate">Your Party Date:*</label>
-                            <input class="form-control" type="date" id="partyDate" name="partyDate" aria-describedby="start" value="2020-12-23" min="2021-03-05" max="2021-12-31">
-                            <div class="invalid-feedback">
-                                Ooops! Please enter a Party Date. 
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="partyLocation">Party Location:*</label>
-                            <input type="text" class="form-control" id="partyLocation" name="partyLocation" aria-describedby="Party Location" placeholder="Enter your Party Location" required>
-                            <div class="invalid-feedback">
-                                Ooops! Please enter an Address for your party location..
-                            </div>
-                        </div>
-                        <div class="form-group options-group">
-                            <label for="options">Choose a service option:*</label>
-                            <select class="form-control" id="options" name="options" aria-describedby="Service Options" placeholder="Choose a Service option.." required>
-                            <option value="" selected disabled>Choose a Service option..</option>  
-                            <option value="I will collect my menu.">I will collect my menu.</option>
-                            <option value="Party Chef will deliver my menu.">Party Chef will deliver my menu.</option>
-                            <option value="Party Chef will deliver and plate up menu ready for service.">Party Chef will deliver and plate up menu ready for service.</option>
-                            <option value="Party Chef will deliver, plate up, and serve my menu to guests.">Party Chef will deliver, plate up, and serve my menu to guests.</option>
-                            </select>
-                            <div class="invalid-feedback">
-                            Ooops! Please select a Service Type.
-                            </div>
-                        </div>
-                        <div>
-                        <small>* All fields required.</small>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" id="button" class="btn form-control">Send Request</button>
-                        </div>
-                    </form>
-                </section>
+                </div>
             </div>
+        </div>
+    </div>
+</section>    
+
+<section class="container-fuid contact-form-container">
+    <div class="row justify-content-center">
+        <div class="col-11 col-sm-10 col-md-9 col-lg-8 form-div">
+            <form id="form" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="from_name">First Name:*</label>
+                    <input type="text" class="form-control" id="from_name" name="from_name" aria-describedby="Your First Name" placeholder="Type your First Name here.." required>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter your First Name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Last Name:*</label>
+                    <input type="text" class="form-control" id="surname" name="surname" aria-describedby="Last Name" placeholder="Type your Last Name here.." required>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter your Last Name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tel_number">Telephone Number:*</label>
+                    <input type="text" class="form-control" id="tel_number" name="tel_number" aria-describedby="Telephone Number" placeholder="Type your Telephone Number here.." required>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter your Telephone Number.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="from_email">Email Address:*</label> 
+                    <input class="form-control" id="from_email" name="from_email" aria-describedby="Email Address" placeholder="Type your Email Address here.." required>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter a valied Email Address. 
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:*</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Type your Message here.." rows="4"></textarea>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter a valied Email Address. 
+                    </div>
+                </div>
+                <div>
+                <small>* All fields required.</small>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" id="button" value="Send Email" class="btn form-control"><h5>Send Message</h5></button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
@@ -340,6 +329,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 <script src="assets/js/bootstrap-form-validation.js" async></script>
 <script src="assets/js/store.js" async></script>
+<script src="assets/js/contact-form-emailjs.js" async></script>
 
 
 <!-- /END of Bootstrap JavaScript CDN links -->

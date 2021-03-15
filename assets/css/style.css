@@ -703,7 +703,7 @@ button.nav-link.mymenu {
 
 /* -- /END of Photo Gallery section -- */
 
-/* -- Index.html - Testimonial section -- */
+/* -- Testimonial Section - Index.html -- */
 
 .testimonial-container {
     padding-top: 30px;
@@ -767,7 +767,7 @@ button.nav-link.mymenu {
 
 /* -- /END of Testimonial section -- */
 
-/* -- Footer - Index.html & contact.html -- */
+/* -- Footer - index.html & contact.html -- */
 
 .footer {
     border-top: 3px solid #ffd500;
@@ -867,7 +867,7 @@ button.nav-link.mymenu {
 
 /* -- /END of Footer -- */
 
-/* -- Contact.html - Google Map -- */
+/* -- Google Map - contact.html -- */
 
 .section-container {
     background-color: #00296b;
@@ -879,7 +879,12 @@ button.nav-link.mymenu {
     margin-top: 5px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 10px;
     color: #ffd500;
+}
+
+.map-heading p {
+    padding: 16px;
 }
 
 .mapdiv {
@@ -932,6 +937,10 @@ button.nav-link.mymenu {
 
 /* -- Social Media Block -- */
 
+.social-container {
+    padding-top: 10px;
+}
+
 .social-section {
     background-color: #00296b;
 }
@@ -939,9 +948,12 @@ button.nav-link.mymenu {
 .social-media-block {
     background-color: #ffd500;
     color: #00296b;
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .social-media-block img {
@@ -957,12 +969,53 @@ button.nav-link.mymenu {
 
 /* -- Contact Form -- */
 
+.contact-form-box {
+    padding-top: 10px;
+}
 .contact-form-box i {
     font-size: 55px;
     margin-top: 5px;
     padding-left: 25px;
     padding-right: 25px;
     color: #ffd500;
+}
+
+.contact-form-container {
+    background-color: #00296b;
+}
+
+.form-div {
+    color: #ffffff;
+    border: 3px solid #ffd500;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.form-group .btn {
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 1;
+    background-color: #00296b;
+    border: 2px solid #ffd500;
+    width: 40%;
+    margin-bottom: 25px;
+}
+
+.form-group .btn h5 {
+    margin: 0;
+}
+
+.form-group .btn:hover {
+    background-color: #ffd500;
+    border: 2px solid #fff;
+    color: #00296b;
+    transform: scale(1.2);
+    transition: all 400ms;
+}
+
+.form-control {
+    width: 100%;
 }
 
 /* -- /END of Contact Form -- */
