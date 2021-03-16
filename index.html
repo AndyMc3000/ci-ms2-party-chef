@@ -1,1343 +1,1113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="icon" type="image/png" href="assets/css/images/map-images/party-chaf-map-marker.png"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-        emailjs.init("user_Pe5jUSL1Dxa5TL2sMYM0L");
-        })();
-    </script>
-    <title>Home | Party Chef</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="icon" type="image/png" href="assets/css/images/map-images/party-chaf-map-marker.png" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script type="text/javascript">
+	(function() {
+		emailjs.init("user_Pe5jUSL1Dxa5TL2sMYM0L");
+	})();
+	</script>
+	<title>Home | Party Chef</title>
 </head>
+
 <body>
-
-<!-- Bootstrap Modal for MyMenu/cart -->
-
-<section>
-    <div class="modal fade" id="myMenuModal" tabindex="-1" role="dialog" aria-labelledby="myMenuModal" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                            <img src="assets/css/images/logo/party-chef-logo-blue.png" alt="Party Chef Logo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <section class="container-fluid content-section">
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center">
-                                <h2 class="modal-title">MyMenu</h2>
-                            </div>
-                        </div>
-                        <div row="justify-content-center">
-                            <div class="col-12 text-center">
-                                <p>Please find the items you selected below. Here you can change the quantities of items based on the number of guests you will be catering for.</p>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row cart-row">
-                                <div class="col-6">
-                                    <span class="cart-item cart-header cart-column text-center"><h3>Item</h3></span>
-                                </div>
-                                <div class="col-3">
-                                    <span class="cart-price cart-header cart-column text-center"><h3>€</h3></span>
-                                </div> 
-                                <div class="col-3">   
-                                    <span class="cart-quantity cart-header cart-column text-center"><h3>Qty.</h3></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cart-items">
-                        </div>
-                        <div class="cart-total">
-                            <h2 class="cart-total-title">Total<span class="cart-total-price">€0</span></h2>
-                        </div>
-                        <hr>
-                    </section>
-                    <section class="container-fluid">
-                        <div class="row">
-                            <div class=" col-12 text-center quote-intro">
-                                <h2>Request A Quote</h2>
-                                <p>You can also request a complete quote based on the items selected by answering some questions</p>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-11 col-sm-10 col-md-9 col-lg-8 form-div">
-                                <form id="form" class="needs-validation" novalidate>
-                                    <div class="form-group">
-                                        <label for="first_name">First Name:*</label>
-                                        <input type="text" class="form-control" id="irst_name" name="irst_name" aria-describedby="Your First Name" placeholder="Type your First Name here.." required>
-                                        <div class="invalid-feedback">
-                                            Ooops!..please enter your First Name.
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="surname">Last Name:*</label>
-                                        <input type="text" class="form-control" id="surname" name="surname" aria-describedby="Your Surname" placeholder="Type your Last Name here.." required>
-                                        <div class="invalid-feedback">
-                                            Ooops!..please enter your First Name.
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="tel_number">Your Telephone Number:*</label>
-                                        <input type="text" class="form-control" id="tel_number" name="tel_number" aria-describedby="Your Telephone Number" placeholder="Type your Telephone Number here.." required>
-                                        <div class="invalid-feedback">
-                                            Ooops!..please enter your Telephone Number.
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email_address">Email Address:*</label> 
-                                        <input class="form-control" id="email_address" name="email_address" aria-describedby="Email Address" placeholder="Type your Email Address here.." required>
-                                        <div class="invalid-feedback">
-                                            Ooops!..please enter a valied Email Address. 
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="party_date">Party Date:*</label>
-                                        <input class="form-control" type="date" id="party_date" name="party_date" aria-describedby="start" value="2021-03-15" min="2021-03-15" max="2021-12-31">
-                                        <div class="invalid-feedback">
-                                            Ooops!..please enter a Party Date. 
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="party_location">Party Location:*</label>
-                                        <input type="text" class="form-control" id="party_location" name="party_location" aria-describedby="Party Location" placeholder="Type your Party Location Address here.." required>
-                                        <div class="invalid-feedback">
-                                            Ooops!..please enter an Address for your Party Location.
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="test">Test</label>
-                                        <input type="text" class="form-control" id="test" name="test" aria-describedby="test" placeholder="Test" required>
-                                        <div class="invalid-feedback">
-                                            Ooops! enter Test
-                                        </div>
-                                    </div>
-                                    <div class="form-group options-group">
-                                            <label for="options">Choose a service option:*</label>
-                                            <select class="form-control" id="options" name="options" aria-describedby="Service Options" placeholder="Choose a Service option.." required>
-                                            <option value="" selected disabled>Choose a Service option..</option>  
-                                            <option value="I will collect my menu.">I will collect my menu.</option>
-                                            <option value="Party Chef will deliver my menu.">Party Chef will deliver my menu.</option>
-                                            <option value="Party Chef will deliver and plate up menu ready for service.">Party Chef will deliver and plate up menu ready for service.</option>
-                                            <option value="Party Chef will deliver, plate up, and serve my menu to guests.">Party Chef will deliver, plate up, and serve my menu to guests.</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                            Ooops! Please select a Service Type.
-                                            </div>
-                                        </div>
-                                        <div>
-                                        <small>* All fields required.</small>
-                                        </div>
-                                    <div class="form-group text-center">
-                                        <button type="submit" id="email-button" value="Send Email" class="btn btn-sm form-control btn-purchase">Let's Party!</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                        <img src="assets/css/images/logo/party-chef-logo-blue.png" alt="Party Chef Logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </div>
-</section>
-
-<!-- /END of Bootstrap Modal for MyMenu/cart -->
-
-<!-- Main Gallery (Bootstrap Carousel Modal Gallery) -->
-
-<section>
-    <div class="modal fade" id="gallery-modal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img class="modal-title" src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Maxfit Logo"><br>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div id="MainCarouselCaptions" class="carousel slide carousel-fade" data-ride="carousel" data-pause="hover">
-                    <div class="modal-body">  
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/css/images/gallery/inner-gallery/001-emy-XoByiBymX20-unsplash-650x425.jpeg" class="d-block w-100" alt="Emy Unsplash Food Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/002-elena-de-soto-w423NnHFjFg-unsplash-650x425.jpeg" class="d-block w-100" alt="Elena de Soto Party Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/003-shaafi-ali-Uck7TR7XYFo-unsplash-650x425.jpeg" class="d-block w-100" alt="Shaafi Ali Food Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/004-kats-weil-CLD1i8hp008-unsplash-650x425.jpeg" class="d-block w-100" alt="Kats Weil Party Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/005-alice-pasqual-cy0MsSVbqrw-unsplash-650x425.jpeg" class="d-block w-100" alt="Alice Pasqual Food Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/006-gor-davtyan-b1aT3t3uq2E-unsplash-650x425px.jpeg" class="d-block w-100" alt="Gor Davtyan Food Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/007-brooke-lark-M4E7X3z80PQ-unsplash-650x425.jpg" class="d-block w-100" alt="Brooke Lark Food Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/008-whitney-wright-6G98hiCJETA-unsplash-650x425.jpeg" class="d-block w-100" alt="Whitney Wright Food Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/009-lee-myungseong-y1XXWct5rBo-unsplash-650x425.jpeg" class="d-block w-100" alt="Lee Myungseong Food Photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/css/images/gallery/inner-gallery/010-alevision-co-3syTDiVAc7w-unsplash-650x425.jpeg" class="d-block w-100" alt="Alevision Co Food Photo">
-                            </div>
-                            <a class="carousel-control-next" href="#MainCarouselCaptions" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                            <p>Hello</p>
-                            <a class="carousel-control-prev" href="#MainCarouselCaptions" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    </div>
-</section>
-
-<!-- /END of Photo Gallery (Bootstrap Carousel Modal Gallery) -->
-
-<!-- Navigation Bar (Bootstrap Navigation Bar) -->
-
-<nav class="navbar navbar-expand-sm sticky-top navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarToggler">
-            <ul class="navbar-nav nav-pills">
-                <li class="nav-item ml-auto">
-                    <a class="nav-link active" aria-current="page" href="index.html"><h5>Home</h5><span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ml-auto">
-                    <a class="nav-link inactive" href="contact.html"><h5>Contact</h5></a>
-                </li>
-            </ul>
-            <button type="button" class="nav-link ml-auto mymenu" data-toggle="modal" data-target="#myMenuModal">
-            MyMenu<span class="mymenu-indicator"><strong>0</strong></span>
-            </button>
-        </div>
-    </div>
-</nav>
-
-<!-- /END of Navigation Bar (Bootstrap Navigation Bar) -->
-
-<!-- Bootstrap Jumbotron -->
-
-<section>
-    <div class="container-fluid jumbotron-container jumbotron-container-home">
-        <div class="row">
-            <div class="col-12 jumbotron-col justify-content-center">
-                <div class="bd-highlight">
-                    <div class="jumbotron">
-                        <div class="container-fluid text-center">
-                            <h1 class="display-2">We Prep. You Party!</h1>
-                            <h2 class="">Ireland's Premier Private Catering & Party Planning Experts</h2>
-                            <hr class="jumbotron-hr">
-                            <p>Click here to find your local Party Chef kitchen.</p>
-                            <a href="contact.html" class="btn button" role="button">
-                            <h5>Find Us</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- /END of Bootstrap Jumbotron -->
-
-<!-- Introduction section - NOT ON WIREFRAME -->
-
-<section class="section-container">
-    <div class="container-fluid home-intro-section">
-        <div class="row justify-content-center">
-            <div class="col-11 col-md-9 text-center">
-                <i class="fas fa-birthday-cake"></i>
-                <h2>We Love To Party!</h2>
-                <p>Party Chef has been operating in Ireland for over 20 years. We are passionate foodies, and deliver silver service to every party we service. If you are planning a party or event and don't want to have to deal with cooking beyond your comfort zone, or washing the dishes!, then you need to talk to us today. We offer exceptional choice, service, and value</p>
-                <hr>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- /END of Introduction section - NOT ON WIREFRAME -->
-
-<!-- Features Section - Index.html -->
-
-<section class="section-container">
-    <div class="container-fluid features-section">
-        <div class="features-title text-center">
-            <h2>What We Offer</h2>
-        </div>
-        <div class="row justify-content-center d-lg-none">
-            <div class="col-12 text-center">
-                <i class="fas fa-utensils text-center"></i>
-                <h3 class="text-centre">Our Menu's</h3>
-            </div>
-            <div class="col-12 text-center">
-                <img src="assets/css/images/features-section/brooke-lark-jUPOXXRNdcA-unsplash-400x250px.jpeg" class="rounded" alt="Brooke Lark Food Photo">
-            </div>
-            <div class="col-12 text-center">
-                <p class="text-center">Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur libero inventore enim doloremque repellendus ipsa laboriosam quos deserunt consequatur esse, blanditiis voluptate repellat fuga! Voluptates aperiam omnis inventore velit mollitia.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center d-none d-lg-flex">
-            <div class="col-12 col-md-4">
-                <img src="assets/css/images/features-section/brooke-lark-jUPOXXRNdcA-unsplash-400x250px.jpeg" class="rounded float-right" alt="Brooke Lark Food Photo">
-            </div>
-            <div class="col-12 col-md-6 my-auto">
-                <h3 class="text-left">Our Menu's<i class="fas fa-utensils"></i></h3>
-                <p class="text-left">Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur libero inventore enim doloremque repellendus ipsa laboriosam quos deserunt consequatur esse, blanditiis voluptate repellat fuga! Voluptates aperiam omnis inventore velit mollitia.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center d-lg-none">
-            <div class="col-12 text-center">
-                <i class="fas fa-glass-cheers text-center"></i>
-                <h3 class="text-center">Events</h3>
-            </div>
-            <div class="col-12 text-center">
-                <img src="assets/css/images/features-section/anthony-delanoix-hzgs56Ze49s-unsplash-400x250px.jpeg" class="rounded" alt="Anthony Delanoix Party Photo">
-            </div>
-            <div class="col-12 text-center">
-                <p class="text-center">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde modi odit odio accusantium ratione quia eius, blanditiis veniam amet, aliquam aspernatur error labore mollitia distinctio est esse molestiae quod.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center d-none d-lg-flex">
-            <div class="col-12 col-md-4">
-                <img src="assets/css/images/features-section/anthony-delanoix-hzgs56Ze49s-unsplash-400x250px.jpeg" class="rounded float-right" alt="Anthony Delanoix Party Photo">
-            </div>
-            <div class="col-12 col-md-6 my-auto">
-                <h3 class="text-left">Events<i class="fas fa-glass-cheers"></i></h3>
-                <p class="text-left">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde modi odit odio accusantium ratione quia eius, blanditiis veniam amet, aliquam aspernatur error labore mollitia distinctio est esse molestiae quod.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center d-lg-none">
-            <div class="col-12 text-center">
-                <i class="fas fa-clipboard"></i>
-                <h3 class="text-center">Party Planning</h3>
-            </div>
-            <div class="col-12 text-center">
-                <img src="assets/css/images/features-section/sagar-patil-8UcNYpynFLU-unsplash-400x250px.jpg" class="rounded" alt="Sagar Patil Balloon Photo">
-            </div>
-            <div class="text-center">
-                <p class="text-center">Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim vitae tenetur illo ipsam magni placeat totam. Laudantium sequi quam perferendis ex fugit eos ea quibusdam, numquam aliquam voluptatibus laborum dolor.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center d-none d-lg-flex">
-            <div class="col-12 col-md-4">
-                <img src="assets/css/images/features-section/sagar-patil-8UcNYpynFLU-unsplash-400x250px.jpg" class="rounded float-right" alt="Brooke Lark Food Photo">
-            </div>
-            <div class="col-12 col-md-6 my-auto">
-                <h3 class="text-left">Party Planning<i class="fas fa-clipboard text-left"></i></h3>
-                <p class="text-left">Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim vitae tenetur illo ipsam magni placeat totam. Laudantium sequi quam perferendis ex fugit eos ea quibusdam, numquam aliquam voluptatibus laborum dolor.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center d-lg-none">
-            <div class="col-12 text-center">
-                <i class="fas fa-concierge-bell text-center"></i>
-                <h3 class="text-center">Service Options</h3>
-            </div>
-            <div class="col-12 text-center">
-                <img src="assets/css/images/features-section/kate-townsend-hEC6zxdFF0M-unsplash-400x250.jpeg" class="rounded" alt="Kate Townsend Waiter Photo">
-            </div>    
-            <div class="text-center">
-                <p class="text-center">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsum eaque unde, illo odio omnis voluptatum temporibus et nesciunt earum nisi eos a rerum est exercitationem! Voluptatibus magni eius unde.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center d-none d-lg-flex">
-            <div class="col-12 col-md-4">
-                <img src="assets/css/images/features-section/kate-townsend-hEC6zxdFF0M-unsplash-400x250.jpeg" class="rounded float-right" alt="Brooke Lark Food Photo">
-            </div>
-            <div class="col-12 col-md-6 my-auto">
-                <h3 class="text-left">Service Options<i class="fas fa-concierge-bell text-left"></i></h3>
-                <p class="text-left">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsum eaque unde, illo odio omnis voluptatum temporibus et nesciunt earum nisi eos a rerum est exercitationem! Voluptatibus magni eius unde.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- /END of Features Section -->
-
-
-<!-- Menu's introduction section -->
-
-<section class="section-container">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center menus-intro">
-                <hr>
-                <i class="fas fa-book-open"></i>
-                <h2>Our Menus</h2>
-                <p>We have some bloody fantastic Menu's.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- /END of Menu's introduction section -->
-
-<!-- Menu Accordions section -->
-
-<section class="section-container justify-content-center">
-    <div class="accordion justify-content-center" id="menuAccordion">
-        <div class="card text-center">
-            <div class="row accordion-button-row justify-content-center">
-                <div class="col-10 col-md-6 text-center menu-header">
-                    <div class="card-header text-center" id="canapésHeading">
-                        <h2 class="mb-0 text-center">
+	<!-- Bootstrap Modal for MyMenu/cart -->
+	<section>
+		<div class="modal fade" id="myMenuModal" tabindex="-1" role="dialog" aria-labelledby="myMenuModal" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12 text-center">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> <img src="assets/css/images/logo/party-chef-logo-blue.png" alt="Party Chef Logo"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<section class="container-fluid content-section">
+							<div class="row justify-content-center">
+								<div class="col-12 text-center">
+									<h2 class="modal-title">MyMenu</h2> </div>
+							</div>
+							<div row="justify-content-center">
+								<div class="col-12 text-center">
+									<p>Please find the items you selected below. Here you can change the quantities of items based on the number of guests you will be catering for.</p>
+								</div>
+								<hr> </div>
+							<div class="container-fluid">
+								<div class="row cart-row">
+									<div class="col-6"> <span class="cart-item cart-header cart-column text-center"><h3>Item</h3></span> </div>
+									<div class="col-3"> <span class="cart-price cart-header cart-column text-center"><h3>€</h3></span> </div>
+									<div class="col-3"> <span class="cart-quantity cart-header cart-column text-center"><h3>Qty.</h3></span> </div>
+								</div>
+							</div>
+							<div class="cart-items"> </div>
+							<div class="cart-total">
+								<h2 class="cart-total-title">Total<span class="cart-total-price">€0</span></h2> </div>
+							<hr> </section>
+						<section class="container-fluid">
+							<div class="row">
+								<div class=" col-12 text-center quote-intro">
+									<h2>Request A Quote</h2>
+									<p>You can also request a complete quote based on the items selected by answering some questions</p>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-11 col-sm-10 col-md-9 col-lg-8 form-div">
+									<form id="form" class="needs-validation" novalidate>
+										<div class="form-group">
+											<label for="first_name">First Name:*</label>
+											<input type="text" class="form-control" id="irst_name" name="irst_name" aria-describedby="Your First Name" placeholder="Type your First Name here.." required>
+											<div class="invalid-feedback"> Ooops!..please enter your First Name. </div>
+										</div>
+										<div class="form-group">
+											<label for="surname">Last Name:*</label>
+											<input type="text" class="form-control" id="surname" name="surname" aria-describedby="Your Surname" placeholder="Type your Last Name here.." required>
+											<div class="invalid-feedback"> Ooops!..please enter your First Name. </div>
+										</div>
+										<div class="form-group">
+											<label for="tel_number">Your Telephone Number:*</label>
+											<input type="text" class="form-control" id="tel_number" name="tel_number" aria-describedby="Your Telephone Number" placeholder="Type your Telephone Number here.." required>
+											<div class="invalid-feedback"> Ooops!..please enter your Telephone Number. </div>
+										</div>
+										<div class="form-group">
+											<label for="email_address">Email Address:*</label>
+											<input class="form-control" id="email_address" name="email_address" aria-describedby="Email Address" placeholder="Type your Email Address here.." required>
+											<div class="invalid-feedback"> Ooops!..please enter a valied Email Address. </div>
+										</div>
+										<div class="form-group">
+											<label for="party_date">Party Date:*</label>
+											<input class="form-control" type="date" id="party_date" name="party_date" aria-describedby="start" value="2021-03-15" min="2021-03-15" max="2021-12-31">
+											<div class="invalid-feedback"> Ooops!..please enter a Party Date. </div>
+										</div>
+										<div class="form-group">
+											<label for="party_location">Party Location:*</label>
+											<input type="text" class="form-control" id="party_location" name="party_location" aria-describedby="Party Location" placeholder="Type your Party Location Address here.." required>
+											<div class="invalid-feedback"> Ooops!..please enter an Address for your Party Location. </div>
+										</div>
+										<div class="form-group">
+											<label for="test">Test</label>
+											<input type="text" class="form-control" id="test" name="test" aria-describedby="test" placeholder="Test" required>
+											<div class="invalid-feedback"> Ooops! enter Test </div>
+										</div>
+										<div class="form-group options-group">
+											<label for="options">Choose a service option:*</label>
+											<select class="form-control" id="options" name="options" aria-describedby="Service Options" placeholder="Choose a Service option.." required>
+												<option value="" selected disabled>Choose a Service option..</option>
+												<option value="I will collect my menu.">I will collect my menu.</option>
+												<option value="Party Chef will deliver my menu.">Party Chef will deliver my menu.</option>
+												<option value="Party Chef will deliver and plate up menu ready for service.">Party Chef will deliver and plate up menu ready for service.</option>
+												<option value="Party Chef will deliver, plate up, and serve my menu to guests.">Party Chef will deliver, plate up, and serve my menu to guests.</option>
+											</select>
+											<div class="invalid-feedback"> Ooops! Please select a Service Type. </div>
+										</div>
+										<div> <small>* All fields required.</small> </div>
+										<div class="form-group text-center">
+											<button type="submit" id="email-button" value="Send Email" class="btn btn-sm form-control btn-purchase">Let's Party!</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="modal-footer">
+						<div class="row">
+							<div class="col-12 text-center"> <img src="assets/css/images/logo/party-chef-logo-blue.png" alt="Party Chef Logo"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /END of Bootstrap Modal for MyMenu/cart -->
+	<!-- Main Gallery (Bootstrap Carousel Modal Gallery) -->
+	<section>
+		<div class="modal fade" id="gallery-modal" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header"> <img class="modal-title" src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Maxfit Logo">
+						<br>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div id="MainCarouselCaptions" class="carousel slide carousel-fade" data-ride="carousel" data-pause="hover">
+						<div class="modal-body">
+							<div class="carousel-inner">
+								<div class="carousel-item active"> <img src="assets/css/images/gallery/inner-gallery/001-emy-XoByiBymX20-unsplash-650x425.jpeg" class="d-block w-100" alt="Emy Unsplash Food Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/002-elena-de-soto-w423NnHFjFg-unsplash-650x425.jpeg" class="d-block w-100" alt="Elena de Soto Party Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/003-shaafi-ali-Uck7TR7XYFo-unsplash-650x425.jpeg" class="d-block w-100" alt="Shaafi Ali Food Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/004-kats-weil-CLD1i8hp008-unsplash-650x425.jpeg" class="d-block w-100" alt="Kats Weil Party Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/005-alice-pasqual-cy0MsSVbqrw-unsplash-650x425.jpeg" class="d-block w-100" alt="Alice Pasqual Food Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/006-gor-davtyan-b1aT3t3uq2E-unsplash-650x425px.jpeg" class="d-block w-100" alt="Gor Davtyan Food Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/007-brooke-lark-M4E7X3z80PQ-unsplash-650x425.jpg" class="d-block w-100" alt="Brooke Lark Food Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/008-whitney-wright-6G98hiCJETA-unsplash-650x425.jpeg" class="d-block w-100" alt="Whitney Wright Food Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/009-lee-myungseong-y1XXWct5rBo-unsplash-650x425.jpeg" class="d-block w-100" alt="Lee Myungseong Food Photo"> </div>
+								<div class="carousel-item"> <img src="assets/css/images/gallery/inner-gallery/010-alevision-co-3syTDiVAc7w-unsplash-650x425.jpeg" class="d-block w-100" alt="Alevision Co Food Photo"> </div>
+								<a class="carousel-control-next" href="#MainCarouselCaptions" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+								<p>Hello</p>
+								<a class="carousel-control-prev" href="#MainCarouselCaptions" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /END of Photo Gallery (Bootstrap Carousel Modal Gallery) -->
+	<!-- Navigation Bar (Bootstrap Navigation Bar) -->
+	<nav class="navbar navbar-expand-sm sticky-top navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"> <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo"> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+			<div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarToggler">
+				<ul class="navbar-nav nav-pills">
+					<li class="nav-item ml-auto"> <a class="nav-link active" aria-current="page" href="index.html"><h5>Home</h5><span class="sr-only">(current)</span></a> </li>
+					<li class="nav-item ml-auto"> <a class="nav-link inactive" href="contact.html"><h5>Contact</h5></a> </li>
+				</ul>
+				<button type="button" class="nav-link ml-auto mymenu" data-toggle="modal" data-target="#myMenuModal"> MyMenu<span class="mymenu-indicator"><strong>0</strong></span> </button>
+			</div>
+		</div>
+	</nav>
+	<!-- /END of Navigation Bar (Bootstrap Navigation Bar) -->
+	<!-- Bootstrap Jumbotron -->
+	<section>
+		<div class="container-fluid jumbotron-container jumbotron-container-home">
+			<div class="row">
+				<div class="col-12 jumbotron-col justify-content-center">
+					<div class="bd-highlight">
+						<div class="jumbotron">
+							<div class="container-fluid text-center">
+								<h1 class="display-2">We Prep. You Party!</h1>
+								<h2 class="">Ireland's Premier Private Catering & Party Planning Experts</h2>
+								<hr class="jumbotron-hr">
+								<p>Click here to find your local Party Chef kitchen.</p>
+								<a href="contact.html" class="btn button" role="button">
+									<h5>Find Us</h5> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /END of Bootstrap Jumbotron -->
+	<!-- Introduction section - NOT ON WIREFRAME -->
+	<section class="section-container">
+		<div class="container-fluid home-intro-section">
+			<div class="row justify-content-center">
+				<div class="col-11 col-md-9 text-center"> <i class="fas fa-birthday-cake"></i>
+					<h2>We Love To Party!</h2>
+					<p>Party Chef has been operating in Ireland for over 20 years. We are passionate foodies, and deliver silver service to every party we service. If you are planning a party or event and don't want to have to deal with cooking beyond your comfort zone, or washing the dishes!, then you need to talk to us today. We offer exceptional choice, service, and value</p>
+					<hr> </div>
+			</div>
+		</div>
+	</section>
+	<!-- /END of Introduction section - NOT ON WIREFRAME -->
+	<!-- Features Section - Index.html -->
+	<section class="section-container">
+		<div class="container-fluid features-section">
+			<div class="features-title text-center">
+				<h2>What We Offer</h2> </div>
+			<div class="row justify-content-center d-lg-none">
+				<div class="col-12 text-center"> <i class="fas fa-utensils text-center"></i>
+					<h3 class="text-centre">Our Menu's</h3> </div>
+				<div class="col-12 text-center"> <img src="assets/css/images/features-section/brooke-lark-jUPOXXRNdcA-unsplash-400x250px.jpeg" class="rounded" alt="Brooke Lark Food Photo"> </div>
+				<div class="col-12 text-center">
+					<p class="text-center">Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur libero inventore enim doloremque repellendus ipsa laboriosam quos deserunt consequatur esse, blanditiis voluptate repellat fuga! Voluptates aperiam omnis inventore velit mollitia.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center d-none d-lg-flex">
+				<div class="col-12 col-md-4"> <img src="assets/css/images/features-section/brooke-lark-jUPOXXRNdcA-unsplash-400x250px.jpeg" class="rounded float-right" alt="Brooke Lark Food Photo"> </div>
+				<div class="col-12 col-md-6 my-auto">
+					<h3 class="text-left">Our Menu's<i class="fas fa-utensils"></i></h3>
+					<p class="text-left">Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur libero inventore enim doloremque repellendus ipsa laboriosam quos deserunt consequatur esse, blanditiis voluptate repellat fuga! Voluptates aperiam omnis inventore velit mollitia.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center d-lg-none">
+				<div class="col-12 text-center"> <i class="fas fa-glass-cheers text-center"></i>
+					<h3 class="text-center">Events</h3> </div>
+				<div class="col-12 text-center"> <img src="assets/css/images/features-section/anthony-delanoix-hzgs56Ze49s-unsplash-400x250px.jpeg" class="rounded" alt="Anthony Delanoix Party Photo"> </div>
+				<div class="col-12 text-center">
+					<p class="text-center">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde modi odit odio accusantium ratione quia eius, blanditiis veniam amet, aliquam aspernatur error labore mollitia distinctio est esse molestiae quod.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center d-none d-lg-flex">
+				<div class="col-12 col-md-4"> <img src="assets/css/images/features-section/anthony-delanoix-hzgs56Ze49s-unsplash-400x250px.jpeg" class="rounded float-right" alt="Anthony Delanoix Party Photo"> </div>
+				<div class="col-12 col-md-6 my-auto">
+					<h3 class="text-left">Events<i class="fas fa-glass-cheers"></i></h3>
+					<p class="text-left">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde modi odit odio accusantium ratione quia eius, blanditiis veniam amet, aliquam aspernatur error labore mollitia distinctio est esse molestiae quod.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center d-lg-none">
+				<div class="col-12 text-center"> <i class="fas fa-clipboard"></i>
+					<h3 class="text-center">Party Planning</h3> </div>
+				<div class="col-12 text-center"> <img src="assets/css/images/features-section/sagar-patil-8UcNYpynFLU-unsplash-400x250px.jpg" class="rounded" alt="Sagar Patil Balloon Photo"> </div>
+				<div class="text-center">
+					<p class="text-center">Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim vitae tenetur illo ipsam magni placeat totam. Laudantium sequi quam perferendis ex fugit eos ea quibusdam, numquam aliquam voluptatibus laborum dolor.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center d-none d-lg-flex">
+				<div class="col-12 col-md-4"> <img src="assets/css/images/features-section/sagar-patil-8UcNYpynFLU-unsplash-400x250px.jpg" class="rounded float-right" alt="Brooke Lark Food Photo"> </div>
+				<div class="col-12 col-md-6 my-auto">
+					<h3 class="text-left">Party Planning<i class="fas fa-clipboard text-left"></i></h3>
+					<p class="text-left">Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim vitae tenetur illo ipsam magni placeat totam. Laudantium sequi quam perferendis ex fugit eos ea quibusdam, numquam aliquam voluptatibus laborum dolor.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center d-lg-none">
+				<div class="col-12 text-center"> <i class="fas fa-concierge-bell text-center"></i>
+					<h3 class="text-center">Service Options</h3> </div>
+				<div class="col-12 text-center"> <img src="assets/css/images/features-section/kate-townsend-hEC6zxdFF0M-unsplash-400x250.jpeg" class="rounded" alt="Kate Townsend Waiter Photo"> </div>
+				<div class="text-center">
+					<p class="text-center">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsum eaque unde, illo odio omnis voluptatum temporibus et nesciunt earum nisi eos a rerum est exercitationem! Voluptatibus magni eius unde.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center d-none d-lg-flex">
+				<div class="col-12 col-md-4"> <img src="assets/css/images/features-section/kate-townsend-hEC6zxdFF0M-unsplash-400x250.jpeg" class="rounded float-right" alt="Brooke Lark Food Photo"> </div>
+				<div class="col-12 col-md-6 my-auto">
+					<h3 class="text-left">Service Options<i class="fas fa-concierge-bell text-left"></i></h3>
+					<p class="text-left">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsum eaque unde, illo odio omnis voluptatum temporibus et nesciunt earum nisi eos a rerum est exercitationem! Voluptatibus magni eius unde.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /END of Features Section -->
+	<!-- Menu's introduction section -->
+	<section class="section-container">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 text-center menus-intro">
+					<hr> <i class="fas fa-book-open"></i>
+					<h2>Our Menus</h2>
+					<p>We have some bloody fantastic Menu's.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /END of Menu's introduction section -->
+	<!-- Menu Accordions section -->
+	<section class="section-container justify-content-center">
+		<div class="accordion justify-content-center" id="menuAccordion">
+			<div class="card text-center">
+				<div class="row accordion-button-row justify-content-center">
+					<div class="col-10 col-md-6 text-center menu-header">
+						<div class="card-header text-center" id="canapésHeading">
+							<h2 class="mb-0 text-center">
                             <button class="btn btn-block" type="button" data-toggle="collapse" data-target="#collapseCanapés" aria-expanded="false" aria-controls="collapseCanapés">
                                 Canapés
                                 <br>
                                 <i class="fas fa-chevron-down"></i>
                             </button>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div id="collapseCanapés" class="collapse accordionScroll justify-content-center text-center" aria-labelledby="canapésHeading" data-parent="#menuAccordion">
-                <div id="pdf" class="card-body card-size justify-content-center">
-                    <div class="container-fluid content-section justify-content-center">
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center menu-header">
-                                <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
-                                <h2 class="section-header">Canapés Menu</h2>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="container-fluid items-container justify-content-center">
-                            <div class="row justify-content-center">
-                                <div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title"> Blue Cheese & Pineapple Canapés</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/001-cheese-pineapple-canapés.png">
-                                        <div class="shop-item-details">
-                                            <p>Spruce up cheese and pineapple with these tasty halloumi, sesame and mint canapés. Perfect for entertaining, they use just four ingredients - fresh pineapple, mint, toasted sesame seeds and halloumi.</p>
-                                            <div class="shop-item-price">€4</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>  
-                                <div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Cucumber & Blue Cheese Canapés</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/002-cucumber-blue-cheese-canapés.png">
-                                        <div class="shop-item-details">
-                                            <p>Top pieces of cucumber and blue cheese with grapes and pomegranates for these party nibbles and you'll have two takes on a healthy, low-calorie snack.</p>
-                                            <div class="shop-item-price">€4</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Creamy Vegan Mushroom Pâté</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/003-creamy-vegan-mushroom-páté.png">
-                                        <div class="shop-item-details">
-                                            <p>Prepare these vegan mushroom pâté with candied walnuts canapés ahead of time. When the party starts, all you need to do is pop them in the oven!</p>
-                                            <div class="shop-item-price">€4</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>  
-                                <div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Kimchi, Cheese & Spring Onion Pinwheels</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/004-kimchi-cheese-spring-onion-pinwheels.png">
-                                        <div class="shop-item-details">
-                                            <p>Pair the acidity of kimchi with mature cheddar in these fabulous pinwheels. They make great canapés for celebrations such as New Year's Eve.</p>
-                                            <div class="shop-item-price">€4</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Smoked Salmon Tartines</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/005-smoked-salmon-tartines.png">
-                                        <div class="shop-item-details">
-                                            <p>Grow primroses from January to April and use the flowers to make a delicious topping for these sourdough tartines. They make a lovely light lunch, starter or canapé.</p>
-                                            <div class="shop-item-price">€5</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>  
-                                <div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Aubergine & Chickpea Bites</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/006-aubergine-chickpea-bites.png">
-                                        <div class="shop-item-details">
-                                            <p>Combine chickpeas and aubergine with garlic and cumin for these tasty, healthy vegan canapés. Everyone will love them served with our harissa yogurt.</p>
-                                            <div class="shop-item-price">€4</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Carrot & Caraway Crackers</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/007-carrot-caraway-crackers.png">
-                                        <div class="shop-item-details">
-                                            <p>Spruce up cheese and pineapple with these tasty halloumi, sesame and mint canapés. Perfect for entertaining, they use just four ingredients - fresh pineapple, mint, toasted sesame seeds and halloumi.</p>
-                                            <div class="shop-item-price">€3</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>  
-                                <div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Teriyaki Tempeh with Peanut Dip</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/008-terayaki-tempeh-peanut-dip.png">
-                                        <div class="shop-item-details">
-                                            <p>Make these tasty teriyaki tempeh canapés ahead of a party and rewarm them in the oven when your guests arrive. Serve with our moreish peanut dipping sauce.</p>
-                                            <div class="shop-item-price">€4</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-10 col-sm-5 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Potato Cakes with Smoked Salmon & Cream Cheese</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/009-potato-cakes-smoked-salmon-cream-cheese.png">
-                                        <div class="shop-item-details">
-                                            <p>Irish potato cakes, or farls, make a delicious base for these smoked salmon, cream cheese and caperberry canapés - simply slice into squares and serve.</p>
-                                            <div class="shop-item-price">€5</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>  
-                                <div class="col-10 col-sm-5 text-center shop-item-container">
-                                    <div class="shop-item">
-                                        <div class="shop-item-title">Naan, Spinach & Halloumi Bites</div>
-                                        <img class="shop-item-image" src="assets/css/images/menu-images/canapés/010-naan-spinach-halloumi-bites.png">
-                                        <div class="shop-item-details">
-                                            <p>Wilt spinach with garlic and spices, then pile onto small, warm pieces of naan bread and top with halloumi for an attractive vegetarian canapé.</p>
-                                            <div class="shop-item-price">€4</div>
-                                            <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="row accordion-button-row justify-content-center">
-                <div class="col-10 col-md-6 text-center menu-header">
-                    <div class="card-header" id="startersHeading">
-                        <h2 class="mb-0">
+                        </h2> </div>
+					</div>
+				</div>
+				<div id="collapseCanapés" class="collapse accordionScroll justify-content-center text-center" aria-labelledby="canapésHeading" data-parent="#menuAccordion">
+					<div id="pdf" class="card-body card-size justify-content-center">
+						<div class="container-fluid content-section justify-content-center">
+							<div class="row justify-content-center">
+								<div class="col-12 text-center menu-header"> <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+									<h2 class="section-header">Canapés Menu</h2>
+									<hr> </div>
+							</div>
+							<div class="container-fluid items-container justify-content-center">
+								<div class="row justify-content-center">
+									<div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title"> Blue Cheese & Pineapple Canapés</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/001-cheese-pineapple-canapés.png">
+											<div class="shop-item-details">
+												<p>Spruce up cheese and pineapple with these tasty halloumi, sesame and mint canapés. Perfect for entertaining, they use just four ingredients - fresh pineapple, mint, toasted sesame seeds and halloumi.</p>
+												<div class="shop-item-price">€4</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Cucumber & Blue Cheese Canapés</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/002-cucumber-blue-cheese-canapés.png">
+											<div class="shop-item-details">
+												<p>Top pieces of cucumber and blue cheese with grapes and pomegranates for these party nibbles and you'll have two takes on a healthy, low-calorie snack.</p>
+												<div class="shop-item-price">€4</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-center">
+									<div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Creamy Vegan Mushroom Pâté</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/003-creamy-vegan-mushroom-páté.png">
+											<div class="shop-item-details">
+												<p>Prepare these vegan mushroom pâté with candied walnuts canapés ahead of time. When the party starts, all you need to do is pop them in the oven!</p>
+												<div class="shop-item-price">€4</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Kimchi, Cheese & Spring Onion Pinwheels</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/004-kimchi-cheese-spring-onion-pinwheels.png">
+											<div class="shop-item-details">
+												<p>Pair the acidity of kimchi with mature cheddar in these fabulous pinwheels. They make great canapés for celebrations such as New Year's Eve.</p>
+												<div class="shop-item-price">€4</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-center">
+									<div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Smoked Salmon Tartines</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/005-smoked-salmon-tartines.png">
+											<div class="shop-item-details">
+												<p>Grow primroses from January to April and use the flowers to make a delicious topping for these sourdough tartines. They make a lovely light lunch, starter or canapé.</p>
+												<div class="shop-item-price">€5</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Aubergine & Chickpea Bites</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/006-aubergine-chickpea-bites.png">
+											<div class="shop-item-details">
+												<p>Combine chickpeas and aubergine with garlic and cumin for these tasty, healthy vegan canapés. Everyone will love them served with our harissa yogurt.</p>
+												<div class="shop-item-price">€4</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-center">
+									<div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Carrot & Caraway Crackers</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/007-carrot-caraway-crackers.png">
+											<div class="shop-item-details">
+												<p>Spruce up cheese and pineapple with these tasty halloumi, sesame and mint canapés. Perfect for entertaining, they use just four ingredients - fresh pineapple, mint, toasted sesame seeds and halloumi.</p>
+												<div class="shop-item-price">€3</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-10 col-sm-5 col-lg-4 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Teriyaki Tempeh with Peanut Dip</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/008-terayaki-tempeh-peanut-dip.png">
+											<div class="shop-item-details">
+												<p>Make these tasty teriyaki tempeh canapés ahead of a party and rewarm them in the oven when your guests arrive. Serve with our moreish peanut dipping sauce.</p>
+												<div class="shop-item-price">€4</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-center">
+									<div class="col-10 col-sm-5 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Potato Cakes with Smoked Salmon & Cream Cheese</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/009-potato-cakes-smoked-salmon-cream-cheese.png">
+											<div class="shop-item-details">
+												<p>Irish potato cakes, or farls, make a delicious base for these smoked salmon, cream cheese and caperberry canapés - simply slice into squares and serve.</p>
+												<div class="shop-item-price">€5</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-10 col-sm-5 text-center shop-item-container">
+										<div class="shop-item">
+											<div class="shop-item-title">Naan, Spinach & Halloumi Bites</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/010-naan-spinach-halloumi-bites.png">
+											<div class="shop-item-details">
+												<p>Wilt spinach with garlic and spices, then pile onto small, warm pieces of naan bread and top with halloumi for an attractive vegetarian canapé.</p>
+												<div class="shop-item-price">€4</div>
+												<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="row accordion-button-row justify-content-center">
+					<div class="col-10 col-md-6 text-center menu-header">
+						<div class="card-header" id="startersHeading">
+							<h2 class="mb-0">
                             <button class="btn btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseStarters" aria-expanded="false" aria-controls="collapseOne">
                             Starters<br>
                             <i class="fas fa-chevron-down"></i>
                             </button>
-                        </h2>
-                    </div>
-                </div>  
-            </div>
-            <div id="collapseStarters" class="collapse accordionScroll" aria-labelledby="startersHeading" data-parent="#menuAccordion">
-                <div class="card-body card-size">
-                    <div class="container-fluid content-section">
-                        <div class="row">
-                            <div class="col-12 text-center menu-header">
-                                <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
-                                <h2 class="section-header">Starters Menu</h2>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Roast Aubergines with Yogurt & Harissa</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/011-roast-aubergines-yogurt-harissa.png">
-                                    <div class="shop-item-details">
-                                        <p>Looking for a simple side or starter that delivers on taste? Look no further than roast aubergines with yogurt and harissa. It's vegetarian and gluten free.</p>
-                                        <div class="shop-item-price">€8</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Vegetable Samosas</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/012-vegetable-samosa.png">
-                                    <div class="shop-item-details">
-                                        <p>Serve up these crisp vegan samosas as a tasty starter or side dish with your favourite curry. They also make great buffet food for your next party.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Halloumi, Carrot & Orange Salad</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/013-halloumi-carrot-orange.png">
-                                    <div class="shop-item-details">
-                                        <p>Serve this halloumi, carrot, orange and watercress salad with a mustard and honey dressing for an easy lunch or starter. It takes just 20 minutes to make and delivers one of your 5-a-day.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Whisky & Nut Baked Camembert</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/014-whisky-nut-baked-camembert.png">
-                                    <div class="shop-item-details">
-                                        <p>Make this gooey baked cheese even more indulgent with the help of whisky, maple syrup and nuts. Serve with toasted sourdough for a fabulous sharing starter.</p>
-                                        <div class="shop-item-price">€4</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Cheese-stuffed Garlic Dough Balls with a Tomato Sauce Dip</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/015-cheese-stuffed-garlic-dough-balls-tomato-sauce-dip.png">
-                                    <div class="shop-item-details">
-                                        <p>Impress family and friends with the ultimate sharing starter: cheesy, moreish garlic dough balls. With a tomato-based dipping sauce, they make an ideal addition to any Italian-inspired menu.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Courgette & Broad Bean Risotto with Basil Pesto</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/016-courgette-broad-bean-risotto-basil-pesto.png">
-                                    <div class="shop-item-details">
-                                        <p>Make this vibrant risotto with courgettes and broad beans to make the most of summer veg. Swirl through homemade pesto for a fabulous starter or main.</p>
-                                        <div class="shop-item-price">€7</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Bengali Scotch Eggs</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/017-bengali-scotch-eggs.png">
-                                    <div class="shop-item-details">
-                                        <p>Impress guests at dinner parties with these moreish Bengali scotch eggs. They make a popular starter in an Indian menu, or as part of the snack spread.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Roasted Sweet Potato & Carrot Soup</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/canapés/008-terayaki-tempeh-peanut-dip.png">
-                                    <div class="shop-item-details">
-                                        <p>This silky smooth, super versatile vegetarian soup is perfect for a dinner party starter, everyday dinner or warming lunch. Plus it's two of your five-a-day.</p>
-                                        <div class="shop-item-price">€7</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Chorizo Croquetas with Aïoli</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/019-chorizo-croquetas-ailoi.png">
-                                    <div class="shop-item-details">
-                                        <p>Try a new way to use chorizo, with these fabulous croquetas served with garlic mayonnaise. They require a little effort, but make a great starter or party snack.</p>
-                                        <div class="shop-item-price">€7</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Pear, Walnut & Blue Cheese Tart</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/starters/020-pear-walnut-blue-cheese-tart.png">
-                                    <div class="shop-item-details">
-                                        <p>Let seasonal pears take centre stage in this marvellous walnut and blue cheese tart. It makes an ideal starter, lunch or alternative cheese course.</p>
-                                        <div class="shop-item-price">€8</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="row accordion-button-row justify-content-center">
-                <div class="col-10 col-md-6 text-center menu-header">
-                    <div class="card-header" id="mainCourseHeading">
-                        <h2 class="mb-0">
+                        </h2> </div>
+					</div>
+				</div>
+				<div id="collapseStarters" class="collapse accordionScroll" aria-labelledby="startersHeading" data-parent="#menuAccordion">
+					<div class="card-body card-size">
+						<div class="container-fluid content-section">
+							<div class="row">
+								<div class="col-12 text-center menu-header"> <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+									<h2 class="section-header">Starters Menu</h2>
+									<hr> </div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Roast Aubergines with Yogurt & Harissa</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/011-roast-aubergines-yogurt-harissa.png">
+										<div class="shop-item-details">
+											<p>Looking for a simple side or starter that delivers on taste? Look no further than roast aubergines with yogurt and harissa. It's vegetarian and gluten free.</p>
+											<div class="shop-item-price">€8</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Vegetable Samosas</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/012-vegetable-samosa.png">
+										<div class="shop-item-details">
+											<p>Serve up these crisp vegan samosas as a tasty starter or side dish with your favourite curry. They also make great buffet food for your next party.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Halloumi, Carrot & Orange Salad</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/013-halloumi-carrot-orange.png">
+										<div class="shop-item-details">
+											<p>Serve this halloumi, carrot, orange and watercress salad with a mustard and honey dressing for an easy lunch or starter. It takes just 20 minutes to make and delivers one of your 5-a-day.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Whisky & Nut Baked Camembert</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/014-whisky-nut-baked-camembert.png">
+										<div class="shop-item-details">
+											<p>Make this gooey baked cheese even more indulgent with the help of whisky, maple syrup and nuts. Serve with toasted sourdough for a fabulous sharing starter.</p>
+											<div class="shop-item-price">€4</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Cheese-stuffed Garlic Dough Balls with a Tomato Sauce Dip</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/015-cheese-stuffed-garlic-dough-balls-tomato-sauce-dip.png">
+										<div class="shop-item-details">
+											<p>Impress family and friends with the ultimate sharing starter: cheesy, moreish garlic dough balls. With a tomato-based dipping sauce, they make an ideal addition to any Italian-inspired menu.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Courgette & Broad Bean Risotto with Basil Pesto</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/016-courgette-broad-bean-risotto-basil-pesto.png">
+										<div class="shop-item-details">
+											<p>Make this vibrant risotto with courgettes and broad beans to make the most of summer veg. Swirl through homemade pesto for a fabulous starter or main.</p>
+											<div class="shop-item-price">€7</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Bengali Scotch Eggs</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/017-bengali-scotch-eggs.png">
+										<div class="shop-item-details">
+											<p>Impress guests at dinner parties with these moreish Bengali scotch eggs. They make a popular starter in an Indian menu, or as part of the snack spread.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Roasted Sweet Potato & Carrot Soup</div> <img class="shop-item-image" src="assets/css/images/menu-images/canapés/008-terayaki-tempeh-peanut-dip.png">
+										<div class="shop-item-details">
+											<p>This silky smooth, super versatile vegetarian soup is perfect for a dinner party starter, everyday dinner or warming lunch. Plus it's two of your five-a-day.</p>
+											<div class="shop-item-price">€7</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Chorizo Croquetas with Aïoli</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/019-chorizo-croquetas-ailoi.png">
+										<div class="shop-item-details">
+											<p>Try a new way to use chorizo, with these fabulous croquetas served with garlic mayonnaise. They require a little effort, but make a great starter or party snack.</p>
+											<div class="shop-item-price">€7</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Pear, Walnut & Blue Cheese Tart</div> <img class="shop-item-image" src="assets/css/images/menu-images/starters/020-pear-walnut-blue-cheese-tart.png">
+										<div class="shop-item-details">
+											<p>Let seasonal pears take centre stage in this marvellous walnut and blue cheese tart. It makes an ideal starter, lunch or alternative cheese course.</p>
+											<div class="shop-item-price">€8</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="row accordion-button-row justify-content-center">
+					<div class="col-10 col-md-6 text-center menu-header">
+						<div class="card-header" id="mainCourseHeading">
+							<h2 class="mb-0">
                             <button class="btn btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseMainCourse" aria-expanded="false" aria-controls="collapseOne">
                             Main Course<br>
                             <i class="fas fa-chevron-down"></i>
                             </button>
-                        </h2>
-                    </div>
-                </div>  
-            </div>
-            <div id="collapseMainCourse" class="collapse accordionScroll" aria-labelledby="mainCourseHeading" data-parent="#menuAccordion">
-                <div class="card-body card-size">
-                    <div class="container-fluid content-section">
-                        <div class="row">
-                            <div class="col-12 text-center menu-header">
-                                <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
-                                <h2 class="section-header">Main Course Menu</h2>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Pork Belly with Bay, Cider & Pears</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/021-pork-belly-with-bay-cider-and-pears.png">
-                                    <div class="shop-item-details">
-                                        <p>Roast pork belly with pear cider, bay leaves and pears for an autumnal main course. It’s perfect for a special Sunday lunch for family and friends.</p>
-                                        <div class="shop-item-price">€18</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Curried Pulled Lamb</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/022-curried-pulled-lamb.png">
-                                    <div class="shop-item-details">
-                                        <p>This meltingly tender shoulder of lamb can be cooked in stages over a few days - serve as the centrepiece for an Indian feast for friends.</p>
-                                        <div class="shop-item-price">€16</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Korean Chilli, Sesame & Honey Chicken</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/023-korean-chilli-sesame-and-honey-chicken.png">
-                                    <div class="shop-item-details">
-                                        <p>A kebab always goes down well at a BBQ, and this Korean chicken with sweet, spicy and sticky glaze is our new favourite. Scatter over spring onions to serve.</p>
-                                        <div class="shop-item-price">€14</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Barbecue Lamb & Courgette Salad</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/024-barbecue-lamb-and-courgette-salad.png">
-                                    <div class="shop-item-details">
-                                        <p>This all-in-one salad makes light work of a summer meal and the most of the barbecue.</p>
-                                        <div class="shop-item-price">€16</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Swedish Meatball Burgers</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/025-swedish-meatball-burgers.png">
-                                    <div class="shop-item-details">
-                                        <p>Love Swedish meatballs? Here we’ve transformed them into a burger that kids will adore – choose beef or pork mince, the flavours will be the same.</p>
-                                        <div class="shop-item-price">€11</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Next Level Paella</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/026-next-level-paella.png">
-                                    <div class="shop-item-details">
-                                        <p>Choose the freshest ingredients for a world-class paella with our ultimate recipe. Serve this classic Spanish seafood dish in the pan to impress your guests.</p>
-                                        <div class="shop-item-price">€18</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Honey-glazed Spiced Roast Goose & Confit Potatoes</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/027-honey-glazed-spiced-roast-goose-and-confit-potatoes.png">
-                                    <div class="shop-item-details">
-                                        <p>Cook goose glazed in honey and spices for an alternative to turkey this Christmas. Serve with herby confit potatoes.</p>
-                                        <div class="shop-item-price">€18</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Hake with Paprika Oil Potatoes</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/028-hake-with-paprika-oil-potatoes.png" alt="Hake with Paprika Oil Potatoes">
-                                    <div class="shop-item-details">
-                                        <p>Let the subtle flavour and meaty texture of hake be the star of the show with just a little paprika oil to lift it. Ideal for an easy, light, romantic meal.</p>
-                                        <div class="shop-item-price">€17</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Steak & Bean Niçoise</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/029-steak-and-bean-niçoise.png" alt="Steak & Bean Niçoise">
-                                    <div class="shop-item-details">
-                                        <p>Try a twist on the classic salad with sirloin steak in place of tuna for a filling and balanced midweek meal that takes just 30 minutes to make.</p>
-                                        <div class="shop-item-price">€18</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Truffle Chicken & Potato Gratin</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/main-course/030-truffle-chicken-and-potato gratin.png" alt="Truffle Chicken & Potato Gratin">
-                                    <div class="shop-item-details">
-                                        <p>Introduce a little luxury to a creamy chicken and potato gratin by adding truffle. A great comfort dish to serve in winter, or when you want something special.</p>
-                                        <div class="shop-item-price">€19</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>    
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="row accordion-button-row justify-content-center">
-                <div class="col-10 col-md-6 text-center menu-header">
-                    <div class="card-header" id="sweetsHeading">
-                        <h2 class="mb-0">
+                        </h2> </div>
+					</div>
+				</div>
+				<div id="collapseMainCourse" class="collapse accordionScroll" aria-labelledby="mainCourseHeading" data-parent="#menuAccordion">
+					<div class="card-body card-size">
+						<div class="container-fluid content-section">
+							<div class="row">
+								<div class="col-12 text-center menu-header"> <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+									<h2 class="section-header">Main Course Menu</h2>
+									<hr> </div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Pork Belly with Bay, Cider & Pears</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/021-pork-belly-with-bay-cider-and-pears.png">
+										<div class="shop-item-details">
+											<p>Roast pork belly with pear cider, bay leaves and pears for an autumnal main course. It’s perfect for a special Sunday lunch for family and friends.</p>
+											<div class="shop-item-price">€18</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Curried Pulled Lamb</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/022-curried-pulled-lamb.png">
+										<div class="shop-item-details">
+											<p>This meltingly tender shoulder of lamb can be cooked in stages over a few days - serve as the centrepiece for an Indian feast for friends.</p>
+											<div class="shop-item-price">€16</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Korean Chilli, Sesame & Honey Chicken</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/023-korean-chilli-sesame-and-honey-chicken.png">
+										<div class="shop-item-details">
+											<p>A kebab always goes down well at a BBQ, and this Korean chicken with sweet, spicy and sticky glaze is our new favourite. Scatter over spring onions to serve.</p>
+											<div class="shop-item-price">€14</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Barbecue Lamb & Courgette Salad</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/024-barbecue-lamb-and-courgette-salad.png">
+										<div class="shop-item-details">
+											<p>This all-in-one salad makes light work of a summer meal and the most of the barbecue.</p>
+											<div class="shop-item-price">€16</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Swedish Meatball Burgers</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/025-swedish-meatball-burgers.png">
+										<div class="shop-item-details">
+											<p>Love Swedish meatballs? Here we’ve transformed them into a burger that kids will adore – choose beef or pork mince, the flavours will be the same.</p>
+											<div class="shop-item-price">€11</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Next Level Paella</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/026-next-level-paella.png">
+										<div class="shop-item-details">
+											<p>Choose the freshest ingredients for a world-class paella with our ultimate recipe. Serve this classic Spanish seafood dish in the pan to impress your guests.</p>
+											<div class="shop-item-price">€18</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Honey-glazed Spiced Roast Goose & Confit Potatoes</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/027-honey-glazed-spiced-roast-goose-and-confit-potatoes.png">
+										<div class="shop-item-details">
+											<p>Cook goose glazed in honey and spices for an alternative to turkey this Christmas. Serve with herby confit potatoes.</p>
+											<div class="shop-item-price">€18</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Hake with Paprika Oil Potatoes</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/028-hake-with-paprika-oil-potatoes.png" alt="Hake with Paprika Oil Potatoes">
+										<div class="shop-item-details">
+											<p>Let the subtle flavour and meaty texture of hake be the star of the show with just a little paprika oil to lift it. Ideal for an easy, light, romantic meal.</p>
+											<div class="shop-item-price">€17</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Steak & Bean Niçoise</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/029-steak-and-bean-niçoise.png" alt="Steak & Bean Niçoise">
+										<div class="shop-item-details">
+											<p>Try a twist on the classic salad with sirloin steak in place of tuna for a filling and balanced midweek meal that takes just 30 minutes to make.</p>
+											<div class="shop-item-price">€18</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Truffle Chicken & Potato Gratin</div> <img class="shop-item-image" src="assets/css/images/menu-images/main-course/030-truffle-chicken-and-potato gratin.png" alt="Truffle Chicken & Potato Gratin">
+										<div class="shop-item-details">
+											<p>Introduce a little luxury to a creamy chicken and potato gratin by adding truffle. A great comfort dish to serve in winter, or when you want something special.</p>
+											<div class="shop-item-price">€19</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="row accordion-button-row justify-content-center">
+					<div class="col-10 col-md-6 text-center menu-header">
+						<div class="card-header" id="sweetsHeading">
+							<h2 class="mb-0">
                             <button class="btn btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseSweets" aria-expanded="false" aria-controls="collapseOne">
                             Something Sweet<br>
                             <i class="fas fa-chevron-down"></i>
                             </button>
-                        </h2>
-                    </div>
-                </div>  
-            </div>
-            <div id="collapseSweets" class="collapse accordionScroll" aria-labelledby="sweetsHeading" data-parent="#menuAccordion">
-                <div class="card-body card-size">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 text-center menu-header">
-                                <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
-                                <h2 class="section-header">Something Sweet Menu</h2>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Lime Semifreddo Cheesecake</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/031-lime-semifreddo-cheesecake.png" alt="Lime Semifreddo Cheesecake">
-                                    <div class="shop-item-details">
-                                        <p>This attractive frozen dessert can be made ahead and frozen for up to 3 months - perfect to get ahead for a Christmas dinner party.</p>
-                                        <div class="shop-item-price">€5</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Raspberry Brûlée</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/032-raspberry-brûlée.png" alt="Raspberry Brûlée">
-                                    <div class="shop-item-details">
-                                        <p>Celebrate raspberry season with this take on crème brûlée. The sharp tang of this red fruit cuts through a rich custard base for the perfect summer dessert.</p>
-                                        <div class="shop-item-price">€7</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Pineapple & Ginger Pavlova</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/033-pineapple-and-ginger-pavlova.png" alt="Pineapple & Ginger Pavlova">
-                                    <div class="shop-item-details">
-                                        <p>Pile whipped cream and charred pineapple on a meringue base to create a stunning dinner party dessert which you can make ahead.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Salted Caramel Choc Pots</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/034-salted-caramel-choc-pot.png">
-                                    <div class="shop-item-details">
-                                        <p>Combining sweet and salty flavours really works when chocolate and toffee is involved - best served in individual portions.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Lychee & Rosewater Ice Cream</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/035-lychee-and-rosewater-ice-cream.png" alt="Lychee & Rosewater Ice Cream">
-                                    <div class="shop-item-details">
-                                        <p>This refreshing lychee ice cream with a delicate rosewater flavour is the perfect showstopping dinner party dessert, with popping candy for added theatre.</p>
-                                        <div class="shop-item-price">€5</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Dark Chocolate & Cherry Bar</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/036-dark-chocolate-and-cherry-bar.png">
-                                    <div class="shop-item-details">
-                                        <p>This impressive looking dessert is a chocolate lover's dream and no one will guess it uses just four ingredients.</p>
-                                        <div class="shop-item-price">€4</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Mini Banoffee Pies</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/037-mini-banoffee-pies.png" alt="Mini Banoffee Pies">
-                                    <div class="shop-item-details">
-                                        <p>Go retro with this easy and ever-popular dessert that's been given a smart dinner party makeover.</p>
-                                        <div class="shop-item-price">€5</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Coconut Custard Tart with Roasted Pineapple</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/038-coconut-custard-tart-with-roasted-pineapple.png" alt="Coconut Custard Tart with Roasted Pineapple">
-                                    <div class="shop-item-details">
-                                        <p>This custard tart has a tropical twist with sunny Caribbean flavours. Bake it for your next dinner party and we guarantee your guests will go back for a second helping!</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Millionaire’s Cheesecake</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/039-millionaires-cheesecake.png" alt="Millionaire’s Cheesecake">
-                                    <div class="shop-item-details">
-                                        <p>Indulge in this no-bake chocolate cheesecake after a special dinner. Whether it's for New Year's Eve or a birthday, it's sure to impress.</p>
-                                        <div class="shop-item-price">€7</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Cassis & Bay-baked Pears with Blackberries</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/040-cassis-and-bay-baked-pears-with-blackberries.png" alt="Cassis & Bay-baked Pears with Blackberries">
-                                    <div class="shop-item-details">
-                                        <p>Impress dinner guests with this grown-up dessert. Pears are wonderful for soaking up flavours – here that's cassis, red wine, blackberry and bay leaves.</p>
-                                        <div class="shop-item-price">€8</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>    
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="row accordion-button-row justify-content-center">
-                <div class="col-10 col-md-6 text-center menu-header">
-                    <div class="card-header" id="drinksHeading">
-                        <h2 class="mb-0">
+                        </h2> </div>
+					</div>
+				</div>
+				<div id="collapseSweets" class="collapse accordionScroll" aria-labelledby="sweetsHeading" data-parent="#menuAccordion">
+					<div class="card-body card-size">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12 text-center menu-header"> <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+									<h2 class="section-header">Something Sweet Menu</h2>
+									<hr> </div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Lime Semifreddo Cheesecake</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/031-lime-semifreddo-cheesecake.png" alt="Lime Semifreddo Cheesecake">
+										<div class="shop-item-details">
+											<p>This attractive frozen dessert can be made ahead and frozen for up to 3 months - perfect to get ahead for a Christmas dinner party.</p>
+											<div class="shop-item-price">€5</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Raspberry Brûlée</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/032-raspberry-brûlée.png" alt="Raspberry Brûlée">
+										<div class="shop-item-details">
+											<p>Celebrate raspberry season with this take on crème brûlée. The sharp tang of this red fruit cuts through a rich custard base for the perfect summer dessert.</p>
+											<div class="shop-item-price">€7</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Pineapple & Ginger Pavlova</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/033-pineapple-and-ginger-pavlova.png" alt="Pineapple & Ginger Pavlova">
+										<div class="shop-item-details">
+											<p>Pile whipped cream and charred pineapple on a meringue base to create a stunning dinner party dessert which you can make ahead.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Salted Caramel Choc Pots</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/034-salted-caramel-choc-pot.png">
+										<div class="shop-item-details">
+											<p>Combining sweet and salty flavours really works when chocolate and toffee is involved - best served in individual portions.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Lychee & Rosewater Ice Cream</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/035-lychee-and-rosewater-ice-cream.png" alt="Lychee & Rosewater Ice Cream">
+										<div class="shop-item-details">
+											<p>This refreshing lychee ice cream with a delicate rosewater flavour is the perfect showstopping dinner party dessert, with popping candy for added theatre.</p>
+											<div class="shop-item-price">€5</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Dark Chocolate & Cherry Bar</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/036-dark-chocolate-and-cherry-bar.png">
+										<div class="shop-item-details">
+											<p>This impressive looking dessert is a chocolate lover's dream and no one will guess it uses just four ingredients.</p>
+											<div class="shop-item-price">€4</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Mini Banoffee Pies</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/037-mini-banoffee-pies.png" alt="Mini Banoffee Pies">
+										<div class="shop-item-details">
+											<p>Go retro with this easy and ever-popular dessert that's been given a smart dinner party makeover.</p>
+											<div class="shop-item-price">€5</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Coconut Custard Tart with Roasted Pineapple</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/038-coconut-custard-tart-with-roasted-pineapple.png" alt="Coconut Custard Tart with Roasted Pineapple">
+										<div class="shop-item-details">
+											<p>This custard tart has a tropical twist with sunny Caribbean flavours. Bake it for your next dinner party and we guarantee your guests will go back for a second helping!</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Millionaire’s Cheesecake</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/039-millionaires-cheesecake.png" alt="Millionaire’s Cheesecake">
+										<div class="shop-item-details">
+											<p>Indulge in this no-bake chocolate cheesecake after a special dinner. Whether it's for New Year's Eve or a birthday, it's sure to impress.</p>
+											<div class="shop-item-price">€7</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Cassis & Bay-baked Pears with Blackberries</div> <img class="shop-item-image" src="assets/css/images/menu-images/something-sweet/040-cassis-and-bay-baked-pears-with-blackberries.png" alt="Cassis & Bay-baked Pears with Blackberries">
+										<div class="shop-item-details">
+											<p>Impress dinner guests with this grown-up dessert. Pears are wonderful for soaking up flavours – here that's cassis, red wine, blackberry and bay leaves.</p>
+											<div class="shop-item-price">€8</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="row accordion-button-row justify-content-center">
+					<div class="col-10 col-md-6 text-center menu-header">
+						<div class="card-header" id="drinksHeading">
+							<h2 class="mb-0">
                             <button class="btn btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseDrinks" aria-expanded="false" aria-controls="collapseOne">
                             Drinks<br>
                             <i class="fas fa-chevron-down"></i>
                             </button>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div id="collapseDrinks" class="collapse accordionScroll" aria-labelledby="drinksHeading" data-parent="#menuAccordion">
-                <div class="card-body card-size">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12 text-center menu-header">
-                                <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
-                                <h2 class="section-header">Drinks Menu</h2>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Pimm's</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/041-pimms.png" alt="Pimm's">
-                                    <div class="shop-item-details">
-                                        <p>A true taste of summer, serve this fruity punch with fresh mint leaves, cucumber, orange and strawberries.</p>
-                                        <div class="shop-item-price">€5</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Dirty Martini</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/042-dirty-martini.png" alt="Dirty Martini">
-                                    <div class="shop-item-details">
-                                        <p>Mix up a classic dirty martini to impress guests at your next party. This easy, elegant cocktail combines dry gin, vermouth and green olives.</p>
-                                        <div class="shop-item-price">€7</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Piña Colada</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/043-piña-colada.png" alt="Piña Colada">
-                                    <div class="shop-item-details">
-                                        <p>A tropical blend of rich coconut cream, white rum and tangy pineapple – serve with an umbrella for kitsch appeal.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Apple Prosecco Punch</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/044-apple-prosecco-punch.png" alt="Apple Prosecco Punch">
-                                    <div class="shop-item-details">
-                                        <p>Spritz up a basic apple cocktail with a dash of prosecco and a splash of vodka.</p>
-                                        <div class="shop-item-price">€9</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Mojito</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/045-mojito.png" alt="Mojito">
-                                    <div class="shop-item-details">
-                                        <p>Mix this classic cocktail for a party using fresh mint, white rum, sugar, zesty lime and cooling soda water. Play with the quantities to suit your taste.</p>
-                                        <div class="shop-item-price">€7</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Mai Tai</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/046-mai-tai.png" alt="Mai Tai">
-                                    <div class="shop-item-details">
-                                        <p>A traditional cocktail with both dark and white rum, vibrant grenadine, triple sec, almond syrup, lime and a retro cherry garnish.</p>
-                                        <div class="shop-item-price">€8</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Tropical Punch Cups</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/047-tropical-punch-cups .png" alt="Tropical Punch Cups">
-                                    <div class="shop-item-details">
-                                        <p>A refreshing fruit salad to hand out to guests at the end of a party.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Reverse Espresso Martini</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/048-reverse-espresso-martini.png" alt="Reverse Espresso Martini">
-                                    <div class="shop-item-details">
-                                        <p>Everyone loves a martini. Perk up this twist on a classic cocktail with a festive splash of Baileys and a shot of coffee to help you party on!</p>
-                                        <div class="shop-item-price">€8</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Mimosa</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/049-mimosa.png" alt="Mimosa">
-                                    <div class="shop-item-details">
-                                        <p>Mix a classic mimosa cocktail with orange juice and champagne – or use prosecco if you prefer a different sort of bubbly. It's an easy fix when entertaining.</p>
-                                        <div class="shop-item-price">€11</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>  
-                            <div class="col-10 col-sm-5 text-center shop-item-container">
-                                <div class="shop-item">
-                                    <div class="shop-item-title">Frozen Lychee & Mint Cocktail</div>
-                                    <img class="shop-item-image" src="assets/css/images/menu-images/drinks/050-frozen-lychee-and-mint-cocktail.png" alt="Frozen Lychee & Mint Cocktail">
-                                    <div class="shop-item-details">
-                                        <p>Get the weekend off to a flying start with these quick cocktails.</p>
-                                        <div class="shop-item-price">€6</div>
-                                        <button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  
-<!-- /END of Menu Accordions section -->
-
-<!-- Photo Gallery -->
-
-<section class="section-container">
-    <div class="container-fluid gallery-container">
-        <div class="row justify-content-center">
-            <div class="col-10 col-md-8 text-center gallery-img">
-                <hr>
-                <i class="fas fa-images"></i>
-                <h2>Photo Gallery</h2>
-                <p>Click on the photo to open our Photo Gallery.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10 col-md-6 text-center gallery-placeholder">
-                <img class="pointer" src="assets/css/images/gallery/gallery-placeholder-brooke-lark-C1fMH2Vej8A-unsplash-800px.jpeg" alt="Brook Lark Food Photo" data-toggle="modal" data-target="#gallery-modal">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- /END of Photo Gallery-->
-
-<!-- Testimonial Block -->
-
-<article class="section-container">
-    <div class="container-fluid testimonial-title">
-        <div class="row justify-content-center">
-            <div class="col-10 col-md-8 text-center gallery-img">
-                <hr>
-                <i class="fas fa-users"></i>
-                <h2>Testimonials</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-11 col-lg-9 testimonial-container">
-            <div class="row justify-content-center">
-                <div class="col-11 col-sm-9 col-md-7 text-center testimonial-title testimonial-box">
-                    <h2>We think we're <strong>AWESOME!</strong></h2>
-                    <h4>But don't take our word for it...</h4>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-11 col-sm-10 col-lg-6 text-center">
-                    <div class="testimonial-box">
-                        <i class="fas fa-comments"></i>
-                        <h3><strong>"</strong>..I felt like I was a guest at my own party..<strong>"</strong></h3>
-                        <p><strong>"</strong>I would highly recommend the MAXFIT Gym & Fitness Club to anyone looking for a gym in Kerry. The Team there are always welcoming and supportive,a nd are always willing to answer any questions I might have and offer expertise. The opening hours are brilliant (24 hours a day, 7 days a week)and allow a lot of flexibility of when you want to go. In addition, the studio classes are constantly running, so you are able to challenge yourself to try new exercises as you go. It all adds up to an excellent place where motivation and support is readily available.<strong>"</strong></p>
-                        <hr>
-                        <h5><strong>Carl Eschenbach<br>Sruffaunrulardheemore<br>Galway</strong></h5>
-                    </div>
-                </div>
-                <div class="col-11 col-sm-10 col-lg-6 text-center">
-                    <div class="testimonial-box">
-                        <i class="fas fa-comments"></i>
-                        <h3><strong>"</strong>..Party Chef gave me 5 star service..<strong>"</strong></h3>
-                        <p><strong>"</strong>I would highly recommend the MAXFIT Gym & Fitness Club to anyone looking for a gym in Kerry. The Team there are always welcoming and supportive,a nd are always willing to answer any questions I might have and offer expertise. The opening hours are brilliant (24 hours a day, 7 days a week)and allow a lot of flexibility of when you want to go. In addition, the studio classes are constantly running, so you are able to challenge yourself to try new exercises as you go. It all adds up to an excellent place where motivation and support is readily available.<strong>"</strong></p>
-                        <hr>
-                        <h5><strong>Paul Maritz<br>Lough Booroughcummeenauragh<br>Kerry</strong></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</article>
-
-<!-- /END of Testimonial block -->
-
-<!-- Footer Block -->
-
-<footer class="section-container">    
-    <div class="container-fluid footer">
-        <div class="row justify-content-center footer-mobile-only-home-link">
-            <div class="col-6 d-lg-none nav-pills home-link">
-                <button class="btn button active home-link" aria-current="page" href="index.html"><h6>Home</h6><span class="sr-only">(current)</span></button>
-            </div>
-            <div class="col-6 d-lg-none nav-pills">
-                <button class="btn button contact-link" href="contact.html"><h6>Contact</h6></button>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-3 footer-navigation-list">
-                <div>
-                    <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
-                    <div class="nav-pills footer-button">
-                        <ul style="list-style-type:none;">
-                            <li>
-                                <button class="btn active" href="index.html"><h6>Home</h6></button>
-                            </li>
-                            <li>
-                                <button class="btn" href="contact.html"><h6>Contact Us</h6></button>
-                            </li>
-                        </ul>
-                    </div> 
-                </div> 
-            </div>
-            <div class="col-12 col-sm-6 justify-content-center">
-                <div class="social-media-box text-center">
-                    <div class="social-links-footer" style="vertical-align: top">
-                        <h4>Get Social With Us</h4>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/" target="-blank">
-                                    <i class="fab fa-facebook-square"></i>
-                                    <span class="sr-only">Facebook</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/" target="-blank">
-                                    <i class="fab fa-linkedin"></i>
-                                    <span class="sr-only">LinkedIn</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.instagram.com/" target="-blank">
-                                    <i class="fab fa-instagram-square"></i>
-                                    <span class="sr-only">Instagram</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.youtube.com/" target="-blank">
-                                    <i class="fab fa-youtube-square"></i>
-                                    <span class="sr-only">YouTube</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.pinterest.com/" target="-blank">
-                                    <i class="fab fa-pinterest-square"></i>
-                                    <span class="sr-only">Pinterest</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div style="vertical-align: middle">
-                        <h2>'We Prep. You Party!'</h2>
-                    </div>
-                    <div class="copyright" style="vertical-align: bottom">
-                        <h6>Copyright Party Chef Ltd. <i class="fas fa-copyright"></i> 2021.</h6>
-                        <h6>Website powered & managed by McApp Software Ltd.</h6>
-                    </div>
-                </div> 
-            </div>
-            <div class="col-12 col-md-3 address-box">
-                <h3>Party Chef Ltd.</h3>
-                <address>
+                        </h2> </div>
+					</div>
+				</div>
+				<div id="collapseDrinks" class="collapse accordionScroll" aria-labelledby="drinksHeading" data-parent="#menuAccordion">
+					<div class="card-body card-size">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12 text-center menu-header"> <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+									<h2 class="section-header">Drinks Menu</h2>
+									<hr> </div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Pimm's</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/041-pimms.png" alt="Pimm's">
+										<div class="shop-item-details">
+											<p>A true taste of summer, serve this fruity punch with fresh mint leaves, cucumber, orange and strawberries.</p>
+											<div class="shop-item-price">€5</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Dirty Martini</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/042-dirty-martini.png" alt="Dirty Martini">
+										<div class="shop-item-details">
+											<p>Mix up a classic dirty martini to impress guests at your next party. This easy, elegant cocktail combines dry gin, vermouth and green olives.</p>
+											<div class="shop-item-price">€7</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Piña Colada</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/043-piña-colada.png" alt="Piña Colada">
+										<div class="shop-item-details">
+											<p>A tropical blend of rich coconut cream, white rum and tangy pineapple – serve with an umbrella for kitsch appeal.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Apple Prosecco Punch</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/044-apple-prosecco-punch.png" alt="Apple Prosecco Punch">
+										<div class="shop-item-details">
+											<p>Spritz up a basic apple cocktail with a dash of prosecco and a splash of vodka.</p>
+											<div class="shop-item-price">€9</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Mojito</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/045-mojito.png" alt="Mojito">
+										<div class="shop-item-details">
+											<p>Mix this classic cocktail for a party using fresh mint, white rum, sugar, zesty lime and cooling soda water. Play with the quantities to suit your taste.</p>
+											<div class="shop-item-price">€7</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Mai Tai</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/046-mai-tai.png" alt="Mai Tai">
+										<div class="shop-item-details">
+											<p>A traditional cocktail with both dark and white rum, vibrant grenadine, triple sec, almond syrup, lime and a retro cherry garnish.</p>
+											<div class="shop-item-price">€8</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Tropical Punch Cups</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/047-tropical-punch-cups .png" alt="Tropical Punch Cups">
+										<div class="shop-item-details">
+											<p>A refreshing fruit salad to hand out to guests at the end of a party.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Reverse Espresso Martini</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/048-reverse-espresso-martini.png" alt="Reverse Espresso Martini">
+										<div class="shop-item-details">
+											<p>Everyone loves a martini. Perk up this twist on a classic cocktail with a festive splash of Baileys and a shot of coffee to help you party on!</p>
+											<div class="shop-item-price">€8</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Mimosa</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/049-mimosa.png" alt="Mimosa">
+										<div class="shop-item-details">
+											<p>Mix a classic mimosa cocktail with orange juice and champagne – or use prosecco if you prefer a different sort of bubbly. It's an easy fix when entertaining.</p>
+											<div class="shop-item-price">€11</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-10 col-sm-5 text-center shop-item-container">
+									<div class="shop-item">
+										<div class="shop-item-title">Frozen Lychee & Mint Cocktail</div> <img class="shop-item-image" src="assets/css/images/menu-images/drinks/050-frozen-lychee-and-mint-cocktail.png" alt="Frozen Lychee & Mint Cocktail">
+										<div class="shop-item-details">
+											<p>Get the weekend off to a flying start with these quick cocktails.</p>
+											<div class="shop-item-price">€6</div>
+											<button class="btn btn-primary shop-item-button" type="button">Add To MyMenu</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /END of Menu Accordions section -->
+	<!-- Photo Gallery -->
+	<section class="section-container">
+		<div class="container-fluid gallery-container">
+			<div class="row justify-content-center">
+				<div class="col-10 col-md-8 text-center gallery-img">
+					<hr> <i class="fas fa-images"></i>
+					<h2>Photo Gallery</h2>
+					<p>Click on the photo to open our Photo Gallery.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-10 col-md-6 text-center gallery-placeholder"> <img class="pointer" src="assets/css/images/gallery/gallery-placeholder-brooke-lark-C1fMH2Vej8A-unsplash-800px.jpeg" alt="Brook Lark Food Photo" data-toggle="modal" data-target="#gallery-modal"> </div>
+			</div>
+		</div>
+	</section>
+	<!-- /END of Photo Gallery-->
+	<!-- Testimonial Block -->
+	<article class="section-container">
+		<div class="container-fluid testimonial-title">
+			<div class="row justify-content-center">
+				<div class="col-10 col-md-8 text-center gallery-img">
+					<hr> <i class="fas fa-users"></i>
+					<h2>Testimonials</h2> </div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-11 col-lg-9 testimonial-container">
+				<div class="row justify-content-center">
+					<div class="col-11 col-sm-9 col-md-7 text-center testimonial-title testimonial-box">
+						<h2>We think we're <strong>AWESOME!</strong></h2>
+						<h4>But don't take our word for it...</h4> </div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-11 col-sm-10 col-lg-6 text-center">
+						<div class="testimonial-box"> <i class="fas fa-comments"></i>
+							<h3><strong>"</strong>..I felt like I was a guest at my own party..<strong>"</strong></h3>
+							<p><strong>"</strong>I would highly recommend the MAXFIT Gym & Fitness Club to anyone looking for a gym in Kerry. The Team there are always welcoming and supportive,a nd are always willing to answer any questions I might have and offer expertise. The opening hours are brilliant (24 hours a day, 7 days a week)and allow a lot of flexibility of when you want to go. In addition, the studio classes are constantly running, so you are able to challenge yourself to try new exercises as you go. It all adds up to an excellent place where motivation and support is readily available.<strong>"</strong></p>
+							<hr>
+							<h5><strong>Carl Eschenbach<br>Sruffaunrulardheemore<br>Galway</strong></h5> </div>
+					</div>
+					<div class="col-11 col-sm-10 col-lg-6 text-center">
+						<div class="testimonial-box"> <i class="fas fa-comments"></i>
+							<h3><strong>"</strong>..Party Chef gave me 5 star service..<strong>"</strong></h3>
+							<p><strong>"</strong>I would highly recommend the MAXFIT Gym & Fitness Club to anyone looking for a gym in Kerry. The Team there are always welcoming and supportive,a nd are always willing to answer any questions I might have and offer expertise. The opening hours are brilliant (24 hours a day, 7 days a week)and allow a lot of flexibility of when you want to go. In addition, the studio classes are constantly running, so you are able to challenge yourself to try new exercises as you go. It all adds up to an excellent place where motivation and support is readily available.<strong>"</strong></p>
+							<hr>
+							<h5><strong>Paul Maritz<br>Lough Booroughcummeenauragh<br>Kerry</strong></h5> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<!-- /END of Testimonial block -->
+	<!-- Footer Block -->
+	<footer class="section-container">
+		<div class="container-fluid footer">
+			<div class="row justify-content-center footer-mobile-only-home-link">
+				<div class="col-6 d-lg-none nav-pills home-link">
+					<button class="btn button active home-link" aria-current="page" href="index.html">
+						<h6>Home</h6><span class="sr-only">(current)</span></button>
+				</div>
+				<div class="col-6 d-lg-none nav-pills">
+					<button class="btn button contact-link" href="contact.html">
+						<h6>Contact</h6></button>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-3 footer-navigation-list">
+					<div> <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+						<div class="nav-pills footer-button">
+							<ul style="list-style-type:none;">
+								<li>
+									<button class="btn active" href="index.html">
+										<h6>Home</h6></button>
+								</li>
+								<li>
+									<button class="btn" href="contact.html">
+										<h6>Contact Us</h6></button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 justify-content-center">
+					<div class="social-media-box text-center">
+						<div class="social-links-footer" style="vertical-align: top">
+							<h4>Get Social With Us</h4>
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="https://www.facebook.com/" target="-blank"> <i class="fab fa-facebook-square"></i> <span class="sr-only">Facebook</span> </a>
+								</li>
+								<li class="list-inline-item">
+									<a href="https://www.linkedin.com/" target="-blank"> <i class="fab fa-linkedin"></i> <span class="sr-only">LinkedIn</span> </a>
+								</li>
+								<li class="list-inline-item">
+									<a href="https://www.instagram.com/" target="-blank"> <i class="fab fa-instagram-square"></i> <span class="sr-only">Instagram</span> </a>
+								</li>
+								<li class="list-inline-item">
+									<a href="https://www.youtube.com/" target="-blank"> <i class="fab fa-youtube-square"></i> <span class="sr-only">YouTube</span> </a>
+								</li>
+								<li class="list-inline-item">
+									<a href="https://www.pinterest.com/" target="-blank"> <i class="fab fa-pinterest-square"></i> <span class="sr-only">Pinterest</span> </a>
+								</li>
+							</ul>
+						</div>
+						<div style="vertical-align: middle">
+							<h2>'We Prep. You Party!'</h2> </div>
+						<div class="copyright" style="vertical-align: bottom">
+							<h6>Copyright Party Chef Ltd. <i class="fas fa-copyright"></i> 2021.</h6>
+							<h6>Website powered & managed by McApp Software Ltd.</h6> </div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3 address-box">
+					<h3>Party Chef Ltd.</h3> <address>
                 Restaurant Patrick Guilbaud<br>
                 21 Upper Merrion Street<br>
                 Dublin<br>
                 D2<br>
                 Ireland<br>
-                </address> 
-                <p>Email: <a href="mailto:info@partychef.ie">info@partychef.ie</a><br>
-                Tel: <a href="tel:012828282">(01) 2828 282</a></p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- /END of Footer block -->
-
-
-<!-- Bootstrap JavaScript CDN links-->
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js" integrity="sha512-VKjwFVu/mmKGk0Z0BxgDzmn10e590qk3ou/jkmRugAkSTMSIRkd4nEnk+n7r5WBbJquusQEQjBidrBD3IQQISQ==" crossorigin="anonymous"></script>
-<script src="assets/js/bootstrap-form-validation.js" async></script>
-<script src="assets/js/store.js" async></script>
-<script src="assets/js/emailjs.js" async></script>
-
-<!-- /END of Bootstrap JavaScript CDN links -->
-    
+                </address>
+					<p>Email: <a href="mailto:info@partychef.ie">info@partychef.ie</a>
+						<br> Tel: <a href="tel:012828282">(01) 2828 282</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /END of Footer block -->
+	<!-- Bootstrap JavaScript CDN links-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js" integrity="sha512-VKjwFVu/mmKGk0Z0BxgDzmn10e590qk3ou/jkmRugAkSTMSIRkd4nEnk+n7r5WBbJquusQEQjBidrBD3IQQISQ==" crossorigin="anonymous"></script>
+	<script src="assets/js/bootstrap-form-validation.js" async></script>
+	<script src="assets/js/store.js" async></script>
+	<script src="assets/js/emailjs.js" async></script>
+	<!-- /END of Bootstrap JavaScript CDN links -->
 </body>
 
 </html>

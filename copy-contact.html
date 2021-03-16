@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="icon" type="image/png" href="assets/css/images/map-images/party-chaf-map-marker.png"/>
+    <script src="assets/js/maps.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_Pe5jUSL1Dxa5TL2sMYM0L");
+        })();
+    </script>
+    <title>Contact | Party Chef</title>
+</head>
+
+<body>
+
+<!-- Navigation Bar (Bootstrap Navigation Bar) -->
+
+<nav class="navbar navbar-expand-sm sticky-top navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarToggler">
+            <ul class="navbar-nav nav-pills">
+                <li class="nav-item ml-auto">
+                    <a class="nav-link inactive" aria-current="page" href="index.html"><h5>Home</h5></a>
+                </li>
+                <li class="nav-item ml-auto">
+                    <a class="nav-link active" href="contact.html"><h5>Contact</h5><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <button type="button" class="nav-link ml-auto mymenu" data-toggle="modal" data-target="#myMenuModal">
+            MyMenu
+            <span class="mymenu-indicator"><strong>0</strong></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- /END of Navigation Bar (Bootstrap Navigation Bar) -->
+
+<!-- Bootstrap Jumbotron -->
+
+<div class="container-fluid jumbotron-container jumbotron-container-contact">
+    <div class="row">
+        <div class="col-12 jumbotron-col justify-content-center">
+            <div class="bd-highlight">
+                <div class="jumbotron jumotron-fluid bg-cover">
+                    <div class="container-fluid text-center">
+                        <h1 class="display-2">Well Hello There!</h1>
+                        <h2>Talk to us today about your Party Plans</h2>
+                        <hr>
+                        <p class="lead">Find contact details below for all our Kicthen locations. Why not pop in for a cup of tea and a chat today.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /END of Bootstrap Jumbotron -->
+
+<!-- Introduction section -->
+
+<section class="section-container">
+    <div class="container-fluid home-intro-section contact-intro">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-9 text-center">
+                <i class="fas fa-comments"></i>
+                <h2>We love To Chat!</h2>
+                <p>Party Chef has been operating in Ireland for over 20 years. We are passionate foodies, and deliver silver service to every party we service. If you are planning a party or event and don't want to have to deal with cooking beyond your comfort zone, or washing the dishes!, then you need to talk to us today. We offer exceptional choice, service, and value</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /END of Introduction Section -->
+
+<!-- Map Section - NOTE: Map uses Google Maps API and uses custom markers and 'infoWindow's-->
+
+<section class="section-container">
+    <div class="container section-container">
+        <div class="map-heading text-center">
+            <i class="fas fa-map-marked-alt"></i>
+            <h2>Kitchen Locations</h2>
+            <p>Party Chef has been operating in Ireland for over 20 years. We are passionate foodies, and deliver silver service to every party we service. If you are planning a party or event and don't want to have to deal with cooking beyond your comfort zone, or washing the dishes!, then you need to talk to us today. We offer exceptional choice, service, and value</p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="map" class="mapdiv" style="position: relative; overflow: inherit;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /END of Map Section -->
+
+<!-- Social Media Block -->
+
+<section class="section-container">
+    <div class="container-fluid home-intro-section social-container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-9 text-center">
+                <hr>
+                <i class="fas fa-share-alt-square"></i>
+                <h2>We're <strong>REALLY</strong> Social!</h2>
+                <p>Party Chef has been operating in Ireland for over 20 years. We are passionate foodies, and deliver silver service to every party we service. If you are planning a party or event and don't want to have to deal with cooking beyond your comfort zone, or washing the dishes!, then you need to talk to us today. We offer exceptional choice, service, and value</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="social-section">
+    <div class="container social-media-block">
+        <div class="row justify-content-center">
+            <div class="col-6 col-sm-4 col-md-2 text-center">
+                <h4>Instagram</h4>
+                <a href="https://www.instagram.com/" target="-blank">
+                    <img class="social-logo" src="assets/css/images/social-media/003-instagram.png" alt="Instagram Logo">
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center">
+                <h4>Facebook</h4>
+                <a href="https://www.facebook.com/" target="-blank">
+                    <img class="social-logo" src="assets/css/images/social-media/002-facebook.png" alt="Instagram Logo">
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center">
+                <h4>YouTube</h4>
+                <a href="https://www.youtube.com/" target="-blank">
+                    <img class="social-logo" src="assets/css/images/social-media/001-youtube.png" alt="Instagram Logo">
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center">
+                <h4>Pinterest</h4>
+                <a href="https://www.pinterest.com/" target="-blank">
+                    <img class="social-logo" src="assets/css/images/social-media/004-pinterest.png" alt="Instagram Logo">
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 text-center">
+                <h4>LinkedIN</h4>
+                <a href="https://www.linkedin.com/" target="-blank">
+                    <img class="social-logo" src="assets/css/images/social-media/005-linkedin.png" alt="LinkedIN Logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /END of Social Media Block -->
+
+<!-- Contact Form Block - NOTE: Contact Form uses Emailjs email services, see emailjs.js file. -->
+
+<section class="section-container">
+    <div class="container-fluid contact-form-box home-intro-section">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-9 justify-content-center">  
+                <div class="text-center">
+                    <div id="callback-form">
+                        <hr>
+                        <i class="fas fa-at"></i>
+                        <h2>Ask Us Anything!</h2>
+                        <p>Complete the form below and we will reply to you as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+<section class="container-fuid contact-form-container">
+    <div class="row justify-content-center">
+        <div class="col-11 col-sm-10 col-md-9 col-lg-8 form-div">
+            <form id="form" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="from_name">First Name:*</label>
+                    <input type="text" class="form-control" id="from_name" name="from_name" aria-describedby="Your First Name" placeholder="Type your First Name here.." required>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter your First Name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Last Name:*</label>
+                    <input type="text" class="form-control" id="surname" name="surname" aria-describedby="Last Name" placeholder="Type your Last Name here.." required>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter your Last Name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tel_number">Telephone Number:*</label>
+                    <input type="text" class="form-control" id="tel_number" name="tel_number" aria-describedby="Telephone Number" placeholder="Type your Telephone Number here.." required>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter your Telephone Number.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="from_email">Email Address:*</label> 
+                    <input class="form-control" id="from_email" name="from_email" aria-describedby="Email Address" placeholder="Type your Email Address here.." required>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter a valied Email Address. 
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:*</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Type your Message here.." rows="4"></textarea>
+                    <div class="invalid-feedback">
+                        Ooops!..please enter a valied Email Address. 
+                    </div>
+                </div>
+                <div>
+                <small>* All fields required.</small>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" id="button" value="Send Email" class="btn form-control"><h5>Send Message</h5></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- /END of Contact Form block -->
+
+<!-- Footer Block -->
+
+<footer class="section-container">    
+    <div class="container-fluid footer">
+        <div class="row justify-content-center footer-mobile-only-home-link">
+            <div class="col-6 d-lg-none nav-pills home-link">
+                <button class="btn button active home-link" aria-current="page" href="index.html"><h6>Home</h6><span class="sr-only">(current)</span></button>
+            </div>
+            <div class="col-6 d-lg-none nav-pills">
+                <button class="btn button contact-link" href="contact.html"><h6>Contact</h6></button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-3 footer-navigation-list">
+                <div>
+                    <img src="assets/css/images/logo/party-chef-logo-navbar.png" alt="Party Chef Logo">
+                    <div class="nav-pills footer-button">
+                        <ul style="list-style-type:none;">
+                            <li>
+                                <button class="btn active" href="index.html"><h6>Home</h6></button>
+                            </li>
+                            <li>
+                                <button class="btn" href="contact.html"><h6>Contact Us</h6></button>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> 
+            </div>
+            <div class="col-6 justify-content-center">
+                <div class="social-media-box text-center">
+                    <div class="social-links-footer" style="vertical-align: top">
+                        <h4>Get Social With Us</h4>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" target="-blank">
+                                    <i class="fab fa-facebook-square"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/" target="-blank">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span class="sr-only">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/" target="-blank">
+                                    <i class="fab fa-instagram-square"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/" target="-blank">
+                                    <i class="fab fa-youtube-square"></i>
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.pinterest.com/" target="-blank">
+                                    <i class="fab fa-pinterest-square"></i>
+                                    <span class="sr-only">Pinterest</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="vertical-align: middle">
+                        <h2>'We Prep. You Party!'</h2>
+                    </div>
+                    <div class="copyright" style="vertical-align: bottom">
+                        <h6>Copyright Party Chef Ltd. <i class="fas fa-copyright"></i> 2021.</h6>
+                        <h6>Website powered & managed by McApp Software Ltd.</h6>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-12 col-md-3 address-box">
+                <h3>Party Chef Ltd.</h3>
+                <address>
+                Restaurant Patrick Guilbaud<br>
+                21 Upper Merrion Street<br>
+                Dublin<br>
+                D2<br>
+                Ireland<br>
+                </address> 
+                <p>Email: <a href="mailto:info@partychef.ie">info@partychef.ie</a><br>
+                Tel: <a href="tel:012828282">(01) 2828 282</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- /END of Footer Block -->
+
+<!-- Bootstrap JavaScript CDN links-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap-form-validation.js" async></script>
+<script src="assets/js/store.js" async></script>
+<script src="assets/js/contact-form-emailjs.js" async></script>
+
+
+<!-- /END of Bootstrap JavaScript CDN links -->
+
+<!-- Google Maps API and JavaScript file links -->
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxYSROlA8U3e3NSQzKhw8AjolzN1KjaM&callback=initMap"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script src="assets/js/maps.js"></script>
+
+<!-- /END of Google Maps API and JavaScript file links -->
+
+</body>
+
+</html>
