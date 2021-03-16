@@ -1,5 +1,3 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AndyMc3000/ci-ms2-party-chef)
-
 <a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-readme-logo.png)</a>
 
 # PartyChef.ie - Professional Private Caterers :cocktail: #
@@ -139,61 +137,66 @@ With this in mind the following wireframes were created to detail the layput of 
 1. <a href="assets/readme-assets/party-chef-mymenu-modal.png"><strong>'MyMenu' Modal Wireframe</strong></a>
 
 
-#### 5. The Surface Plane - TO EDIT ####
+#### 5. The Surface Plane ####
 
 Having completed the previous 4 stages in the UX design process, I moved on to making decisions around the design and styling of the website. The Surface Plane focuses on the styling of images, backgrounds, fonts, and colours used on a website. The details of these decisions are listed here;
 
-1. Colours - The color scheme for the website was chosen from a selection of colours I considered, using tools on the [Coolors.co](https://coolors.co/) website. The color schemes chosen, along with their HEX values, is shown here;
+1. Colours - The color scheme for the website was chosen from a selection of colours I considered using tools on the [Coolors.co](https://coolors.co/) website. The color schemes chosen, along with their HEX values, is shown here;
 <img src="assets/readme-assets/maxfit-coolors-palettes.png" width="450">
 
-1. Font - I used the Google Fonts website to help me decide on a font to use on the MAXFIT website. I wanted something simple yet strong at the same time - not too light, not too bold. I decided upon a Font called Nunito Sans. An example of it can be seen here;   
+1. Font - I used the Google Fonts website to help me decide on a font to use on the MAXFIT website. I wanted something simple yet modern at the same time - not too bold, and something a little different. I decided upon a font called 'Blinker' for headings, and the 'Montserrat' font for paragraph texts. An example of these fonts can be seen here;   
+<img src="assets/readme-assets/maxfit-font-nunito-sans.png" width="220">
 <img src="assets/readme-assets/maxfit-font-nunito-sans.png" width="220">
 
-1. Images - I mainly used photos taken from the [Unsplash.com](https://unsplash.com/) website. On Unspalsh.com I was able to create collections of phtotos for each of the services and classes which I wanted a gallery for. E.g. a selection for yoga, pilates, personal training etc.
+1. Logo Design - I created the Party Chef logo using tools on [FreeLogoDesign.com](https://www.freelogodesign.org/).
 
-1. Icons - I used Font Awesome to add icons to various page and section headings. The footer navigation list had icons which matched the icon found on each page heading. I also added a Font Awesme Favicon to the page headers.
+1. Images - I mainly used photos taken from the [Unsplash.com](https://unsplash.com/) website. On Unspalsh.com I was able to create a collection of relevant phtotos. The naming convention for each photograph includes a referenece to the photographer name and the Unsplash item code. The Alt attribute for each photograph also includes the photographer name.
 
-1. Galleries - I decide to use Bootstrap Modals as containers for my Carousel Galleries.
+1. Icons - I used Font Awesome to add icons to various page and section headings. I also added a Party Chef Favicon to the page headers.
+
+1. Gallery - I decided to use a Bootstrap Modal as a container for my Carousel Galleries.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
 <hr>
 
-## 3. <a name="development-process">Development Process - TO EDIT</a> ##
+## 3. <a name="development-process">Development Process</a> ##
 
 I drew up a process to follow for developing the Party Chef website. This is listed in sequence below.
 
-1. Design - I firstly designed the site based on the Client/User Stories requirements, by getting ideas from fitness club/gym websites, and by creating wireframes/sketches.
-1. Structure - I then wrote the HTML code for all pages including; navigation, footers, sections, galleries, forms, iframes.
-2. Interactive Functionality - JavaScript
-3. Content - I then added text content to sections (lorem ipsum/placeholder text), and images to galleries. 
-4. Style - I then added colours and fonts and wrote CSS rule sets and media queries in order to style the website.
-5. Responsive - I made sure all texts/headings, images, and container elements transform approprately and look good when viewed on different devices such as: mobile phones, tablets, laptops, large screen computers (PC's), and large TV's. 
-6. Review - I did a last review of all code (formatting, besutifying etc) and content, fixing anys bugs/typo's etc as I did so.
-7. Testing - And finally I validated my HTML and CSS code, and tested functionality of site elements across a range of different devices and browsers.
+1. Design - I firstly designed the site based on the Client/User Stories requirements, and by creating wireframes/sketches.
+2. Structure - I then wrote the HTML code for all pages including; navigation, footers, sections, modal gallery, forms, and google maps iframe.
+3. Interactive Functionality - I added in any JavaScript elements to the site. Those being; Using the Google Maps API for a map with customer markers and 'infoWindows'. Adding in a JavaScript Shopping Cart plugin. And adding in JavaScript to send form data via email using the EmailJS service.
+4. Content - I then added text content to sections (lorem ipsum/placeholder text), and images to galleries. 
+5. Style - I then added colours and fonts and wrote CSS rule sets and media queries in order to style the website and make it responsive.
+6. Responsive - I made sure all texts/headings, images, and container elements transform approprately and look good when viewed on different devices such as: mobile phones, tablets, laptops, large screen computers (PC's), and large TV's. 
+7. Review - I did a last review of all code (formatting, beautifying etc) and content, fixing anys bugs/typo's etc as I did so.
+8. Testing - And finally I validated my HTML and CSS code, and tested functionality of site elements across a range of different devices and browsers.
 
 
 #### [Back To Top ^ ](#top-of-page) ####
 
 <hr>
 
-## 4. <a name="website-features">Website Features - TO EDIT</a> ##
-* Bootstrap navigation bar
-* Jumbotron 
-* Bootstrap responsive grid
-* JS Accordion
-* JScart/MyMenu/EmailJS
-* Carousel slider modal gallery
-* Google Map/Markers/InfoWindow
-* Contact Form/EmailJS
-* Social Links in footer
-* Navigation links in Footer
+## 4. <a name="website-features">Website Features</a> ##
+* Bootstrap Navigation Bar on index.html and contact.html.
+* Bootstrap Jumbotron on index.html and contact.html. 
+* Bootstrap Accordions for menus.
+* Bootstrap Responsive Grid system.
+* JavaScript shopping cart used for MyMenu system.
+* EmailJS for sending from data by email.
+* Bootstrap Carousel Slider Modal Gallery.
+* Google Map with custom markers and infoWindow's.
+* Bootrap Forms for MyMenu Modal and Contact form on contact.html.
+* Bootstrap Form validation.
+* Social Links in Footer and contact.html.
+* Navigation links in Footer.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
 <hr>
 
-## 5. <a name="technologies-used">Technologies Used - TO EDIT</a> ##
+## 5. <a name="technologies-used">Technologies Used</a> ##
 
 <img src="assets/readme-assets/maxfit-tech-logos-readme-2.png" width="430">
 
@@ -201,15 +204,18 @@ I used the following technologies, services, and devices to develop, style, depl
 <br>
 * HTML5 - The site was develop using HTML5 markup language.
 * CSS3 - The site was styled and in some cases made responsive using CSS3.
-* JavaScript/jQuery
+* JavaScript - Used for MyMenu functionality, Google Map, and EmailJS service.
 * Bootstrap - I used the Bootstrap framework for implementing some sections and features.
+* EmailJS - Used to send Form and MyMenu list data by email to users and to Party Chef.
 * GitHub - I set up a free repository on GitHub.com to maintain a master of all website files, content, and resources.
 * GitPod - I used the free GitPod.io Integrated Development Environment to write and develop the code for the website.
 * Github Pages - I used the free GitHub Pages to deploy/publish the live website on the web.
 * Balsamiq - I used the Balsamiq application to create the website sitemap and webpage wireframes.
 * Responsive Viewer - I used a Chrome Browser Extension called Responsive Viewer to emulate the presentation of the website on multiple device sizes and types.
+* AmIResponsive - I used the [AmIResponsive](http://ami.responsivedesign.is/) webpage to view site responsiveness across devices.
 * Apple Preview - I used the Apple Preview image editor application to crop and resize photo's and images. 
 * Apple Pages - I used the Apple Pages word processor to manage and edit text content for the website. 
+* Apple Keynote - I used Apple Keynote as a sketch pad to test content and review/edit content/images.
 * Apple Hardware - I used a MacBook Pro to develop the site. I also used an Apple iPhone, Apple TV, and Apple iPad for testing the website.
 
 #### [Back To Top ^ ](#top-of-page) ####
@@ -217,6 +223,16 @@ I used the following technologies, services, and devices to develop, style, depl
 <hr>
 
 ## 6. <a name="testing">Testing</a> ##
+
+
+1. Development Testing
+1. User Testing
+1. Code Validation
+1. Device Testing
+1. Browser Tsting
+
+## TO EDIT ##
+
 
 Generally speaking I continually tested each function/feature/element as I added them to the website. I also tested the website using a combination of online services, browsers, and a limited number of physical devices upon completion. 
 
@@ -264,7 +280,7 @@ Here are the steps I took to deploy the website on GitHub Pages;
 
 I deployed the website early on in the developmnt process, as it useful to be able to examine the website on various physical devices in its live state. Also, while the GitPod IDE has the ability to show a preview of changes to a project, sometimes that does not pick up or display issues which would appear on a live site. For example, when I deployed my website on GitHub Pages initially, I found that it was not reading my CSS file, so no styling was appearing on the site. The Preview tab in GitPod was reading the CSS file correctly. I found that a typo relating to the CSS file source address in my page headers caused the issue for the deployed site, while GitPod Preview did not pick it up. By having the deployed site up and running, I was able to address and correct the bug early in the development process.
 
-The working version of the MAXFIT website deployed on GitHub Pages can be seen here: [Click here to view deployed website](https://andymc3000.github.io/maxfit-codeinstitute-ms1project-static-gym-website/)
+The working version of the Party Chef website deployed on GitHub Pages can be seen here: [Click here to view deployed website](https://andymc3000.github.io/ci-ms2-party-chef/)
 
 #### [Back To Top ^ ](#top-of-page) ####
 
@@ -278,6 +294,7 @@ The working version of the MAXFIT website deployed on GitHub Pages can be seen h
 * [Bootstrap](https://getbootstrap.com/)
 * [GitHub.com](https://github.com/)
 * [StackOverflow.com](https://stackoverflow.com/)
+* [CSSTricks.com](https://css-tricks.com/)
 
 1. Colours - I used the Coolors.co website to help me decide on a colour scheme for the webite. This website allows you to create your own colour palettes or to use one of thiers. See more about the Coolors.co palette catalogue and tools here: [Coolors.co](https://coolors.co/). 
 
@@ -287,7 +304,7 @@ The working version of the MAXFIT website deployed on GitHub Pages can be seen h
 
 1. Design Principles - The design of this website employed the principles of 'The 5 Planes of UX design', which was created by Jesse James Garrett in his book; The Elements of User Experience: User-centered Design for the Web (2002). See more at; [Jjg.net](http://www.jjg.net/elements/)
   
-1. Company Logo - The Maxfit logo was created using tools on the FreeLogoDesign.org website. See more at; [FreeLogoDesign.org](https://www.freelogodesign.org/)
+1. Company Logo - The Party Chef logo was created using tools on the FreeLogoDesign.org website. See more at; [FreeLogoDesign.org](https://www.freelogodesign.org/)
 
 1. Wikimedia commons - Technology logo's.
 
