@@ -1,8 +1,9 @@
-<a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-readme-logo.png)</a>
+<a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-logo-readme.png)</a>
 
-# PartyChef.ie - Professional Private Caterers :cocktail: #
-## Code Institute - Dip. in Software Development - Milestone Project 2 - Interactive Frontend Development Milestone Project ##
-#### Student: Andrew McDonald - Contact me on GitHub :octocat: - <a href="https://github.com/AndyMc3000"><strong>AndyMc3000</strong></a> ####
+# Website: PartyChef.ie :cocktail: #
+## Business: Professional Private Caterers ## 
+## Project: Diploma in Software Development, Code Institute - Milestone Project 2 - Interactive Frontend Development ##
+#### Student Developer: Andrew McDonald - Contact me on GitHub :octocat: - <a href="https://github.com/AndyMc3000"><strong>AndyMc3000</strong></a> ####
 
 <hr>
 <img src="assets/readme-assets/party-chef-am-i-responsive-screenshot.png" width="900">
@@ -198,7 +199,7 @@ I drew up a process to follow for developing the Party Chef website. This is lis
 
 ## 5. <a name="technologies-used">Technologies Used</a> ##
 
-<img src="assets/readme-assets/maxfit-tech-logos-readme-2.png" width="430">
+<img src="assets/readme-assets/technologies-used-logos-readme.png" width="330">
 
 I used the following technologies, services, and devices to develop, style, deploy, and test the Pary Chef website;
 <br>
@@ -211,6 +212,7 @@ I used the following technologies, services, and devices to develop, style, depl
 * GitPod - I used the free GitPod.io Integrated Development Environment to write and develop the code for the website.
 * Github Pages - I used the free GitHub Pages to deploy/publish the live website on the web.
 * Balsamiq - I used the Balsamiq application to create the website sitemap and webpage wireframes.
+* W3C validators - used to validate HTML5 and CSS3 code.
 * Responsive Viewer - I used a Chrome Browser Extension called Responsive Viewer to emulate the presentation of the website on multiple device sizes and types.
 * AmIResponsive - I used the [AmIResponsive](http://ami.responsivedesign.is/) webpage to view site responsiveness across devices.
 * Apple Preview - I used the Apple Preview image editor application to crop and resize photo's and images. 
@@ -224,12 +226,19 @@ I used the following technologies, services, and devices to develop, style, depl
 
 ## 6. <a name="testing">Testing</a> ##
 
+During development I continually tested each function/feature/element as I added them to the website. I then tested the website code using a combination of online validation service. 
 
+I tested features and functionality across multiple browsers, an online device emulator service, and a limited number of physical devices upon completion of development. 
+
+Testing was completed under the below headings. A detailed testing document can be seen <a href="assets/readme-assets/testing.md"><strong>Here - Testing Document.</strong></a>
+
+Testing Headings;
 1. Development Testing
-1. User Testing
+1. User & Client stories Testing
 1. Code Validation
 1. Device Testing
-1. Browser Tsting
+1. Browser Testing
+1. Bugs detected & fixed
 
 ## TO EDIT ##
 
@@ -339,4 +348,4 @@ I also received help and support from;
 
 #### [Back To Top ^ ](#top-of-page) ####
 
-<a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-readme-logo.png)</a>
+<a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-logo-readme.png)</a>
