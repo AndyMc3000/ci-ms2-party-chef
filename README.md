@@ -5,7 +5,7 @@
 #### Student: Andrew McDonald - Contact me on GitHub :octocat: - <a href="https://github.com/AndyMc3000"><strong>AndyMc3000</strong></a> ####
 
 <hr>
-<img src="assets/readme-assets/maxfit-ami-responsive-homepage.png" width="900">
+<img src="assets/readme-assets/party-chef-am-i-responsive-screenshot.png" width="900">
 <hr>
 
 ## Table of Contents ##
@@ -133,7 +133,7 @@ Following on from the tasks decided upon in the Structure Plane, the Skeleton Pl
 With this in mind the following wireframes were created to detail the layput of the website pages and individual sections/containers. Please click the following links to view these wireframes.
 
 1. <a href="assets/readme-assets/party-chef-homepage.png"><strong>Homepage Wireframe</strong></a>
-1. <a href="assets/readme-assets/party-chef-contact-page.png"><strong>Contact page Wireframe</strong></a>
+1. <a href="assets/readme-assets/party-chef-contact-page.png"><strong>Contact Page Wireframe</strong></a>
 1. <a href="assets/readme-assets/party-chef-mymenu-modal.png"><strong>'MyMenu' Modal Wireframe</strong></a>
 
 
@@ -142,11 +142,11 @@ With this in mind the following wireframes were created to detail the layput of 
 Having completed the previous 4 stages in the UX design process, I moved on to making decisions around the design and styling of the website. The Surface Plane focuses on the styling of images, backgrounds, fonts, and colours used on a website. The details of these decisions are listed here;
 
 1. Colours - The color scheme for the website was chosen from a selection of colours I considered using tools on the [Coolors.co](https://coolors.co/) website. The color schemes chosen, along with their HEX values, is shown here;
-<img src="assets/readme-assets/maxfit-coolors-palettes.png" width="450">
+<img src="assets/readme-assets/party-chef-coolors-pallette.png" width="450">
 
 1. Font - I used the Google Fonts website to help me decide on a font to use on the MAXFIT website. I wanted something simple yet modern at the same time - not too bold, and something a little different. I decided upon a font called 'Blinker' for headings, and the 'Montserrat' font for paragraph texts. An example of these fonts can be seen here;   
-<img src="assets/readme-assets/maxfit-font-nunito-sans.png" width="220">
-<img src="assets/readme-assets/maxfit-font-nunito-sans.png" width="220">
+<img src="assets/readme-assets/party-chef-google-fonts-blinker.png" width="220">
+<img src="assets/readme-assets/party-chef-google-fonts-montserrat.png" width="220">
 
 1. Logo Design - I created the Party Chef logo using tools on [FreeLogoDesign.com](https://www.freelogodesign.org/).
 
