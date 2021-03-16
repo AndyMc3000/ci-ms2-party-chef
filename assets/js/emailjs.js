@@ -9,12 +9,12 @@ document.getElementById('form')
    btn.value = 'Sending...';
 
    var templateParams = {
-    menuFirstName: '',
-    menuSurname: '', 
-    telNumber: '',
-    menuEmailAddress: '',
-    partyDate: '',
-    partyLocation: '',
+    first_name: '',
+    surname: '', 
+    tel_number: '',
+    email_address: '',
+    party_date: '',
+    party_location: '',
     options: '',
 };
 console.log(btn);
