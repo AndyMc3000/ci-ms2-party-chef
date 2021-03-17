@@ -1,18 +1,17 @@
-let map;
-let InfoObj = [];
-// This represent Ireland
-let centerCoords = {
+var map;
+var InfoObj = [];
+var centerCoords = {
     lat: 53.286462626348,
     lng: -8.193259451610158
 };
 
-let icons = {
+var icons = {
     kitchen: {
         icon: 'assets/css/images/map-images/party-chaf-map-marker.png',
     },
 };
 
-let markersOnMap = [
+var markersOnMap = [
     {
         placeName: 'Cork (North) Kitchen',
         address1: 'Unit 3',
@@ -260,8 +259,8 @@ window.onload = function () {
 };
 
 function addMarkerInfo() {
-    for( let i = 0; i < markersOnMap.length; i++ ) {
-        let contentString = '<div class="container infoContainer">' +   
+    for( var i = 0; i < markersOnMap.length; i++ ) {
+        var contentString = '<div class="container infoContainer">' +   
                             '<div class="infoHeading">' +
                             '<h3>' + 
                             markersOnMap[i].placeName + 
@@ -325,11 +324,7 @@ function closeOtherInfo() {
     }    
 }
 
-/* 
-This is the main callback function on window load
-*/
 function initMap() {
-    // ...
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 7.4,
         center: centerCoords

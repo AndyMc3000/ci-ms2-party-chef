@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600&family=Montserrat&display=swap');
 
+
+/*Section backgrounds and colors*/
+.blue-background {
+    background-color: #0c296b;
+    color: white;
+}
+
+.white-background {
+    background-color: white;
+    color: #0c296b;
+}
+
 /* -- Google Fonts -- */
 
 body h1, h2, h3, h4, h5, h6, button {
@@ -22,25 +34,36 @@ body p {
         https://www.youtube.com/watch?v=YeFzkC2awTM -- */
 
 .close {
-    color: #fff; 
+    color: #ffffff; 
     opacity: 1;
     font-size: 28px;
 }
 
+.close:hover {
+    color: #ffd500; 
+    transform: (1.3);
+}
+
 .close i:hover {
+    background-color: #ffd500;
     color: #ffd500; 
     opacity: 1;
     transform: (1.3);
 }
 
 .modal-header {
-    background-color: #ffd500;
-    color: #00296b;
-    border-bottom: 2px solid #ffd500;
+    background-color: #00296b;
+    color: #ffffff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.modal-header img {
+   padding: 0px;
 }
 
 .modal-title {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -58,8 +81,8 @@ body p {
 
 .modal-body {
     padding: 0;
-    background-color: #00296b;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #00296b;
 }
 
 .modal-body p {
@@ -69,8 +92,7 @@ body p {
 }
 
 .modal-content {
-    border: 3px solid #ffd500;
-    border-radius: 10px;
+    border-radius: 18px;
 }
 
 .modal-body hr {
@@ -79,14 +101,14 @@ body p {
 }
 
 .quote-intro h2 {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #ffffff;
+    color: #00296b;
     justify-content: center;
 }
 
@@ -101,6 +123,8 @@ body p {
 
 .cart-row {
     display: flex;
+    background-color: #ffffff;
+    color: #ffffff;
 }
 
 .cart-items {
@@ -119,7 +143,7 @@ body p {
 }
 
 .cart-price.cart-header {
-    color: #ffffff;
+    color: #00296b;
 }
 
 .cart-quantity {
@@ -148,7 +172,7 @@ body p {
 }
 
 .btn-danger:hover {
-    background-color: #CC4C4C;
+    background-color: #00296b;
     transform: (1.2);
 }
 
@@ -156,7 +180,7 @@ body p {
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #ffd500;
+    border: 2px solid #00296b;
     background-color: #ffffff;
     color: #00296b;
     padding: 0;
@@ -177,17 +201,19 @@ body p {
     text-align: center;
     margin-top: 15px;
     margin-left: 15px;
+    background-color: #ffffff;
+    color: #ffffff;
 }
 
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: #ffffff;
+    color: #00296b;
     margin-left: 20px;
 }
 
 .cart-total-price {
-    color: #ffffff;
+    color: #00296b;
     font-size: 1.6em;
     padding-left: 10px;
 }
@@ -209,8 +235,7 @@ body p {
 }
 
 .modal-footer {
-    border-top: 2px solid #ffd500;
-    background-color: #ffd500;
+    background-color: #ffffff;
 }
 
 /* -- /END of 'MyMenu' Bootstrap Modal (see button in Navbar) -- */
@@ -222,7 +247,7 @@ body p {
     border-bottom: 3px solid;
     border-color: #ffd500; 
     width: 100%;
-    background-color: #00296b;
+    background-color: #ffffff;
 }
 
 .navbar-brand img {
@@ -231,15 +256,15 @@ body p {
 }
 
 .navbar-nav {
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .navbar button {
-    color: #00296b;
-    background-color: #ffd500;
-    padding-right: 5px;
+    color: #ffffff;
+    background-color: #00296b;
+    padding-right: 0;
     padding-left: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 20px;
 }
 
@@ -250,7 +275,7 @@ body p {
     transform: (1.2);
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active {
     color: #fff;
     background-color: #00296b;
     border: 2px solid #ffd500;
@@ -272,20 +297,14 @@ body p {
 .nav-pills .nav-link.inactive {
     color: #fff;
     background-color: #00296b;
-    border: 2px solid #00296b;
     border-radius: 10%;
-}
-
-.nav-pills .nav-link.inactive, .nav-pills .show>.nav-link {
-    justify-content: right;
+    margin-top: 2px;
 }
 
 .nav-pills .nav-link.inactive:hover {
-    color: #ffffff;
-    background-color: #00296b;
-    border: 2px solid #ffffff;
+    color: #00296b;
+    background-color: #ffffff;
     border-radius: 10%;
-    transform: (1.2);
 }
 
 .navbar-toggler-icon {
@@ -293,9 +312,11 @@ body p {
 }
 
 .mymenu-indicator {
-    font-size: 12px;
-    color: black;
-    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #EB5757;
     padding: 7px; 
     border-radius: 50%;
     position: relative;
@@ -316,7 +337,9 @@ button.navbar-toggler {
 } 
 
 .navbar-dark .navbar-toggler {
-    border: 2px solid #ffffff;
+    border: 2px solid #ffd500;
+    margin: 0px;
+    padding-right: 0px;
 }
 
 .nav-link.active {
@@ -338,8 +361,8 @@ button.nav-link.mymenu {
 
 /* -- Bootstrap Jumbotron - Index.html & Contact.html -- */
 
-.jumbotron {
-    background-color: rgba(0, 80, 157,.65);
+.custom-jumbotron {
+    background-color: rgba(0, 80, 157,.0);
     width: 80%;
     height: 85%;
     position: relative;
@@ -352,7 +375,7 @@ button.nav-link.mymenu {
     padding-bottom: 35px;
     color: #ffffff;
     border-radius: 10px;
-    border: 2px solid #ffd500;
+/*    border: 2px solid #ffd500;*/
 }
 
 .jumbotron-container {
@@ -363,25 +386,21 @@ button.nav-link.mymenu {
 }
 
 .jumbotron-container-home {
-    background: url('../css/images/jumbotron/kelsey-chance-ZrhtQyGFG6s-unsplash-1000px.jpeg') no-repeat center center scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../css/images/jumbotron/kelsey-chance-ZrhtQyGFG6s-unsplash-1000px.jpeg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding: 70px;
-    border-bottom: 3px solid;
-    border-color: #ffd500;
 }
 
 .jumbotron-container-contact {
-    background: url('../css/images/jumbotron/matt-hoffman-7zwyUZVrt-U-unsplash-1000px.jpeg') no-repeat center center scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../css/images/jumbotron/matt-hoffman-7zwyUZVrt-U-unsplash-1000px.jpeg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding: 70px;
-    border-bottom: 3px solid;
-    border-color: #ffd500;
 }
 
 .jumbotron-col {
@@ -394,6 +413,7 @@ button.nav-link.mymenu {
     background-color: #ffd500;
 }
 
+/*
 .jumbotron .btn {
     font-size: 20px;
     color: #ffffff;
@@ -401,6 +421,7 @@ button.nav-link.mymenu {
     background-color: #00296b;
     border: 2px solid #ffd500;
 }
+*/
 
 .jumbotron .btn h5 {
     margin: 0;
@@ -479,7 +500,6 @@ button.nav-link.mymenu {
     height: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    border: 2px solid #ffd500;
     border-radius: 10px;
 }
 
@@ -505,6 +525,10 @@ button.nav-link.mymenu {
         This code also includes Tooltip code which was copied from W3Schools
         https://www.w3schools.com/css/css_tooltip.asp -- */
 
+.menus-container {
+    padding-bottom: 45px;
+}
+
 .menus-intro hr {
     height: 2px;
     width: 80%;
@@ -522,21 +546,26 @@ button.nav-link.mymenu {
 }
 
 .menu-header img {
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 5px;
     max-height: 72px;
-    width: auto;
+    max-width: 110px;
 }
 
 .menu-header h2 {
-    padding-bottom: 10;
+    padding-bottom: 15px;
+    padding-top: 10px;;
 } 
 
 .accordion hr {
     height: 2px;
     width: 30%;
-    background-color: #ffd500;
+    background-color: #ffffff;
     margin-bottom: 15px;
+}
+
+.accordion-width {
+   width: 90%;
 }
 
 .accordion-button-row {
@@ -568,8 +597,9 @@ button.nav-link.mymenu {
 
 .card-header .btn {
     color: #00296b;
-    background-color: #ffd500;
-    border: 1px solid;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #ffd500;
     font-size: 25px;
     font-weight: 500;
     line-height: normal;
@@ -580,16 +610,18 @@ button.nav-link.mymenu {
 }
 
 .accordionScroll {
-    max-height: 520px;
+    max-height: 720px;
     overflow-y: auto;
-    background-color: #ffd500;
+    background-color: #ffffff;
     color: #00296b;
-    border: 2px solid #ffffff;
+    border: 2px solid #ffd500;
+    border-radius: 10px;
 }
 
 .card-size {
-    height: 520px;
+    height: 720px;
     width: auto;
+    border-radius: 10px;
 }
 
 .items-container {
@@ -597,8 +629,6 @@ button.nav-link.mymenu {
 }
 
 .shop-item-container {
-    border: 3px solid;
-    border-color: #ffd500;
     background-color: #00296b;
     border-radius: 10px;
     padding: 5px;
@@ -622,7 +652,8 @@ button.nav-link.mymenu {
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
 }
 
 .shop-item-image {
@@ -666,6 +697,7 @@ button.nav-link.mymenu {
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 18px;
+    color: #ffffff;
 }
 
 /* -- /END of Menu's introduction & Menu Accordions section -- */
@@ -678,21 +710,29 @@ button.nav-link.mymenu {
     height: auto;
     width: 100%;
     max-width: 650px;
-    margin-bottom: 35px;
-    border: 3px solid #ffd500;
+    margin-bottom: 45px;
     border-radius: 10px;
     cursor: zoom-in;
 } 
 
 .gallery-placeholder img:hover {
-    transform: scale(1.08);
-    transition: all 1s;
+    transform: scale(1.1);
+    transition: all 1.1s;
 }
 
 .gallery-img hr {
     height: 2px;
     background-color: #ffd500;
     margin-bottom: 35px;
+}
+
+.gallery-container {
+    background-color: #ffffff;
+    color: #00296b;
+}
+
+.gallery-img-container {
+    background-color: #ffffff;
 }
 
 .gallery-container i {
@@ -738,24 +778,22 @@ button.nav-link.mymenu {
     padding-bottom: 15px;
     padding-right: 20px;
     padding-left: 20px;
-    background: url('../css/images/testimonials/testimonial-section-alasdair-elmes-ULHxWq8reao-unsplash-1200px.jpeg') no-repeat center center scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../css/images/testimonials/testimonial-section-alasdair-elmes-ULHxWq8reao-unsplash-1200px.jpeg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border: 2px solid #ffd500;
     border-radius: 10px;
     margin-left: 35px;
     margin-right: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
     align-items: center;
 }
 
 .testimonial-box {
-    background-color: rgb(0, 80, 157,.70);
+    background-color: rgb(0, 80, 157,.20);
     padding: 10px;
     padding-bottom: 15px;
-    border: 2px solid #ffd500;
     border-radius: 10px;
     z-index: 1;
     margin-bottom: 20px;
@@ -781,7 +819,7 @@ button.nav-link.mymenu {
 }
 
 .testimonial-title h2 {
-    padding-bottom: 10px;
+    margin: 0px;
 }
 
 .testimonial-title i {
@@ -798,15 +836,19 @@ button.nav-link.mymenu {
 /* -- Footer - index.html & contact.html -- */
 
 .footer {
-    border-top: 3px solid #ffd500;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.footer-home {
+    background-color: #ffffff;
+    color: #00296b
 }
 
 .footer i {
     font-size: 20px;
     padding: 5px;
-    color: #ffd500; 
+    color: #00296b; 
 }
 
 .footer-button {
@@ -845,7 +887,7 @@ button.nav-link.mymenu {
 }
 
 .address-box a {
-    color: #ffd500;
+    color: #00296b;
 }
 
 .home-link {
@@ -879,7 +921,7 @@ button.nav-link.mymenu {
 .social-media-box i {
     font-size: 50px;
     padding: 5px;
-    color: #ffd500; 
+    color: #00296b; 
 }
 
 .social-media-box i:hover {
@@ -1035,7 +1077,7 @@ button.nav-link.mymenu {
 }
 
 .form-div {
-    color: #ffffff;
+    color: #00296b;
     border: 3px solid #ffd500;
     border-radius: 10px;
     padding: 30px;
@@ -1178,14 +1220,14 @@ button.nav-link.mymenu {
 
 @media screen and (max-width: 1250px) {
 
-    .jumbotron {
+    .custom-jumbotron {
         padding-top: 5px;
     }
 }
 
 @media screen and (max-width: 1222px) {
 
-    .jumbotron {
+    .custom-jumbotron {
         padding-top: 15px;
         width: auto;
     }
@@ -1205,7 +1247,7 @@ button.nav-link.mymenu {
         padding: 35px;
     }
 
-    .jumbotron {
+    .custom-jumbotron {
         padding-top: 30px;
         padding-bottom: 40px;
     }
@@ -1224,7 +1266,7 @@ button.nav-link.mymenu {
         height: 500px;
     }
 
-    .jumbotron {
+    .custom-jumbotron {
         padding-top: 35px;
         padding-bottom: 35px;
     }
@@ -1242,7 +1284,7 @@ button.nav-link.mymenu {
         height: 500px;
     }
 
-    .jumbotron {
+    .custom-jumbotron {
         padding-top: 25px;
         padding-bottom: 35px;
     }
@@ -1260,7 +1302,7 @@ button.nav-link.mymenu {
         height: 500px;
     }
 
-    .jumbotron {
+    .custom-jumbotron {
         padding-top: 15px;
         padding-bottom: 25px;
     }

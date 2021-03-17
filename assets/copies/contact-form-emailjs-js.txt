@@ -1,6 +1,6 @@
 /* EmailJS JavaScript code for contact form on contact.html */
 
-const btn = document.getElementById('');
+const btn = document.getElementById('button');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
