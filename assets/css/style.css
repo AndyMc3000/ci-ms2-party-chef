@@ -209,7 +209,7 @@ body p {
     font-weight: bold;
     font-size: 1.5em;
     color: #00296b;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .cart-total-price {
@@ -405,12 +405,6 @@ button.nav-link.mymenu {
 
 .jumbotron-col {
     padding: 0;
-}
-
-.jumbotron hr {
-    height: 2px;
-    width: 80%;
-    background-color: #ffd500;
 }
 
 /*
@@ -1081,7 +1075,7 @@ button.nav-link.mymenu {
     border: 3px solid #ffd500;
     border-radius: 10px;
     padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     margin-top: 0px;
 }
 
@@ -1109,6 +1103,7 @@ button.nav-link.mymenu {
 
 .form-control {
     width: 100%;
+    background-color: beige;
 }
 
 /* -- /END of Contact Form -- */
