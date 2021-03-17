@@ -27,7 +27,7 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert('Thank you for your Quote Request')
+    alert('Thank you for your Quote Request from store.js')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)

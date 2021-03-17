@@ -283,7 +283,7 @@ body p {
 .nav-pills .nav-link.inactive:hover {
     color: #ffffff;
     background-color: #00296b;
-    border: 2px solid #ffd500;
+    border: 2px solid #ffffff;
     border-radius: 10%;
     transform: (1.2);
 }
@@ -582,9 +582,9 @@ button.nav-link.mymenu {
 .accordionScroll {
     max-height: 520px;
     overflow-y: auto;
-    background-color: #003f88;
-    color: #ffffff;
-    border: 2px solid #ffd500;
+    background-color: #ffd500;
+    color: #00296b;
+    border: 2px solid #ffffff;
 }
 
 .card-size {

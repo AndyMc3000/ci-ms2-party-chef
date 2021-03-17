@@ -15,6 +15,7 @@ document.getElementById('form')
     email_address: '',
     party_date: '',
     party_location: '',
+    test: '',
     options: '',
 };
 console.log(btn);
