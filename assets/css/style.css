@@ -937,19 +937,16 @@ button.nav-link.mymenu {
 
 /* -- /END of Footer -- */
 
-/* -- Introduction Section - contact.html -- */
-
-.contact-intro hr {
-    width: 80%;
-}
-
-/* -- Introduction Section - contact.html -- */
 
 /* -- Google Map - contact.html -- */
 
 .section-container {
     background-color: #00296b;
     color: #ffffff;   
+}
+
+.map-section {
+    padding-bottom: 95px;
 }
 
 .map-heading i {
@@ -969,8 +966,6 @@ button.nav-link.mymenu {
     min-height: 650px;
     width: 100%;
     border: 5px;
-    border-color: #ffd500;
-    background-color: #00296b;
 }
 
 .infoimage {
@@ -1015,6 +1010,10 @@ button.nav-link.mymenu {
 
 /* -- Social Media Block -- */
 
+@keyframes social-box {
+    50% {background-color: #ffffff;}
+}
+
 .social-container {
     padding-top: 10px;
 }
@@ -1028,7 +1027,7 @@ button.nav-link.mymenu {
 }
 
 .social-media-block {
-    background-color: #ffd500;
+    background-color: #ffffff;
     color: #00296b;
     border: 3px solid #ffffff;
     border-radius: 10px;
@@ -1074,6 +1073,7 @@ button.nav-link.mymenu {
 
 .contact-form-container {
     background-color: #00296b;
+    padding-top: 0px;
 }
 
 .form-div {
@@ -1082,6 +1082,7 @@ button.nav-link.mymenu {
     border-radius: 10px;
     padding: 30px;
     margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .form-group .btn {
