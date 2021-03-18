@@ -308,7 +308,7 @@ These websites are;
 No. | Business Name | Website | Description
 --- | ------------- | ------- | -----------
 1 | **The Whole Hog** | [TheWholeHog.ie](https://www.thewholehog.ie/) | A team of professional chefs who deliver event catering across the whole of Ireland.
-2 | **Prestige Catering** | [Equinox.com](https://www.prestigecatering.ie/) | Prestige Catering is a caterer recognised as one of Cork’s best catering companies.
+2 | **Prestige Catering** | [PrestigeCatering.ie](https://www.prestigecatering.ie/) | Prestige Catering is a caterer recognised as one of Cork’s best catering companies.
 
 
 ### Additonal Support ###
