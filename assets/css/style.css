@@ -1315,9 +1315,9 @@ button.nav-link.mymenu {
     }
 }
 
-/* -- /END of Media Query 3 -- */
+/* -- /END of Media Query 4 -- */
 
-/* -- 4. Media Query for Introduction & Features section on index.html -- */
+/* -- 5. Media Query for Introduction & Features section on index.html -- */
 
 @media screen and (max-width: 800px) {
 
@@ -1397,9 +1397,9 @@ button.nav-link.mymenu {
     }
 }
 
-/* -- /END of Media Query 4 -- */
+/* -- /END of Media Query 5 -- */
 
-/* -- 5. Media Query for Menu's Accordion section on index.html -- */
+/* -- 6. Media Query for Menu's Accordion section on index.html -- */
 
 @media screen and (max-width: 480px) {
     .menu-header {
@@ -1419,7 +1419,9 @@ button.nav-link.mymenu {
     }
 }
 
-/* -- 4. Media Query for Introduction & Features section on index.html -- */
+/* -- /END of Media Query 6 -- */
+
+/* -- 7. Media Query for Footer -- */
 
 @media screen and (max-width: 991px) {
     .footer-navigation-list {
@@ -1440,4 +1442,4 @@ button.nav-link.mymenu {
     }
 }
 
-/* -- /END of Media Query 4 -- */
+/* -- /END of Media Query 7 -- */
