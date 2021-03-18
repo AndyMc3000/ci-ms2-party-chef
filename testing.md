@@ -29,19 +29,64 @@ During the development process I manually tested elements and components after I
 * Tested increasing/decreasing quantities of items in the MyMenu, and removing items from MyMenu. Worked as expected.
 * Added EmailJS javascript file for 'Request a quote' form code on MyMenu/Cart. Tested it and it worked as expected.
 * Added Bootstrap form validation to form on MyMenu. Tested it and it worked as expected.
+* Added content to menu items. Tested ‘Add to MyMenu’ button functionality for each item as I went along. All worke as expected.
+* Added images to Bootsrap gallery. I tested calling the gallery, and the modal controls. All worked as expected.
+* Added wmailjs Contact Form send functionality. Teste it and it worked as expected.
+* Added MyMenu cart item indicator to MyMenu button in navbar. Tested it and it worked as expected. 
 
 
 #### Tests with Bugs ####
+
 * Added Bootstrap menu accordions to index.html. Found a bug where all accordions open and close at the same time. I realised I needed to give each accordion * unique control ID’s. That fixed the bug.
 * One one occassion I had an issue with launching the project master instance on GitPod. It wasn't loading completely - see screenshot. When trying to resolve the issue I ended up working on a branch of my Master. I found that the simplest course of action was to delete my GitPod instances (branch & master) and create an new instance by launching the site afresh from GitPod.
-<img src="gitpod-error-instance-not-loading.png">
+<img src="/assets/readme-assets/gitpod-error-instance-not-loading.png">
 * I tried implement a Javascript shopping cart plugin for the MyMenu system but couldn’t get it to work. See GitHub the following repository for that code: [Asraf-Uddin-Ahmed /jquery.mycart](https://github.com/Asraf-Uddin-Ahmed/jquery.mycart). I decided to use a simpler alternative solution instead. See: [Introduction to JavaScript Lesson 1](https://github.com/WebDevSimplified/Introduction-to-Web-Development/tree/master/Introduction%20to%20JavaScript/Lesson%201).
-* I had a bug with form submission. EmailJS was executing (sending email) before Bootstrap validation takes place.
+* I had a bug with form submission. EmailJS was executing (sending email) before Bootstrap validation takes place. I git help from Tutor support to resolve this.
+* I had an issue on the MyModal form with here I couldn't put a placeholder in for the options dropdown input. The first option in the list 'Choose and option' was acting as the placeholder but was also selectable, which doesn't make sense. I eventually found a solution on StackOverflow whihc allow me to add a class to the first option so that it would not be selectable.
 
 
 ## 2. User & Client Stories Testing ##
 
+#### Client Stories ####
 
+1. “The main goal of the website is to attract new business, and provide value to visitors in the information is provides.”
+      * The website offers details about what Party Chef does at the top of index.html.
+      * The website allows users to look through the different menus of food which Party Chef offers.
+      * The website allows users to calculate the cost of their preferred list of menu items.
+      * The website allows users to identify their local Party Chef kitchen/office and get its contact details easily.
+      * The website details testimonial quotes from past customers.
+      * The website aloows users to easily connect with the Party Chef social media channels and mentions the party planning tips and tricks which those channels         offer.
+1. “The website must show and promote the services which Party Chef provides.”  
+      * The website describes its services in the 'What We Do' section at the top of the homepage.
+1. “The website must detail the various menu's on offer, and the cost of food/drink items on each menu.” 
+      * The website shows 5 menu types in accordions on index.html - a Canapés menu, a Starters menu, a Main Course menu, a Desserts menu, and a Drinks menu.
+1. “The website must allow people to easily contact Party Chef to arrange a party planning consultation.”
+      * The website has a map which shows the contact details for all kitchens/offices where a customer can arrange a consultation. It gives the address, email           and telephone number.
+      * The website shows the contact details of the Party Chef head office - address, telephone and email.
+      * The website highlights links to its social media channels.
+      * The website allows a user to requat a quote by completing a form on the MyMenu modal.
+      * The website allows a user to send a question or query via contact form on contact.html.
+1. “The website must allow users to create their own menu from the items available, in order to get an idea of food/drinks costs for their party.”
+1. “The website must allow users to send a copy of their personal menu to an email address. A copy of this should also be sent to the business owner so they can better understan what items users prefer.”
+      
+> - [x] “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
+> - [x] “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called a 'kitchens' on the website).”
+> - [x] “The website must promote Party Chef's social media channels.”
+> - [x] “The website must show photos of previous events.” 
+> - [x] “The website must show customer testimonial quotes.”
+> - [x] “The website must be mobile-friendly.”
+
+#### User Stories ####
+
+> - [x] “I want to see what kind of services Party Chef offers.”
+> - [x] “I want to see what kind of menu's (food & drink) Party Chef offer.”
+> - [x] “I want to find out where they are located, and which is the closest office to me.”
+> - [x] “I want to see photo's of the dishes in Party Chef menu's.”
+> - [x] “I want to see photo's of previous events serviced by Party Chef.”
+> - [x] “I want to be able to see pricing for menu items.”
+> - [x] “I want to be able to create my own menu from the menu's of items offerred. And I want to be able to email a copy of my menu to myself.”
+> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs”.
+> - [x] “I want to find the Party Chef social media channels.”
 
 
 ## 3. Code Validation ##
@@ -50,9 +95,12 @@ During the development process I manually tested elements and components after I
 
 ## 4. Device Testing ##
 
+#### Manual Testing ####
 
 
-## 5. Browser Tsting ##
+
+
+## 5. Browser Testing ##
 
 
 
