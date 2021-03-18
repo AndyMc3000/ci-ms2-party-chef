@@ -3,13 +3,14 @@
 # Website: PartyChef.ie :cocktail: #
 ## Business: Professional Private Caterers ## 
 ## Project: Diploma in Software Development, Code Institute - Milestone Project 2 - Interactive Frontend Development ##
-#### Student Developer: Andrew McDonald - Contact me on GitHub :octocat: - <a href="https://github.com/AndyMc3000"><strong>AndyMc3000</strong></a> ####
+### Student Developer: Andrew McDonald - Contact me on GitHub :octocat: - <a href="https://github.com/AndyMc3000"><strong>AndyMc3000</strong></a> ###
+### Party Chef Website: [Click Here](https://andymc3000.github.io/ci-ms2-party-chef/)
 
 <hr>
 <img src="assets/readme-assets/party-chef-am-i-responsive-screenshot.png" width="900">
 <hr>
 
-## Table of Contents ##
+# Table of Contents #
 1. [Introduction](#introduction-heading)
 1. [User Experience Design (UX)](#user-experience-design)
 1. [Development Process](#development-process)
@@ -21,7 +22,7 @@
 <br>
 <hr>
 
-## 1. <a name="introduction-heading">Introduction</a> ##
+# 1. <a name="introduction-heading">Introduction</a> #
 
 This Party Chef website is my Milestone 2 (MS2) project for my Diploma in Fullstack Software Development course at Code Institute. This README refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owner to meet certain criteria (see UX section below). However, the underlying goal of the project is to meet and exceed the requirements laid out for the MS2 project by Code Institute. The high-level requirement of the MS2 is to "..build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals." The principle technologies to be used are HTML5, CSS3, and JavaScript. Other technologies being used are; the Bootstrap front-end framework, the jQuery library, and EmailJS.
 
@@ -31,12 +32,12 @@ Party Chef is a private catering business with multiple office locations around 
 
 <hr>
 
-## 2. <a name="user-experience-design">User Experience Design (UX)</a> ##
+# 2. <a name="user-experience-design">User Experience Design (UX)</a> #
 
 The design of this website was determined by assessing and quantifying the goals and objectives of the business owner, as well as the requirements of end users who will visit and use the website. Following the determination of 'Client' and 'User' stories and their subsequent technical requirements, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each design plane is outlinined below.
 
 
-#### 1. The Strategy Plane ####
+### 1. The Strategy Plane ###
 
 The Strategy Plane is, as defined by Jesse James Garrett "..incorporates not only what the people running the site want to get out of it but what the users want to get out of the site as well." 
 
@@ -68,7 +69,7 @@ Please see below details of the 'Client Stories' to detail the requirements of t
 > - [x] “I want to find the Party Chef social media channels.”
 
 
-#### 2. The Scope Plane ####
+### 2. The Scope Plane ###
 
 Based on the outcomes from the Strategy Plane, The Scope Plane determines what features, functionality, and types of content should be included within the scope of the project. Listed below are the functional specifications and content requirements decided upon for the Party Chef website. 
 
@@ -94,7 +95,7 @@ Based on the outcomes from the Strategy Plane, The Scope Plane determines what f
 * Homepage should show the most glowing but brief Testimonial quotes along with the customer details.
 
 
-#### 3. The Structure Plane ####
+### 3. The Structure Plane ###
 
 #### Interaction Design: ####
 
@@ -127,7 +128,7 @@ Infromation Architechture is defined as; "The structural design of the informati
 The structure of the website and outline of page sections is outlined in the Sitemap. Click the link to view the <a href="assets/readme-assets/party-chef-sitemap.png"><strong>Sitemap.</strong></a>
 
 
-#### 4. The Skeleton Plane ####
+### 4. The Skeleton Plane ###
 
 Following on from the tasks decided upon in the Structure Plane, the Skeleton Plane is defined as follows; ".. The skeleton is designed to optimize the arrangement of these elements (such as the placement of buttons, tabs, photos's and blocks of text) for maximum effect and efficiency..".
 
@@ -138,7 +139,7 @@ With this in mind the following wireframes were created to detail the layput of 
 1. <a href="assets/readme-assets/party-chef-mymenu-modal.png"><strong>'MyMenu' Modal Wireframe</strong></a>
 
 
-#### 5. The Surface Plane ####
+### 5. The Surface Plane ###
 
 Having completed the previous 4 stages in the UX design process, I moved on to making decisions around the design and styling of the website. The Surface Plane focuses on the styling of images, backgrounds, fonts, and colours used on a website. The details of these decisions are listed here;
 
@@ -153,9 +154,12 @@ Having completed the previous 4 stages in the UX design process, I moved on to m
 
 1. Images - I mainly used photos taken from the [Unsplash.com](https://unsplash.com/) website. On Unspalsh.com I was able to create a collection of relevant phtotos. The naming convention for each photograph includes a referenece to the photographer name and the Unsplash item code. The Alt attribute for each photograph also includes the photographer name.
 
-1. Icons - I used Font Awesome to add icons to various page and section headings. I also added a Party Chef Favicon to the page headers.
+1. Icons;
+    * I used [Font Awesome](https://fontawesome.com/) icons to add icons to section headings. 
+    * I created and added a Party Chef Favicon to the page headers.
+    * I used [Flaticon](https://favicon.io/) icons for the social media section on contact.html.
 
-1. Gallery - I decided to use a Bootstrap Modal as a container for my Carousel Galleries.
+1. Gallery - I decided to use a Bootstrap Modal as a container for my Carousel Gallery.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
@@ -166,13 +170,13 @@ Having completed the previous 4 stages in the UX design process, I moved on to m
 I drew up a process to follow for developing the Party Chef website. This is listed in sequence below.
 
 1. Design - I firstly designed the site based on the Client/User Stories requirements, and by creating wireframes/sketches.
-2. Structure - I then wrote the HTML code for all pages including; navigation, footers, sections, modal gallery, forms, and google maps iframe.
-3. Interactive Functionality - I added in any JavaScript elements to the site. Those being; Using the Google Maps API for a map with customer markers and 'infoWindows'. Adding in a JavaScript Shopping Cart plugin. And adding in JavaScript to send form data via email using the EmailJS service.
+2. Structure - I then wrote the HTML code for all pages including; navigation, footers, sections, modal gallery, forms, and Google Maps section.
+3. Interactive Functionality - I added in any JavaScript elements to the site. Those being; the Google Maps API for a map with custom markers and 'infoWindows'.    Add a JavaScript Shopping Cart plugin. And adding in JavaScript to send form data via email using the EmailJS service.
 4. Content - I then added text content to sections (lorem ipsum/placeholder text), and images to galleries. 
 5. Style - I then added colours and fonts and wrote CSS rule sets and media queries in order to style the website and make it responsive.
-6. Responsive - I made sure all texts/headings, images, and container elements transform approprately and look good when viewed on different devices such as: mobile phones, tablets, laptops, large screen computers (PC's), and large TV's. 
+6. Responsive - I made sure all texts/headings, images, and container elements transform approprately and look good when viewed on different devices such as:        mobile phones, tablets, laptops, large screen PC's, and large TV's. 
 7. Review - I did a last review of all code (formatting, beautifying etc) and content, fixing anys bugs/typo's etc as I did so.
-8. Testing - And finally I validated my HTML and CSS code, and tested functionality of site elements across a range of different devices and browsers.
+8. Testing - I validated my HTML and CSS code, and tested functionality of site elements across a range of different devices and browsers, and fixed any bugs.
 
 
 #### [Back To Top ^ ](#top-of-page) ####
@@ -185,12 +189,12 @@ I drew up a process to follow for developing the Party Chef website. This is lis
 * Bootstrap Accordions for menus.
 * Bootstrap Responsive Grid system.
 * JavaScript shopping cart used for MyMenu system.
-* EmailJS for sending from data by email.
+* EmailJS for sending form data by email.
 * Bootstrap Carousel Slider Modal Gallery.
 * Google Map with custom markers and infoWindow's.
-* Bootrap Forms for MyMenu Modal and Contact form on contact.html.
+* Bootrap Forms for MyMenu Modal on index.html and Contact form on contact.html.
 * Bootstrap Form validation.
-* Social Links in Footer and contact.html.
+* Social Links in Footers.
 * Navigation links in Footer.
 
 #### [Back To Top ^ ](#top-of-page) ####
@@ -226,11 +230,7 @@ I used the following technologies, services, and devices to develop, style, depl
 
 ## 6. <a name="testing">Testing</a> ##
 
-During development I continually tested each function/feature/element as I added them to the website. I then tested the website code using a combination of online validation service. 
-
-I tested features and functionality across multiple browsers, an online device emulator service, and a limited number of physical devices upon completion of development. 
-
-Testing was completed under the below headings. A detailed testing document can be seen <a href="assets/readme-assets/testing.md"><strong>Here - Testing Document.</strong></a>
+Testing was completed under the below headings. A detailed testing document can be seen <a href="assets/readme-assets/testing.md"><strong>Here - testing.md.</strong></a>
 
 Testing Headings;
 1. Development Testing
@@ -240,42 +240,18 @@ Testing Headings;
 1. Browser Testing
 1. Bugs detected & fixed
 
-## TO EDIT ##
-
-
-Generally speaking I continually tested each function/feature/element as I added them to the website. I also tested the website using a combination of online services, browsers, and a limited number of physical devices upon completion. 
-
-1. Code Validation:
-
-I ran the code on the website through the W3C Markup Validation Service for both my HTML and CSS code. The results were;
-
-* W3C HTML Validation - Some issues arose around divs not having closing tages, and images not having ALT tags. These issues were easily corrected
-* W3C CSS Validation Service - no issues.
-
-1. Website Functionality:
-
-I tested all functionality of links, navigation, buttons, galleries, and site features using the Chrome browser. The tests completed can be seen here <a href="functionality-tests.md"><strong>- Functionality Tests</strong></a>
-
-1. Cross-Browser Testing:
-* I tested the website on 3 browsers - Google Chrome, Apple Safari, and Mozilla Firefox.
-
-1. Device Testing:
-* I primarily used and online services and Chrome browser extension to test the website across different devices. I also tested the website on a physical MacBook Pro, and Apple iPhone 6s. The services I used were;
-* [Ami.Resonive](hhttp://ami.responsivedesign.is/)
-* [Responsive Viewer Browser Add-On](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en)
-
 
 #### [Back To Top ^ ](#top-of-page) ####
 
 <hr>
 
-## 7. <a name="deployment">Deployment - TO EDIT</a> ##
+## 7. <a name="deployment">Deployment</a> ##
 
 This site was developed by firstly setting up a GitHub repository to store the website files. GitHub is a free online code hosting platform for websites or web applications, which enables version control and collaboration during the development of a project. A repository on GitHub containes all of a project's files and each file's revision history. You can learn more about GitHub and repositories here: [Click here to go to GitHub](https://docs.github.com/en/free-pro-team@latest/github)
 
-I used the online GitPod Integrated Development Environment (or GitPod IDE) to write the site code. Once I was happy with a section of code I commited or saved that to the working version of the website on GitPod. I then 'pushed' those changes from the GitPod IDE to my GitHub repository where the master set of files was updated. You can learn more about GitPod: [Click here to go to GitPod](https://docs.github.com/en/free-pro-team@latest/github)
+I then used the online GitPod Integrated Development Environment (or GitPod IDE) to write the code for the website. Once I was happy with a section of code I commited or saved those to a staging area. Then on a regular basis I commited changes to the working version of the website on GitPod. These commits included a short description of what the changes are. I would then 'push' those changes from the GitPod IDE to my GitHub repository where the master set of files was updated. You can learn more about GitPod here: [Click here to go to GitPod](https://docs.github.com/en/free-pro-team@latest/github)
 
-Early on in the development process I also deployed the website to a live web address using GitHub Pages. GitHub pages is a free static-site hosting service. It takes HTML, CSS, and JavaScript files directly from a GitHub repository and publishes a website with them. Once setup, any changes you make on your IDE which are subsequently 'pushed' to your GitHub repository, are automatically updated on GitHub Pages too. 
+Early on in the development process I also deployed the website to a live web address using GitHub Pages. GitHub pages is a free static-site hosting service. It takes HTML, CSS, and JavaScript files directly from a GitHub repository and publishes a website with them. Once setup, any changes you make on your IDE which are subsequently 'pushed' to your GitHub repository, are automatically updated on GitHub Pages too. The published GitHub Pages website can be seen here: [Click here to go to Party Chef](https://andymc3000.github.io/ci-ms2-party-chef/)
 
 Here are the steps I took to deploy the website on GitHub Pages;
 1. Login to GitHub.
@@ -287,7 +263,7 @@ Here are the steps I took to deploy the website on GitHub Pages;
 1. Also under the Source section choose the folder of the files you wnat to deploy (normally '/root').
 1. Once you have made your selection, click Save. This will deploy your site to a unique URL. Once the site has been deployed, green text with a tcick mark will appear above the Source secion to notify you that deployment has been successful, and will also show you the URL for the website.
 
-I deployed the website early on in the developmnt process, as it useful to be able to examine the website on various physical devices in its live state. Also, while the GitPod IDE has the ability to show a preview of changes to a project, sometimes that does not pick up or display issues which would appear on a live site. For example, when I deployed my website on GitHub Pages initially, I found that it was not reading my CSS file, so no styling was appearing on the site. The Preview tab in GitPod was reading the CSS file correctly. I found that a typo relating to the CSS file source address in my page headers caused the issue for the deployed site, while GitPod Preview did not pick it up. By having the deployed site up and running, I was able to address and correct the bug early in the development process.
+I deployed the website early on in the developmnt process, as it useful to be able to examine the website on various physical devices in its live state. Also, while the GitPod IDE has the ability to show a preview of changes to a project, sometimes that does not pick up or display issues which would appear on a live site. For example, when I deployed my website on GitHub Pages initially, I found that it was not reading my CSS file, so no styling was appearing on the site. Yet the Preview tab in GitPod was reading the CSS file correctly. I found that a typo relating to the CSS file source address in my page headers caused the issue for the deployed site, while GitPod Preview did not pick it up. By having the deployed site up and running, I was able to address and correct the bug early in the development process.
 
 The working version of the Party Chef website deployed on GitHub Pages can be seen here: [Click here to view deployed website](https://andymc3000.github.io/ci-ms2-party-chef/)
 
@@ -305,11 +281,17 @@ The working version of the Party Chef website deployed on GitHub Pages can be se
 * [StackOverflow.com](https://stackoverflow.com/)
 * [CSSTricks.com](https://css-tricks.com/)
 
+1. BBC Good Food webite - I copied the images and descriptions for 50 dishes on the BBC Good Food website to poulate the different menus on the Party Chef homepage. I edited some of the text descriptions but didn't edit any of the images. I did prefix each image filename with a number, but otherwise the filename is as the BCC Good Food website named them. Learn about the BBC Good Food website here: [BBC Good Food](https://www.bbcgoodfood.com/)
+
+1. Javascript Shoping Cart Plugin -  I used a Javascript plugin for the MyMenu feature on Party Chef. This was copied from code supplied by a GitHub user called WebDevSimplified who offers online coding course on YouTube. See that users profile here: [WebDevSimplified](https://github.com/WebDevSimplified). See the code repository for this plugin here: [Introduction to JavaScript Lesson 1](https://github.com/WebDevSimplified/Introduction-to-Web-Development/tree/master/Introduction%20to%20JavaScript/Lesson%201).
+
+1. Google Map with custom markers and InfoWindows - I used a YouTube video to help with implementing the Google Map API and adding custom markers and InfoWindows. That video was created by Pradip Debnath. See Pradips GitHub profile here: [Pradip Debnath](https://github.com/itzpradip). See the YouTube video here: [Google Maps API Tutorial | Custom Marker Icon | Multiple Info Window](https://www.youtube.com/watch?v=Xptz0GQ2DO4)
+
 1. Colours - I used the Coolors.co website to help me decide on a colour scheme for the webite. This website allows you to create your own colour palettes or to use one of thiers. See more about the Coolors.co palette catalogue and tools here: [Coolors.co](https://coolors.co/). 
 
 1. Font - I used Google Fonts for the fonts on the website. See more at: [GoogleFonts.com](https://fonts.google.com/)
 
-1. Icons - I used Fontawesome for all icons on the website. See more at: [FontAwesome.com](https://fontawesome.com/)
+1. Icons - I used FontAwesome and Favicon for all icons on the website. See more at: [FontAwesome.com](https://fontawesome.com/)
 
 1. Design Principles - The design of this website employed the principles of 'The 5 Planes of UX design', which was created by Jesse James Garrett in his book; The Elements of User Experience: User-centered Design for the Web (2002). See more at; [Jjg.net](http://www.jjg.net/elements/)
   
@@ -317,11 +299,6 @@ The working version of the Party Chef website deployed on GitHub Pages can be se
 
 1. Wikimedia commons - Technology logo's.
 
-1. Text content - I rewordered some of the marketing slogans and texts/descriptions content from Equinox.com and ActiveFitness.ie, and used those on my site.
-
-1. Map - The map on contact.html uses Google Maps iFrame code.
-
-1. Website Analytics - I added Google Analytics to the website by adding their code to the <head> of each page. 
 
 ### Acknowledgements ###
 
@@ -330,21 +307,19 @@ These websites are;
 
 No. | Business Name | Website | Description
 --- | ------------- | ------- | -----------
-1 | **The Movement** | [TheMovement.ie](https://www.themovement.ie/) | Single local Gym, Co.Cork, Ireland.
-2 | **EQUINOX** | [Equinox.com](https://www.equinox.com/) | 400+ global locations, U.S.-based.
-3 | **The Squad** | [TheSquad.ie](https://thesquad.ie/) | City Gym with 3 locations, Cork, Ireland.
-4 | **Glofox** | [Glofox.com](https://www.glofox.com/) | Gym manegement and website software company.
-5 | **ActiveFitness** | [ActiveFitness.ie](https://activefitness.ie/) | 24-hr Gym with one location, Galway, Ireland.
-6 | **The Spencer Health Club** | [TheSpencerHealthClub.com](https://www.thespencerhealthclub.com/) | City Gym one location, Dublin, Ireland.
+1 | **The Whole Hog** | [TheWholeHog.ie](https://www.thewholehog.ie/) | A team of professional chefs who deliver event catering across the whole of Ireland.
+2 | **Prestige Catering** | [Equinox.com](https://www.prestigecatering.ie/) | Prestige Catering is a caterer recognised as one of Cork’s best catering companies.
+
 
 ### Additonal Support ###
 
 I also received help and support from;
-* Allen Thomas Varghese - GitHub username: @allentv - my mento at Code Institute. He gave me advice on project planning, VSCode, Wireframing, and requirements.
-* Jim - GitHub username: @JimLynx - Code Institute - advice on GitHub/Git/GitPod, milestone project planning, and creating a README.md.
-* Anna - GitHub username: @anna_ci - Code Institute - advice with creating a README.md.
-* Student Support - Code Institute
-* Tutor Support - Code Institute
+* Allen Thomas Varghese - GitHub username: @allentv - my initial mentor at Code Institute for this project.
+* Reuben Ferrante - Code Institute Mentor - Slack Username: [reubenfer_mentor](https://code-institute-room.slack.com/team/UKD9L615F) my new Mentor who was hugely helpful with my JavaScript having jumped in at a late stage in the project.
+* Anna Greaves - Full Stack Developer and Content Developer at Code Institute - GitHub profile here: [@AJGreaves](https://github.com/AJGreaves)
+ - I took inspiration from Anna's Family Hub project on GitHub. In particular I found her README.md and Testing.md files very helpful. See that repository here: [FamilyHub](https://github.com/AJGreaves/familyhub)
+* The Student support team at Code Institute
+* The tutor team at Code Institute
 
 #### [Back To Top ^ ](#top-of-page) ####
 
