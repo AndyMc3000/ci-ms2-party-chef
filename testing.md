@@ -112,14 +112,23 @@ During the development process I manually tested elements and components after I
 
 
 
-## 4. Device Testing ##
+## 4. Manual Testing ##
 
-#### Manual Testing ####
+### Homepage ###
 
+### MyMenu Modal ###
+
+### Contact Page ###
 
 
 
 ## 5. Browser Testing ##
+
+### Chrome ###
+
+### Firefox ###
+
+### Safari ###
 
 
 
