@@ -672,7 +672,12 @@ button.nav-link.mymenu {
 
 .shop-item-button {
     font-family: 'Blinker', sans-serif;
-    font-weight: bold;
+    font-size: 20px;
+}
+
+.shop-item-button:hover {
+    transform: scale(1.1);
+    transition: all 1.1s;
 }
 
 .shop-items {
