@@ -69,34 +69,43 @@ During the development process I manually tested elements and components after I
 1. “The website must allow users to create their own menu from the items available, in order to get an idea of food/drinks costs for their party.”
       * The website allows user to pick items from the food & drink menus and add them to a 'MyMenu modal where they can calculate costs for their menu               choices based on the quantity of guets that are attending their party.   
 1. “The website must allow users to send a copy of their personal menu to an email address. A copy of this should also be sent to the business owner so they         can better understan what items users prefer.”
-       * This functionality was not included. It is listed as a future development.
-1.   “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
-1.   “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called a 'kitchens' on the website).”
-       * The website has a Google Map with custom markers. When clicked the InfoWindows display the contact details (address, email, and telephone number) for a specific kitchen/office.     
-1.    “The website must promote Party Chef's social media channels.”
-       * The website has social media links in the footer of index.html and contact.html. 
-       * The website has social media links in a specific social media section on contact.html.
-1.    “The website must show photos of previous events.” 
-       * The website has a modal carousel gallery on index.html which shows picture of past Party Chef events and food dishes.
-1.    “The website must show customer testimonial quotes.”
-       * The website has a testimonial section on index.html highlighting two quotes from previous customers.
-1.    “The website must be mobile-friendly.”
-       * The website has a responsive design. Most of the section are made responsive by using the Bootstrap framework.
+      * This functionality was not included. It is listed as a future development.
+1. “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote           request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
+      * The website allows a user to request a quote by ansering questions on a form on the MyMenu modal.
+3. “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called a 'kitchens'         on the website).”
+      * The website has a Google Map with custom markers. When clicked the InfoWindows display the contact details (address, email, and telephone number)           for a specific kitchen/office.     
+4. “The website must promote Party Chef's social media channels.”
+      * The website has social media links in the footer of index.html and contact.html. 
+      * The website has social media links in a specific social media section on contact.html.
+5. “The website must show photos of previous events.” 
+      * The website has a modal carousel gallery on index.html which shows picture of past Party Chef events and food dishes.
+6. “The website must show customer testimonial quotes.”
+      * The website has a testimonial section on index.html highlighting two quotes from previous customers.
+7. “The website must be mobile-friendly.”
+      * The website has a responsive design. Most of the section are made responsive by using the Bootstrap framework.
 
 #### User Stories ####
 
-1.     “I want to see what kind of services Party Chef offers.”
-       * The website has a Features section on index.html. This details what Party Chef offers.   
-1.     “I want to see what kind of menu's (food & drink) Party Chef offer.”
-       * THe website has five menu sections on index.html - Canapés, Starters, Main Course, Something Sweet, and Drinks.   
-1.     “I want to find out where they are located, and which is the closest office to me.”
-       *    
-> - [x] “I want to see photo's of the dishes in Party Chef menu's.”
-> - [x] “I want to see photo's of previous events serviced by Party Chef.”
-> - [x] “I want to be able to see pricing for menu items.”
-> - [x] “I want to be able to create my own menu from the menu's of items offerred. And I want to be able to email a copy of my menu to myself.”
-> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs”.
-> - [x] “I want to find the Party Chef social media channels.”
+1. “I want to see what kind of services Party Chef offers.”
+      * The website has a Features section on index.html. This details what Party Chef offers.   
+1. “I want to see what kind of menu's (food & drink) Party Chef offer.”
+      * The website has five menu sections on index.html - Canapés, Starters, Main Course, Something Sweet, and Drinks.   
+1. “I want to find out where they are located, and which is the closest office to me.”
+      * The website has a Google map which shows the locations of all Party Chef kitchen/office locations.    
+1. “I want to see photo's of the dishes in Party Chef menu's.”
+      * The website has a gallery section on index.html which shows picture of the food dishes they offer.
+1. “I want to see photo's of previous events serviced by Party Chef.”
+      * The website has a gallery section on index.html which shows picture of previous events.
+1. “I want to be able to see pricing for menu items.”
+      * The website has a list of menus on index.html. These menus include per-person pricing for each item."
+1. “I want to be able to create my own menu from the menu's of items offerred. And I want to be able to email a copy of my menu to myself.”
+      * The website allows user to create their own menu within the MyMenu modal.
+      * The ability to send a MyMenu list by email was not added. This feature is listed as a future feature.
+5. “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my     event, and to get a detailed quote inclusive of all costs”.
+      * The website includes the ability to request a quote based on questions answered on a form on the MyMenu form. The ability to add the MyMenu items to         a request was not included.
+7. “I want to find the Party Chef social media channels.”
+      * The website has links to the Party Chef social media channels in the footer of index.html and contact.html.
+      * The website has links to the Party Chef socia media channels in a specific section on contact.html.
 
 
 ## 3. Code Validation ##
