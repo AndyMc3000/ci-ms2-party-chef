@@ -15,19 +15,16 @@ $(document).ready(function () {
             
 
             let templateParams = {
-                first_name: document.getElementById('from_name').value,
-                surname: '',
-                tel_number: '',
-                email_address: '',
-                party_date: '',
-                party_location: '',
-                test: '',
-                options: '',
+                from_name: document.getElementById('from_name').value,
+                surname: document.getElementById('surname').value,
+                tel_number: document.getElementById('tel_number').value,
+                from_email: document.getElementById('from_email').value,
+                message: document.getElementById('message').value,
             };
 
             console.log(btn);
 
-            emailjs.send('default_service', 'template_cewgm4l', templateParams)
+            emailjs.send('default_service', 'contactForm', templateParams)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert('Message Sent Successfully')

@@ -20,3 +20,16 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+
+let templateParams = {
+                first_name: document.getElementById('from_name').value,
+                surname: document.getElementById('surname').value,
+                tel_number: document.getElementById('tel_number').value,
+                from_email: document.getElementById('from_email').value,
+                party_date: document.getElementById('party_date').value,
+                party_location: document.getElementById('party_date').value,
+                message: document.getElementById('message').value,
+                test: document.getElementById('party_date').value,
+                options: document.getElementById('party_date').value,
+            };
