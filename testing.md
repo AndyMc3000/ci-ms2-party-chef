@@ -111,6 +111,34 @@ During the development process I manually tested elements and components after I
 
 ## 3. Code Validation ##
 
+I ran the website through the W3C validators for HTML and CSS.
+
+#### HTML ####
+
+The validator highlighted the followings errors.
+
+The aria-controls attribute must point to an element in the same document.
+The aria-describedby attribute must point to an element in the same document.
+The aria-describedby attribute must point to an element in the same document.
+Illegal character in path segment: space is not allowed.
+An img element must have an alt attribute, except under certain conditions.
+Element h3 not allowed as child of element span in this context. 
+Attribute row not allowed on element div at this point.
+
+All errors were fixed by making neccessary changes.
+
+#### CSS ####
+
+The W3C CSS Validation Service
+
+The validator highlighted the following errors;
+
+URI : https://andymc3000.github.io/ci-ms2-party-chef/assets/css/style.css
+44	.close:hover	Parse Error (1.3)
+51	.close i:hover	Parse Error (1.3)
+176	.btn-danger:hover	Parse Error (1.2)
+275	.navbar button:hover	Parse Error (1.2)
+357	.button.nav-link.mymenu:hover	Parse Error (1.2)
 
 
 ## 4. Manual Testing ##
@@ -174,10 +202,9 @@ I manually tested all website elements/components under the following headings;
 #### Reast-A-Quote Form ####
 * When I click on the Contact Us link in the Request A Quote introduction section contact.html loads as expected.
 * When I hover on the 'Lets Party' button it changes color and grows as expected.
-* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, the Bootstrap validation highlights the fields in green as           expected.
-* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, an Alert appears to notfy me my message has been sent. - BUG         emailjs is not sending an email. 
-* When I enter details incorrectly I get an alert to say my meesage had been sent, yet Bootstrap validation then highlights the missing form infromation.  -        BUG
-     
+* When I enter details in all fields correctly and hit the 'Send Request' button on the form, the Bootstrap validation highlights the fields in green as           expected.
+* When I enter details in all fields correctly and hit the 'Send Request' button on the form, an Alert appears to notfy me my message has been sent.
+* 
 
 ### Contact Page ###
 #### Navbar ####
@@ -199,8 +226,7 @@ I manually tested all website elements/components under the following headings;
 * When I complete the form correctly the fields are highlighted in green as expected.
 * When I complete the form correctly and hit the 'Send Message' button I get a 'Message Sent Successfully' alert.
 * When I close the 'Message Sent Successfully' alert the form does not clear. BUG
-* When I complete the form correctly and hit the 'Send Message' button I receive an email to the Party Chef email address as expected.
-* When I complete the form correctly and hit the 'Send Message' button I do not receive an email to my personal email address. BUG
+* When I complete the form correctly and hit the 'Send Message' button I receive an email to the Party Chef email and my personal email address as expected.
 
 #### Footer ####
 * When I hover over the Home and Contact Us navigation buttons they change colour as expected.
@@ -210,14 +236,16 @@ I manually tested all website elements/components under the following headings;
 
 ## 5. Browser Testing ##
 
-I completed the manual testing on the following browsers
+I completed the above manual testing on the following browsers;
 
 ### Chrome ###
-* All tests ran OK (I completed the above manual testing using Chrome.
+* All tests ran OK (I completed the above manual testing using Chrome).
 
 ### Firefox ###
+* All tests ran OK 
 
 ### Safari ###
+* All tests ran OK 
 
 
 
