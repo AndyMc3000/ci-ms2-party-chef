@@ -197,6 +197,9 @@ I drew up a process to follow for developing the Party Chef website. This is lis
 * Social Links in Footers.
 * Navigation links in Footer.
 
+#### Future Features ####
+* An End user should be able to add the contents of their MyMenu to the request-a-quote email body. This would allow the Party Chef team to better calculate a detailed quotation to include service costs plus food costs.
+
 #### [Back To Top ^ ](#top-of-page) ####
 
 <hr>
@@ -232,14 +235,20 @@ I used the following technologies, services, and devices to develop, style, depl
 
 Testing was completed under the below headings. A detailed testing document can be seen <a href="assets/readme-assets/testing.md"><strong>Here - testing.md.</strong></a>
 
-Testing Headings;
+#### Testing Headings ####
 1. Development Testing
 1. User & Client stories Testing
 1. Code Validation
 1. Device Testing
 1. Browser Testing
-1. Bugs detected & fixed
 
+#### Bugs Discovered ####
+1. Issues remain with the functionality of forms when they are not completed in full.
+2. Issues remain with multiple alerts appearing when a product is removed from the MyMenu.
+3. The contact froms don't clear their contents once the send buttons are sent.
+4. The JavaScript code is not commented correctly.
+
+I ran out of time to fix these issues. These need to be addresses in the future.
 
 #### [Back To Top ^ ](#top-of-page) ####
 

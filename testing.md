@@ -140,6 +140,7 @@ URI : https://andymc3000.github.io/ci-ms2-party-chef/assets/css/style.css
 275	.navbar button:hover	Parse Error (1.2)
 357	.button.nav-link.mymenu:hover	Parse Error (1.2)
 
+I didn't have time to fix these errors. I couldn't figure out what a CSS parse error is on time to meet project deadline. I will look into this at a later date. 
 
 ## 4. Manual Testing ##
 
