@@ -40,14 +40,15 @@ During the development process I manually tested elements and components after I
 * Added Bootstrap menu accordions to index.html. Found a bug where all accordions open and close at the same time. I realised I needed to give each accordion * unique control ID’s. That fixed the bug.
 * One one occassion I had an issue with launching the project master instance on GitPod. It wasn't loading completely - see screenshot. When trying to resolve the issue I ended up working on a branch of my Master. I found that the simplest course of action was to delete my GitPod instances (branch & master) and create an new instance by launching the site afresh from GitPod.
 <img src="/assets/readme-assets/gitpod-error-instance-not-loading.png">
-* I tried implement a Javascript shopping cart plugin for the MyMenu system but couldn’t get it to work. See GitHub the following repository for that code: [Asraf-Uddin-Ahmed /jquery.mycart](https://github.com/Asraf-Uddin-Ahmed/jquery.mycart). I decided to use a simpler alternative solution instead. See: [Introduction to JavaScript Lesson 1](https://github.com/WebDevSimplified/Introduction-to-Web-Development/tree/master/Introduction%20to%20JavaScript/Lesson%201).
-* I had a bug with form submission. EmailJS was executing (sending email) before Bootstrap validation takes place. I git help from Tutor support to resolve this.
+
+* I tried implement a Javascript shopping cart plugin for the MyMenu system but couldn’t get it to work. See GitHub the following repository for that code: [Asraf-Uddin-Ahmed /jquery.mycart](https://github.com/Asraf-Uddin-Ahmed/jquery.mycart). I decided to use a simpler alternative solution instead. See: [Introduction to JavaScript Lesson 1](https://github.com/WebDevSimplified/Introduction-to-Web-Development/tree/master/Introduction%20to%20JavaScript/Lesson%201). 
+* I had a bug with form submission. EmailJS was executing (sending email) before Bootstrap validation takes place. I git help from Tutor support to resolve this. 
 * I had an issue on the MyModal form with here I couldn't put a placeholder in for the options dropdown input. The first option in the list 'Choose and option' was acting as the placeholder but was also selectable, which doesn't make sense. I eventually found a solution on StackOverflow whihc allow me to add a class to the first option so that it would not be selectable.
 
 
 ## 2. User & Client Stories Testing ##
 
-#### Client Stories ####
+### Client Stories ###
 
 1. “The main goal of the website is to attract new business, and provide value to visitors in the information is provides.”
       * The website offers details about what Party Chef does at the top of index.html.
@@ -55,7 +56,7 @@ During the development process I manually tested elements and components after I
       * The website allows users to calculate the cost of their preferred list of menu items.
       * The website allows users to identify their local Party Chef kitchen/office and get its contact details easily.
       * The website details testimonial quotes from past customers.
-      * The website aloows users to easily connect with the Party Chef social media channels and mentions the party planning tips and tricks which those             channels offer.
+      * The website aloows users to easily connect with the Party Chef social media channels and mentions the party planning tips and tricks which those                 channels offer.
 1. “The website must show and promote the services which Party Chef provides.”  
       * The website describes its services in the 'What We Do' section at the top of the homepage.
 1. “The website must detail the various menu's on offer, and the cost of food/drink items on each menu.” 
@@ -67,13 +68,13 @@ During the development process I manually tested elements and components after I
       * The website allows a user to requat a quote by completing a form on the MyMenu modal.
       * The website allows a user to send a question or query via a contact form on contact.html.
 1. “The website must allow users to create their own menu from the items available, in order to get an idea of food/drinks costs for their party.”
-      * The website allows user to pick items from the food & drink menus and add them to a 'MyMenu modal where they can calculate costs for their menu               choices based on the quantity of guets that are attending their party.   
-1. “The website must allow users to send a copy of their personal menu to an email address. A copy of this should also be sent to the business owner so they         can better understan what items users prefer.”
+      * The website allows user to pick items from the food & drink menus and add them to a 'MyMenu modal where they can calculate costs for their menu                   choices based on the quantity of guets that are attending their party.   
+1. “The website must allow users to send a copy of their personal menu to an email address. A copy of this should also be sent to the business owner so they             can better understan what items users prefer.”
       * This functionality was not included. It is listed as a future development.
-1. “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote           request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
+1. “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote             request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
       * The website allows a user to request a quote by ansering questions on a form on the MyMenu modal.
-3. “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called a 'kitchens'         on the website).”
-      * The website has a Google Map with custom markers. When clicked the InfoWindows display the contact details (address, email, and telephone number)           for a specific kitchen/office.     
+3. “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called a 'kitchens'             on the website).”
+      * The website has a Google Map with custom markers. When clicked the InfoWindows display the contact details (address, email, and telephone number)                 for a specific kitchen/office.     
 4. “The website must promote Party Chef's social media channels.”
       * The website has social media links in the footer of index.html and contact.html. 
       * The website has social media links in a specific social media section on contact.html.
@@ -84,7 +85,7 @@ During the development process I manually tested elements and components after I
 7. “The website must be mobile-friendly.”
       * The website has a responsive design. Most of the section are made responsive by using the Bootstrap framework.
 
-#### User Stories ####
+### User Stories ###
 
 1. “I want to see what kind of services Party Chef offers.”
       * The website has a Features section on index.html. This details what Party Chef offers.   
@@ -101,8 +102,8 @@ During the development process I manually tested elements and components after I
 1. “I want to be able to create my own menu from the menu's of items offerred. And I want to be able to email a copy of my menu to myself.”
       * The website allows user to create their own menu within the MyMenu modal.
       * The ability to send a MyMenu list by email was not added. This feature is listed as a future feature.
-5. “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my     event, and to get a detailed quote inclusive of all costs”.
-      * The website includes the ability to request a quote based on questions answered on a form on the MyMenu form. The ability to add the MyMenu items to         a request was not included.
+5. “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my         event, and to get a detailed quote inclusive of all costs”.
+      * The website includes the ability to request a quote based on questions answered on a form on the MyMenu form. The ability to add the MyMenu items to            a request was not included.
 7. “I want to find the Party Chef social media channels.”
       * The website has links to the Party Chef social media channels in the footer of index.html and contact.html.
       * The website has links to the Party Chef socia media channels in a specific section on contact.html.
@@ -112,15 +113,101 @@ During the development process I manually tested elements and components after I
 
 
 
-## 4. Device Testing ##
+## 4. Manual Testing ##
 
-#### Manual Testing ####
+I manually tested all website elements/components under the following headings;
 
+### Homepage ###
+
+#### Navbar ****
+
+     * When I click on the party Chef Logo in the navbar it loads index.html as expected.
+     * The Home link button on the navbar shows an active status (button border) as expected.
+     * When I hover over the Contact button in the navabr it changes color as expected.
+     * When I click on the Contact button it opens contact.html as expected.
+     * When I click on the MyMenu button it opens the MyMenu Modal as expected.
+
+#### Hero Image ####
+
+     * When I hover over the button on the hero images (Jumbotron) it hovers and grows as expected.
+     * When I click on the hero image button it opens contact.html as expected.
+
+#### Menus Section ####
+
+     * When I hover over any/all menu accordion heading button it changes color and grows as expected.
+     * When I click on the menu heading button it opens the menu accordion as expected.
+     * When I click inside the open accordion the list of items scroll up/down as expected.
+     * When I hover over the 'Add To MyMenu' button it grows as expected.
+     * When I click on the 'Add To MyMenu' button it and alert appears to say 'Menu item added to your MyMenu' as expected.
+     * When I close the alert the item quantity indicator on the MyMenu button increases by one as expected.
+     * When I click on the MyMenu button the MyMenu modal opens and my item is listed as expected.
+     * When I add multiple items to MyMenu they all appear as expected.
+
+#### Gallery Section ####
+
+* When I hover over the gallery section image it grows as expected.
+* When I click on the gallery section image it opens the gallery modal showing photo number one as expected.
+* When I click the 'next' carousel control icon the next photo appears as expected.
+* When I keep clicking the next carousel control button all images appear correctly as expected.
+* When I click the previous carousel control button the previous photo appears as expected.
+* When I click the close button on the modal the modal closes as expected.
+* When I open the gallery carousel and click anywhere on the page outside the modal the modal closes as expected.
+
+#### Footer ####
+
+* When I hover over the Home and Contact Us navigation buttons they change colour as expected.
+* When I click on the Home button it reloads the homepage as expected.
+* When I click on the Contact Us button it loads contact.html as expected.
+* When I hover over the social media icons they grow as expected.
+
+
+### MyMenu Modal ###
+
+#### Modal ####
+* When I click on the MyMenu button in the nabar the MyMenu modal opens as expected.
+* When I click the close button on the modal the modal closes as expected.
+* When I open the MyMenu modal and click anywhere on the page outside the modal the modal closes as expected.
+
+#### MyMenu Item List ####
+* When I add an item to the MYMenu modal it appears in the list which a default quantity of 1 as expected.
+* When I add an item to the MyMenu modal the 'Total' price figure updates correctly as expected.
+* When I try to reduce the item quantity using the quantity controls I am stopped from reducing the quantity to zero as expected.
+* When I increase the item quantity using the quantity controls the Total price increases correctly as expected.
+* When I reduce the item quantity the Total price figure reduces correctly as expected.
+* When I click on the remove item buttom the item disappears and an alert appears. BUG - the incorrect message appears and the alert appears twice.
+
+#### Reast-A-Quote Form ####
+* When I click on the Contact Us link in the Request A Quote introduction section contact.html loads as expected.
+* When I hover on the 'Lets Party' button it changes color and grows as expected.
+* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, the Bootstrap validation highlights the fields in green as              expected.
+* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, an Alert appears to notfy me my message has been sent. - BUG            emailjs is not sending an email. 
+* When I enter details incorrectly I get an alert to say my meesage had been sent, yet Bootstrap validation then highlights the missing form infromation.  -        BUG
+     
+
+### Contact Page ###
+
+#### Navbar ####
+* When I click on the party Chef Logo in the navbar it loads index.html as expected.
+* The Home link button on the navbar shows an active status (button border) as expected.
+* When I hover over the Contact button in the navabr it changes color as expected.
+* When I click on the Contact button it opens contact.html as expected.
+* When I click on the MyMenu button it opens the MyMenu Modal as expected.
+
+#### Google Map ####
+
+#### Social Media Section ####
+
+#### Contact Form ####
 
 
 
 ## 5. Browser Testing ##
 
+### Chrome ###
+
+### Firefox ###
+
+### Safari ###
 
 
 
