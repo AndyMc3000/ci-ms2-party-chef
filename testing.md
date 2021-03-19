@@ -120,31 +120,27 @@ I manually tested all website elements/components under the following headings;
 ### Homepage ###
 
 #### Navbar ****
-
-     * When I click on the party Chef Logo in the navbar it loads index.html as expected.
-     * The Home link button on the navbar shows an active status (button border) as expected.
-     * When I hover over the Contact button in the navabr it changes color as expected.
-     * When I click on the Contact button it opens contact.html as expected.
-     * When I click on the MyMenu button it opens the MyMenu Modal as expected.
+* When I click on the party Chef Logo in the navbar it loads index.html as expected.
+* The Home link button on the navbar shows an active status (button border) as expected.
+* When I hover over the Contact button in the navabr it changes color as expected.
+* When I click on the Contact button it opens contact.html as expected.
+* When I click on the MyMenu button it opens the MyMenu Modal as expected.
 
 #### Hero Image ####
-
-     * When I hover over the button on the hero images (Jumbotron) it hovers and grows as expected.
-     * When I click on the hero image button it opens contact.html as expected.
+* When I hover over the button on the hero images (Jumbotron) it hovers and grows as expected.
+* When I click on the hero image button it opens contact.html as expected.
 
 #### Menus Section ####
-
-     * When I hover over any/all menu accordion heading button it changes color and grows as expected.
-     * When I click on the menu heading button it opens the menu accordion as expected.
-     * When I click inside the open accordion the list of items scroll up/down as expected.
-     * When I hover over the 'Add To MyMenu' button it grows as expected.
-     * When I click on the 'Add To MyMenu' button it and alert appears to say 'Menu item added to your MyMenu' as expected.
-     * When I close the alert the item quantity indicator on the MyMenu button increases by one as expected.
-     * When I click on the MyMenu button the MyMenu modal opens and my item is listed as expected.
-     * When I add multiple items to MyMenu they all appear as expected.
+* When I hover over any/all menu accordion heading button it changes color and grows as expected.
+* When I click on the menu heading button it opens the menu accordion as expected.
+* When I click inside the open accordion the list of items scroll up/down as expected.
+* When I hover over the 'Add To MyMenu' button it grows as expected.
+* When I click on the 'Add To MyMenu' button it and alert appears to say 'Menu item added to your MyMenu' as expected.
+* When I close the alert the item quantity indicator on the MyMenu button increases by one as expected.
+* When I click on the MyMenu button the MyMenu modal opens and my item is listed as expected.
+* When I add multiple items to MyMenu they all appear as expected.
 
 #### Gallery Section ####
-
 * When I hover over the gallery section image it grows as expected.
 * When I click on the gallery section image it opens the gallery modal showing photo number one as expected.
 * When I click the 'next' carousel control icon the next photo appears as expected.
@@ -154,7 +150,6 @@ I manually tested all website elements/components under the following headings;
 * When I open the gallery carousel and click anywhere on the page outside the modal the modal closes as expected.
 
 #### Footer ####
-
 * When I hover over the Home and Contact Us navigation buttons they change colour as expected.
 * When I click on the Home button it reloads the homepage as expected.
 * When I click on the Contact Us button it loads contact.html as expected.
@@ -179,31 +174,46 @@ I manually tested all website elements/components under the following headings;
 #### Reast-A-Quote Form ####
 * When I click on the Contact Us link in the Request A Quote introduction section contact.html loads as expected.
 * When I hover on the 'Lets Party' button it changes color and grows as expected.
-* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, the Bootstrap validation highlights the fields in green as              expected.
-* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, an Alert appears to notfy me my message has been sent. - BUG            emailjs is not sending an email. 
+* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, the Bootstrap validation highlights the fields in green as           expected.
+* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, an Alert appears to notfy me my message has been sent. - BUG         emailjs is not sending an email. 
 * When I enter details incorrectly I get an alert to say my meesage had been sent, yet Bootstrap validation then highlights the missing form infromation.  -        BUG
      
 
 ### Contact Page ###
-
 #### Navbar ####
 * When I click on the party Chef Logo in the navbar it loads index.html as expected.
-* The Home link button on the navbar shows an active status (button border) as expected.
-* When I hover over the Contact button in the navabr it changes color as expected.
-* When I click on the Contact button it opens contact.html as expected.
-* When I click on the MyMenu button it opens the MyMenu Modal as expected.
+* The Contact link button on the navbar shows an active status (button border) as expected.
+* When I hover over the Home button in the navbar it changes color as expected.
+* When I click on the Home button it opens index.html as expected.
 
 #### Google Map ####
+* When Google Map controls work expected - Pan, Zoom in/out, Pegman, Map/Satellite views, and Full screen mode.
+* When Click on a Party Chef marker and InfoWindow pops up with kitchen contact details as expected. All markers worked as expected.
+* When I click on a new marker while an InfroWindow is already open, the existing InfoWindow closes and the new one opens as expected.
 
 #### Social Media Section ####
+* When I hover over a social media icon it grows as expected.
+* When I click on a social media icon it launches the social media website in a new tab/page.
 
 #### Contact Form ####
+* When I complete the form correctly the fields are highlighted in green as expected.
+* When I complete the form correctly and hit the 'Send Message' button I get a 'Message Sent Successfully' alert.
+* When I close the 'Message Sent Successfully' alert the form does not clear. BUG
+* When I complete the form correctly and hit the 'Send Message' button I receive an email to the Party Chef email address as expected.
+* When I complete the form correctly and hit the 'Send Message' button I do not receive an email to my personal email address. BUG
 
-
+#### Footer ####
+* When I hover over the Home and Contact Us navigation buttons they change colour as expected.
+* When I click on the Home button it loads the index.html as expected.
+* When I click on the Contact Us button it reloads contact.html and sends me to the top of the page as expected.
+* When I hover over the social media icons they grow as expected.
 
 ## 5. Browser Testing ##
 
+I completed the manual testing on the following browsers
+
 ### Chrome ###
+* All tests ran OK (I completed the above manual testing using Chrome.
 
 ### Firefox ###
 
