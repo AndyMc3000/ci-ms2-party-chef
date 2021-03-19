@@ -31,8 +31,6 @@ $(document).ready(function () {
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert('Message Sent Successfully')
-//                    purchaseClicked()
-//                    updateCartTotal()
                 }, function (error) {
                     console.log('FAILED...', error);
                 });

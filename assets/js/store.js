@@ -21,7 +21,7 @@ function addEventListenersToCartElements() {
 }
 
 function purchaseClicked() {
-    alert('Thank you for your Quote Request from store.js')
+    alert('Thank you for your Quote Request')
     let cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -45,6 +45,8 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
+console.log(btn);
+
 function addToCartClicked(event) {
     let button = event.target
     let shopItem = button.parentElement.parentElement
@@ -54,6 +56,8 @@ function addToCartClicked(event) {
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
 }
+
+cconsole.log(btn);
 
 function addItemToCart(title, price, imageSrc) {
     let cartRow = document.createElement('div')
