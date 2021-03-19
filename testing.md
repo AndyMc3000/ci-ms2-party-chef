@@ -119,68 +119,85 @@ I manually tested all website elements/components under the following headings;
 
 ### Homepage ###
 
-     #### Navbar ****
-     
-          * When I click on the party Chef Logo in the navbar it loads index.html as expected.
-          * The Home link button on the navbar shows an active status (button border) as expected.
-          * When I hover over the Contact button in the navabr it changes color as expected.
-          * When I click on the Contact button it opens contact.html as expected.
-          * When I click on the MyMenu button it opens the MyMenu Modal as expected.
-       
-     #### Hero Image ####
-     
-          * When I hover over the button on the hero images (Jumbotron) it hovers and grows as expected.
-          * When I click on the hero image button it opens contact.html as expected.
-        
-     #### Menus Section ####
-     
-          * When I hover over any/all menu accordion heading button it changes color and grows as expected.
-          * When I click on the menu heading button it opens the menu accordion as expected.
-          * When I click inside the open accordion the list of items scroll up/down as expected.
-          * When I hover over the 'Add To MyMenu' button it grows as expected.
-          * When I click on the 'Add To MyMenu' button it and alert appears to say 'Menu item added to your MyMenu' as expected.
-          * When I close the alert the item quantity indicator on the MyMenu button increases by one as expected.
-          * When I click on the MyMenu button the MyMenu modal opens and my item is listed as expected.
-          * When I add multiple items to MyMenu they all appear as expected.
-        
-     #### Gallery Section ####
-     
-          * When I hover over the gallery section image it grows as expected.
-          * When I click on the gallery section image it opens the gallery modal showing photo number one as expected.
-          * When I click the 'next' carousel control icon the next photo appears as expected.
-          * When I keep clicking the next carousel control button all images appear correctly as expected.
-          * When I click the previous carousel control button the previous photo appears as expected.
-          * When I click the close button on the modal the modal closes as expected.
-          * When I open the gallery carousel and click anywhere on the page outside the modal the modal closes as expected.
- 
-     #### Footer ####
-     
-          * When I hover over the Home and Contact Us navigation buttons they change colour as expected.
-          * When I click on the Home button it reloads the homepage as expected.
-          * When I click on the Contact Us button it loads contact.html as expected.
-          * When I hover over the social media icons they grow as expected.
+#### Navbar ****
+
+     * When I click on the party Chef Logo in the navbar it loads index.html as expected.
+     * The Home link button on the navbar shows an active status (button border) as expected.
+     * When I hover over the Contact button in the navabr it changes color as expected.
+     * When I click on the Contact button it opens contact.html as expected.
+     * When I click on the MyMenu button it opens the MyMenu Modal as expected.
+
+#### Hero Image ####
+
+     * When I hover over the button on the hero images (Jumbotron) it hovers and grows as expected.
+     * When I click on the hero image button it opens contact.html as expected.
+
+#### Menus Section ####
+
+     * When I hover over any/all menu accordion heading button it changes color and grows as expected.
+     * When I click on the menu heading button it opens the menu accordion as expected.
+     * When I click inside the open accordion the list of items scroll up/down as expected.
+     * When I hover over the 'Add To MyMenu' button it grows as expected.
+     * When I click on the 'Add To MyMenu' button it and alert appears to say 'Menu item added to your MyMenu' as expected.
+     * When I close the alert the item quantity indicator on the MyMenu button increases by one as expected.
+     * When I click on the MyMenu button the MyMenu modal opens and my item is listed as expected.
+     * When I add multiple items to MyMenu they all appear as expected.
+
+#### Gallery Section ####
+
+* When I hover over the gallery section image it grows as expected.
+* When I click on the gallery section image it opens the gallery modal showing photo number one as expected.
+* When I click the 'next' carousel control icon the next photo appears as expected.
+* When I keep clicking the next carousel control button all images appear correctly as expected.
+* When I click the previous carousel control button the previous photo appears as expected.
+* When I click the close button on the modal the modal closes as expected.
+* When I open the gallery carousel and click anywhere on the page outside the modal the modal closes as expected.
+
+#### Footer ####
+
+* When I hover over the Home and Contact Us navigation buttons they change colour as expected.
+* When I click on the Home button it reloads the homepage as expected.
+* When I click on the Contact Us button it loads contact.html as expected.
+* When I hover over the social media icons they grow as expected.
 
 
 ### MyMenu Modal ###
 
-     #### Modal ####
+#### Modal ####
+* When I click on the MyMenu button in the nabar the MyMenu modal opens as expected.
+* When I click the close button on the modal the modal closes as expected.
+* When I open the MyMenu modal and click anywhere on the page outside the modal the modal closes as expected.
 
-          * When I click on the MyMenu button in the nabar the MyMenu modal opens as expected.
-          * When I click the close button on the modal the modal closes as expected.
-          * When I open the MyMenu modal and click anywhere on the page outside the modal the modal closes as expected.
-          
-     #### MyMenu Item List ####
-          * When I add an item to the MYMenu modal it appears in the list which a default quantity of 1 as expected.
-          * When I add an item to the MyMenu modal the 'Total' price figure updates correctly as expected.
-          * When I try to reduce the item quantity using the quantity controls I am stopped from reducing the quantity to zero as expected.
-          * When I increase the item quantity using the quantity controls the Total price increases correctly as expected.
-          * When I reduce the item quantity the Total price figure reduces correctly as expected.
-          * When I click on the remove item buttom the item disappears and an alert appears. BUG - the incorrect message appears and the alert appears twice.
+#### MyMenu Item List ####
+* When I add an item to the MYMenu modal it appears in the list which a default quantity of 1 as expected.
+* When I add an item to the MyMenu modal the 'Total' price figure updates correctly as expected.
+* When I try to reduce the item quantity using the quantity controls I am stopped from reducing the quantity to zero as expected.
+* When I increase the item quantity using the quantity controls the Total price increases correctly as expected.
+* When I reduce the item quantity the Total price figure reduces correctly as expected.
+* When I click on the remove item buttom the item disappears and an alert appears. BUG - the incorrect message appears and the alert appears twice.
 
-     #### Reast-A-Quote Form ####
+#### Reast-A-Quote Form ####
+* When I click on the Contact Us link in the Request A Quote introduction section contact.html loads as expected.
+* When I hover on the 'Lets Party' button it changes color and grows as expected.
+* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, the Bootstrap validation highlights the fields in green as              expected.
+* When I enter details in all fields correctly and hit the 'Lets Party' button on the form, an Alert appears to notfy me my message has been sent. - BUG            emailjs is not sending an email. 
+* When I enter details incorrectly I get an alert to say my meesage had been sent, yet Bootstrap validation then highlights the missing form infromation.  -        BUG
      
 
 ### Contact Page ###
+
+#### Navbar ####
+* When I click on the party Chef Logo in the navbar it loads index.html as expected.
+* The Home link button on the navbar shows an active status (button border) as expected.
+* When I hover over the Contact button in the navabr it changes color as expected.
+* When I click on the Contact button it opens contact.html as expected.
+* When I click on the MyMenu button it opens the MyMenu Modal as expected.
+
+#### Google Map ####
+
+#### Social Media Section ####
+
+#### Contact Form ####
 
 
 
@@ -191,7 +208,6 @@ I manually tested all website elements/components under the following headings;
 ### Firefox ###
 
 ### Safari ###
-
 
 
 
