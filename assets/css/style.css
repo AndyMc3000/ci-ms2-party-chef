@@ -1059,6 +1059,11 @@ button.nav-link.mymenu {
 
 /* -- Contact Form -- */
 
+.contact-form-header {
+    color: white;
+    padding-bottom: 10px;
+}
+
 .contact-form-box {
     padding-top: 10px;
 }
