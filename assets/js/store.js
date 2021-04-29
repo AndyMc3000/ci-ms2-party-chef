@@ -34,7 +34,7 @@ function removeCartItem(event) {
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
     updateMenuIndicatorNumber()
-    alert("Menu item removed from your MyMenu");
+    alert("This Menu item has been removed from your MyMenu!");
 }
 
 function quantityChanged(event) {
@@ -45,7 +45,6 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
-console.log(btn);
 
 function addToCartClicked(event) {
     let button = event.target
@@ -57,7 +56,6 @@ function addToCartClicked(event) {
     updateCartTotal()
 }
 
-cconsole.log(btn);
 
 function addItemToCart(title, price, imageSrc) {
     let cartRow = document.createElement('div')
@@ -66,7 +64,7 @@ function addItemToCart(title, price, imageSrc) {
     let cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (let i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to your MyCart')
+            alert('This item has already been added to your MyCart!')
             return
         }
     }
@@ -89,7 +87,7 @@ function addItemToCart(title, price, imageSrc) {
 
 function updateMenuIndicatorNumber(){
     document.getElementById('quantity-indicator-span').innerText = document.getElementsByClassName('cart-items')[0].childElementCount;
-    alert("Menu item added to your MyMenu");
+    alert("This Menu item has been added to your MyMenu!");
 }
 
 function updateCartTotal() {
