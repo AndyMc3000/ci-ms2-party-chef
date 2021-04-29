@@ -63,8 +63,8 @@ body p {
 }
 
 .modal-title {
-    padding-top: 0px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .modal-title hr {
@@ -741,6 +741,11 @@ button.nav-link.mymenu {
     padding-right: 25px;
     margin-bottom: 10px;
     color: #ffd500;
+}
+
+.gallery-header {
+    background-color: #00296b;
+    color: white;
 }
 
 .carousel-control-prev-icon,
