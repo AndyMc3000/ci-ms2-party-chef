@@ -25,8 +25,6 @@ $(document).ready(function () {
                 options: document.getElementById('party_date').value,
             };
 
-            console.log(btn);
-
             emailjs.send('default_service', 'template_cewgm4l', templateParams)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
@@ -35,8 +33,6 @@ $(document).ready(function () {
                     console.log('FAILED...', error);
                 });
         });
-
-    console.log(btn);
 })
 
 
