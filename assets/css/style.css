@@ -378,13 +378,13 @@ button.nav-link.mymenu {
 }
 
 .jumbotron-container-home {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../css/images/jumbotron/kelsey-chance-ZrhtQyGFG6s-unsplash-1000px.jpeg') no-repeat center center scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('../css/images/jumbotron/kelsey-chance-ZrhtQyGFG6s-unsplash-1000px.jpeg') no-repeat center center scroll;
     background-size: cover;
     padding: 70px;
 }
 
 .jumbotron-container-contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../css/images/jumbotron/matt-hoffman-7zwyUZVrt-U-unsplash-1000px.jpeg') no-repeat center center scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('../css/images/jumbotron/matt-hoffman-7zwyUZVrt-U-unsplash-1000px.jpeg') no-repeat center center scroll;
     background-size: cover;
     padding: 70px;
 }

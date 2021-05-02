@@ -19,9 +19,9 @@ $(document).ready(function () {
                 tel_number: document.getElementById('tel_number').value,
                 email_address: document.getElementById('email_address').value,
                 party_date: document.getElementById('party_date').value,
-                party_location: document.getElementById('party_date').value,
-                test: document.getElementById('party_date').value,
-                options: document.getElementById('party_date').value,
+                party_location: document.getElementById('party_location').value,
+                test: document.getElementById('test').value,
+                options: document.getElementById('options').value,
             };
 
             emailjs.send('default_service', 'template_cewgm4l', templateParams)

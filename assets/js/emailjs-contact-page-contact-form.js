@@ -22,7 +22,6 @@ $(document).ready(function () {
                 message: document.getElementById('message').value,
             };
 
-console.log(btn);
 
             emailjs.send('default_service', 'contactForm', templateParams)
                 .then(function (response) {

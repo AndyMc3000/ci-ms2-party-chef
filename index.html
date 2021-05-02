@@ -57,7 +57,7 @@
                                         </span> </div>
                                 </div>
                             </div>
-                            <div class="cart-items"> </div>
+                            <div class="cart-items" id="cart-items"> </div>
                             <div class="cart-total">
                                 <h2 class="cart-total-title">Total<span class="cart-total-price">€0</span></h2>
                             </div>
@@ -102,11 +102,6 @@
                                             <input type="text" class="form-control" id="party_location" name="party_location" aria-describedby="party_location" placeholder="Type your Party Location Address here.." required>
                                             <div class="invalid-feedback"> Ooops!..please enter an Address for your Party Location. </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="test">Test</label>
-                                            <input type="text" class="form-control" id="test" name="test" aria-describedby="test" placeholder="Test" required>
-                                            <div class="invalid-feedback"> Ooops! enter Test </div>
-                                        </div>
                                         <div class="form-group options-group">
                                             <label for="options">Choose a service option:*</label>
                                             <select class="form-control" id="options" name="options" aria-describedby="options" required>
@@ -121,6 +116,11 @@
                                         <div> <small>* All fields required.</small> </div>
                                         <div class="form-group text-center">
                                             <button type="submit" id="email-button" value="Send Email" class="btn btn-sm form-control btn-purchase">Send Request</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="test"></label>
+                                            <input type="hidden" class="form-control" id="test" name="test" aria-describedby="test" placeholder="Test" required>
+                                            <div class="invalid-feedback"> Ooops! enter Test </div>
                                         </div>
                                     </form>
                                 </div>
