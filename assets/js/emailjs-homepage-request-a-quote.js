@@ -1,6 +1,5 @@
 $(document).ready(function () {
     const btn = document.getElementById('email-button');
-    console.log(btn);
 
     document.getElementById('form')
         .addEventListener('submit', function (event) {

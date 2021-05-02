@@ -74,7 +74,7 @@ body p {
 
 .modal-footer {
     display: inline;
-    color: #ffffff;
+    background-color: #ffffff;
 }
 
 .modal-body {
@@ -379,18 +379,12 @@ button.nav-link.mymenu {
 
 .jumbotron-container-home {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../css/images/jumbotron/kelsey-chance-ZrhtQyGFG6s-unsplash-1000px.jpeg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     padding: 70px;
 }
 
 .jumbotron-container-contact {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../css/images/jumbotron/matt-hoffman-7zwyUZVrt-U-unsplash-1000px.jpeg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     padding: 70px;
 }
@@ -774,10 +768,7 @@ button.nav-link.mymenu {
     padding-bottom: 15px;
     padding-right: 20px;
     padding-left: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../css/images/testimonials/testimonial-section-alasdair-elmes-ULHxWq8reao-unsplash-1200px.jpeg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../css/images/testimonials/testimonial-section-alasdair-elmes-ULHxWq8reao-unsplash-1200px.jpeg') no-repeat center center scroll;
     background-size: cover;
     border-radius: 10px;
     margin-left: 35px;
@@ -787,7 +778,7 @@ button.nav-link.mymenu {
 }
 
 .testimonial-box {
-    background-color: rgb(0, 80, 157,.20);
+    background-color: rgb(0, 80, 157,.40);
     padding: 10px;
     padding-bottom: 15px;
     border-radius: 10px;
