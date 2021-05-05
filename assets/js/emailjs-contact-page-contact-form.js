@@ -25,10 +25,9 @@ $(document).ready(function () {
 
             emailjs.send('default_service', 'contactForm', templateParams)
                 .then(function (response) {
+                    document.getElementById('contact-us-form').reset();
                     console.log('SUCCESS!', response.status, response.text);
                     alert('Message Sent Successfully')
-//                    purchaseClicked()
-//                    updateCartTotal()
                 }, function (error) {
                     console.log('FAILED...', error);
                 });
