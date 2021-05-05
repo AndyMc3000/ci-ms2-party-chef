@@ -18,27 +18,6 @@ function addEventListenersToCartElements() {
 		let button = addToCartButtons[i];
 		button.addEventListener('click', addToCartClicked);
 	}
-
-	// document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
-}
-
-/* const request = document.getElementById('email-button');
-request.addEventListener('click', copyMenu, false); */
-
-function clearCart() {
-	/* function copyMenu() {
-	    var x = document.getElementClassName('cart-items')
-	    var i;
-	    var menuItems = x[0].innerHTML;
-	    for (i = 1; i < x.length; i++) {
-	        mneuItems = menuItems + x[i].innerHTML;
-	    }
-	} */
-	let cartItems = document.getElementsByClassName('cart-items')[0];
-	while (cartItems.hasChildNodes()) {
-		cartItems.removeChild(cartItems.firstChild);
-	}
-	updateCartTotal();
 }
 
 function removeCartItem(event) {
