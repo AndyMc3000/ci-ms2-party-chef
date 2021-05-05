@@ -1,6 +1,5 @@
 $(document).ready(function () {
     const btn = document.getElementById('contact-us-submit-btn');
-    console.log(btn);
 
     document.getElementById('contact-us-form')
         .addEventListener('submit', function (event) {
@@ -25,15 +24,15 @@ $(document).ready(function () {
 
             emailjs.send('default_service', 'contactForm', templateParams)
                 .then(function (response) {
-                    document.getElementById('contact-us-form').reset();
+                    // this resets the form and stops the from validating
+                    var form = $('#contact-us-form')[0];
+                    $(form).removeClass('was-validated');
+                    form.reset();
                     console.log('SUCCESS!', response.status, response.text);
                     alert('Message Sent Successfully')
                 }, function (error) {
                     console.log('FAILED...', error);
                 });
         });
-
-console.log(btn);
-
 })
 

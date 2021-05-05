@@ -33,14 +33,10 @@ $(document).ready(function () {
 
             emailjs.send('default_service', 'template_cewgm4l', templateParams)
                 .then(function (response) {
-                    // this resets the form but leaves validation error messages 
+                    // this resets the form and stops the from validating
                     var form = $('#form')[0];
                     $(form).removeClass('was-validated');
                     form.reset();
-                    // document.getElementById('form').remove("was-validated");
-                    // document.getElementById('form').reset();
-                    // I tried the below to stop validation error messages showing on reset, but it simply removes the form completley whihc doesnt suit requirements.
-                    // document.getElementById('form').remove('was-validated');
                     console.log('SUCCESS!', response.status, response.text);
                     alert('Message Sent Successfully. Thank you for your Quote Request.');
                 }, function (error) {
