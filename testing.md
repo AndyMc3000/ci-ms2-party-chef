@@ -112,19 +112,19 @@ During the development process I manually tested elements and components after I
 
 ## 3. Code Validation ##
 
-I ran the website through the W3C validators for HTML and CSS.
+I ran the website through the W3C validators for HTML and CSS. I also ran my JavaScript code through the JSHint.com code validator.
 
 #### HTML ####
 
-The validator highlighted the followings errors.
+The validator highlighted the followings errors across index.html and contact.html.
 
-The aria-controls attribute must point to an element in the same document.
-The aria-describedby attribute must point to an element in the same document.
-The aria-describedby attribute must point to an element in the same document.
-Illegal character in path segment: space is not allowed.
-An img element must have an alt attribute, except under certain conditions.
-Element h3 not allowed as child of element span in this context. 
-Attribute row not allowed on element div at this point.
+* The aria-controls attribute must point to an element in the same document.
+* The aria-describedby attribute must point to an element in the same document.
+* The aria-describedby attribute must point to an element in the same document.
+* Illegal character in path segment: space is not allowed.
+* An img element must have an alt attribute, except under certain conditions.
+* Element h3 not allowed as child of element span in this context. 
+* Attribute row not allowed on element div at this point.
 
 All errors were fixed by making neccessary changes.
 
@@ -132,18 +132,31 @@ All errors were fixed by making neccessary changes.
 
 The W3C CSS Validation Service
 
-The validator highlighted the following errors;
+The validator highlighted the following errors in style.css;
 
-URI : https://andymc3000.github.io/ci-ms2-party-chef/assets/css/style.css
-44	.close:hover	Parse Error (1.3)
-51	.close i:hover	Parse Error (1.3)
-176	.btn-danger:hover	Parse Error (1.2)
-275	.navbar button:hover	Parse Error (1.2)
-357	.button.nav-link.mymenu:hover	Parse Error (1.2)
+* 44	.close:hover	Parse Error (1.3)
+* 51	.close i:hover	Parse Error (1.3)
+* 176	.btn-danger:hover	Parse Error (1.2)
+* 275	.navbar button:hover	Parse Error (1.2)
+* 357	.button.nav-link.mymenu:hover	Parse Error (1.2)
 
-I didn't have time to fix these errors. I couldn't figure out what a CSS parse error is on time to meet project deadline. I will look into this at a later date. 
+All errors were fixed by making necessary changes.
 
-## 4. Manual Testing ##
+The validator also highlighted 2 x Errors and 768 x Warnings relating to the bootstrap.min.css style sheet. I queried this with Student support and was advised that as I have no control over the Bootstrap style sheet as I am using a CDN to access the file, these were acceptable.
+
+#### JavaScript ####
+
+I ran the following files though the JSHint validator;
+
+store.js
+maps.js
+emailjs-homepage-request-a-quote.js
+emailjs-contact-page-contact-form.js
+bootstrap-form-validation.js
+
+Once I configued the validator to accept jQuery and JavaScript ES6, no errors were listed.
+
+## 3. Manual Testing ##
 
 I manually tested all website elements/components under the following headings;
 
