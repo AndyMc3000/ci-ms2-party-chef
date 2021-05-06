@@ -25,7 +25,9 @@ function removeCartItem(event) {
 	buttonClicked.parentElement.parentElement.remove();
 	updateCartTotal();
 	// update cart indicator - instead of calling the updateMenuIndicatorNumber function I just used the logic within that function
-	document.getElementById('quantity-indicator-span').innerText = document.getElementsByClassName('cart-items')[0].childElementCount;
+    document.getElementById('quantity-indicator-span').innerText = document.getElementsByClassName('cart-items')[0].childElementCount;
+	document.getElementById('mobile-quantity-indicator-span').innerText = document.getElementsByClassName('cart-items')[0].childElementCount;
+    
 	alert("This Menu item has been removed from your MyMenu!");
 }
 
@@ -77,8 +79,11 @@ function addItemToCart(title, price, imageSrc) {
 
 function updateMenuIndicatorNumber() {
 	document.getElementById('quantity-indicator-span').innerText = document.getElementsByClassName('cart-items')[0].childElementCount;
+	document.getElementById('mobile-quantity-indicator-span').innerText = document.getElementsByClassName('cart-items')[0].childElementCount;
 	alert("This Menu item has been added to your MyMenu!");
 }
+
+'mobile-quantity-indicator-span'
 
 function updateCartTotal() {
 	let cartItemContainer = document.getElementsByClassName('cart-items')[0];

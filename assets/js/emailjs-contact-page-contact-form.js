@@ -24,7 +24,8 @@ $(document).ready(function () {
 
             emailjs.send('default_service', 'contactForm', templateParams)
                 .then(function (response) {
-                    // this resets the form and stops the from validating
+                    // this resets the form and stops the from validating. 
+                    // jQuery code below copied from Cina Saffary's GitHub issue thread relating to Bootstrap validation. 
                     var form = $('#contact-us-form')[0];
                     $(form).removeClass('was-validated');
                     form.reset();
