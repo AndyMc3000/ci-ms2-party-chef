@@ -44,15 +44,14 @@ The Strategy Plane is, as defined by Jesse James Garrett "..incorporates not onl
 Please see below details of the 'Client Stories' to detail the requirements of the Pary Chef business owner, and the 'User Stories' which highlight the requiremnts of end users of the Party Chef website.
 
 #### Client Stories ####
-> - [x] “The main goal of the website is to attract new business, and provide value to visitors in the information is provides.”
+> - [x] “The main goal of the website is to attract new business for Party Chef, and provide value to visitors in the information is provides.”
 > - [x] “The website must show and promote the services which Party Chef provides.”
 > - [x] “The website must detail the various menu's on offer, and the cost of food/drink items on each menu.” 
-> - [x] “The website must allow people to easily contact Party Chef to arrange a party planning consultation.”
+> - [x] “The website must allow people to easily contact Party Chef.”
 > - [x] “The website must allow users to create their own menu from the items available, in order to get an idea of food/drinks costs for their party.”
-> - [x] “The website must allow users to send a copy of their personal menu to an email address. A copy of this should also be sent to the business owner so they can better understan what items users prefer.”
-> - [x] “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
-> - [x] “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called a 'kitchens' on the website).”
-> - [x] “The website must promote Party Chef's social media channels.”
+> - [x] “The website must also allow users to request a quote, based on their MyMenu items and other relevant information about their event (Party Date, Party Location). The quote request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
+> - [x] “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called 'kitchens' on the website).”
+> - [x] “The website must promote links to Party Chef's social media channels.”
 > - [x] “The website must show photos of previous events.” 
 > - [x] “The website must show customer testimonial quotes.”
 > - [x] “The website must be mobile-friendly.”
@@ -60,11 +59,11 @@ Please see below details of the 'Client Stories' to detail the requirements of t
 #### User Stories ####
 > - [x] “I want to see what kind of services Party Chef offers.”
 > - [x] “I want to see what kind of menu's (food & drink) Party Chef offer.”
-> - [x] “I want to find out where they are located, and which is the closest office to me.”
+> - [x] “I want to find out where their 'kitchens' (offices) are located, and which is the closest office to me.”
 > - [x] “I want to see photo's of the dishes in Party Chef menu's.”
 > - [x] “I want to see photo's of previous events serviced by Party Chef.”
 > - [x] “I want to be able to see pricing for menu items.”
-> - [x] “I want to be able to create my own menu from the menu's of items offerred. And I want to be able to email a copy of my menu to myself.”
+> - [x] “I want to be able to create my own menu from the menu's of items offerred.”
 > - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs”.
 > - [x] “I want to find the Party Chef social media channels.”
 
@@ -78,14 +77,14 @@ Based on the outcomes from the Strategy Plane, The Scope Plane determines what f
 * Navigation bar to highlight currently accessed page.
 * Both pages should have a Jumbotron at the top of the page with relevant call-out messaging. The Homepage Jumbotron to include link to contact page in order to arrange a meeting for a no-obligation consultation.
 * The Homepage should include a 'Features' section highlighting the Party Chef services.
-* The Homepage should show various menu's (canpapes, starters, main course, something sweet, drinks) each showing menu items listed within an accordian. Items on the menu can be added to a MyMenu cart.
-* Shopping cart functionality should be built in so that menu items can be added to a 'MyMenu' list of items. The MyMenu should then be accessed via links in the Nav bar and Footer. Once clicked, the MyMenu list of items appears on a modal. User can ammend quantites of the items they have selected in the MyMenu to get a price for their food/drink selection. A copy of the MyMenu list can be sent to a users email. A copy of the email should also be sent to Paty Chef.
-* The MyMenu should also have the facility to request a quote for an event. The request should include the food/drink items in the MyMenu lis plus additional information about the event (date/time, location, etc.). The request will eb sent to Party Chef by email. A copy of the request should also be sent to the user email address.
+* The Homepage should show various menu's (canpapes, starters, main course, something sweet, drinks) each showing menu items listed within an accordian. Items on the menu can be added to a MyMenu cart (a Bootstrap modal).
+* Shopping cart functionality should be built in so that menu items can be added to a 'MyMenu' list of items. The MyMenu should then be accessed via links in the Nav bar. Once clicked, the MyMenu list of items appears on a modal. User can ammend quantites of the items they have selected in the MyMenu to get a price for their food/drink selection. 
+* The MyMenu should also have the facility to request a quote for an event. The request should include the food/drink items in a MyMenu list plus additional information about the event (date/time, location, etc.). The request will be sent to Party Chef by email. A copy of the request should also be sent to the user email address.
 * The Homepage should include a photo Gallery using a carousel on the Homepage to show menu items. A similar gallery on the contact page showing photos from past events should also be included.
-* The contact page must include all contact infromation for the Party Chef headquarters.
+* The contact page must include all contact information for the Party Chef headquarters.
 * The contact page should include an interactive map showing all the kitchen locations across Ireland. By implementing features of the Google Maps API, a user should be able to select an individual kitchen marker to get a pop-up of contact information for that particular kitchen.
 * The contact page should also include a section highlighting social media channels.
-* The contact page should also include a contact form with a dropdown box so a user can select the subject type of their query (i.e. arrange a consultation. special menu request, service availability at certain location etc). 
+* The contact page should also include a contact form so a user can ask a specific question of the party Chef team.
 
 #### Content Requirements: ####
 * Both Jumbotrons should show images conveying people haveing fun at a great party. Appropriate messaging should also be used to convey the key values of Party Chef.
@@ -107,8 +106,8 @@ Interaction design is defined as the "..development of application flows to faci
 * It should contain a features/benefits section containing 4 principle featires under the following headings; 'Who We Are', 'Our Services', 'Our Menu's', and 'Talk to us'.
 * It should contain a list of menu's (each within its own accordion) under the following headings; 'Canapés', 'Starters', 'Main Course', 'Something Sweet', and 'Drinks'. 
 * The menu accordions should contain a list of menu item to include a photo, description, and an 'Add to MyMenu' button. When the 'Add to MyMenu' button is clicked, an item is added to the users MyMenu (i.e. shopping cart). 
-* The users MyMenu (a modal) can be accessed by clicking on the MyModal button in the Nav bar and Footer. Within the MyMenu modal, a user can change the quantity of an item, remove and item, or send a copy of the menu to an email address. A copy of the email is also sent to Party Chef.
-* A user can also send a copy of the menu to Party Chef, along with additional information which must be included, in order to request a quote an confirm availablity. The extra information will come from a form in the MyMenu modal which a user must complete. The from will ask for; Name, Email, Telephone number, Party date, Party start time, Location, Service Type. A copy of the quote request will also be sent to the user by email.
+* The users MyMenu (a modal) can be accessed by clicking on the MyModal button in the Nav bar. Within the MyMenu modal, a user can change the quantity of an item or remove an item.
+* A user can also send a copy of the menu to Party Chef, along with additional information which must be included, in order to request a quote an confirm availablity. The extra information will come from a form in the MyMenu modal which a user must complete. The form will ask for; Name, Email, Telephone number, Party date, Party start time, Location, Service Type. A copy of the quote request will also be sent to the user by email.
 * It should contain a gallery of photographs highlighting recent events and food displays.
 * It should contain a section to show Testimonial quotes.
 * It should have a further navigation section in the footer. The footer will also contain links to all Party Chef's social media channels.
@@ -117,9 +116,7 @@ Interaction design is defined as the "..development of application flows to faci
 * It should have a navigation bar with individual links to each page and a 'MyMenu' modal.
 * It should contain a section to show the address and phone number of the Party Chef Headquarters.
 * It should include a Google Map with markers to show the individual Party Chef offices around the country. And when a user clicks on a marker, and 'info window' should popup to show the contacts details and address for that office.
-* It should contain a contact form with a dropdown to allow users to indicate their are of interest: 'Request a party planning consultation', 'Check our availability to service your event', or 'Ask us anything'.
-* It should have 3 main sections focusing on; The Gym/equipment, Personal Training Services, and the Studio/class facilities.
-* It should contain a gallery of photographs titled 'Our Team'.
+* It should also contain a contact form to allow a user to submit a query to Party Chef.
 
 #### Information Architecture: ####
 
@@ -189,16 +186,16 @@ I drew up a process to follow for developing the Party Chef website. This is lis
 * Bootstrap Accordions for menus.
 * Bootstrap Responsive Grid system.
 * JavaScript shopping cart used for MyMenu system.
-* EmailJS for sending form data by email.
+* EmailJS code for sending form and MyMenu data by email.
 * Bootstrap Carousel Slider Modal Gallery.
 * Google Map with custom markers and infoWindow's.
-* Bootrap Forms for MyMenu Modal on index.html and Contact form on contact.html.
-* Bootstrap Form validation.
+* Bootrap Forms for MyMenu Modal on index.html and Contact Form on contact.html.
+* Bootstrap Form validation code.
 * Social Links in Footers.
-* Navigation links in Footer.
+* Navigation links in Footers.
 
 #### Future Features ####
-* An End user should be able to add the contents of their MyMenu to the request-a-quote email body. This would allow the Party Chef team to better calculate a detailed quotation to include service costs plus food costs.
+* An End user could be able to book and pay for an event online. This would require the integration of a booking system and a billing system.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
@@ -243,11 +240,12 @@ Testing was completed under the below headings. A detailed testing document can 
 1. Device Testing
 1. Browser Testing
 
-#### Bugs Discovered & Remedies ####
+#### Bugs Discovered / Remedies ####
 1. Issues remained with the functionality of forms when they are not completed in full. These validation erros have now been resolved with help from Tutor support.
 2. Issues remained with multiple alerts appearing when a product is removed from the MyMenu. This has now been resolved with help from my Mentor, Rueben Ferrante.
 3. The contact forms don't clear their contents once the send buttons are sent. This has now been resolved with help from my Mentor, Rueben Ferrante.
 4. The JavaScript code was not commented fully. This has been resolved.
+5. The Google Chrome Dev Tools console logs a warning which reads: 'Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.' I found from a thread on StackOverflow that this relates to a "new header used to block Google's new tracking technology called Federated Cohorts of Learning (FLoC)." I then found that GitHub has added this new permission policy header to all pages. As such the warning is not within my control to fix as my site is deployed on GitHub Pages.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
