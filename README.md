@@ -233,7 +233,7 @@ I used the following technologies, services, and devices to develop, style, depl
 
 ## 6. <a name="testing">Testing</a> ##
 
-Testing was completed under the below headings. A detailed testing document can be seen <a href="assets/readme-assets/testing.md"><strong>Here - testing.md.</strong></a>
+Testing was completed under the below headings. A detailed testing document can be seen <a href="/assets/readme-assets/testing.md"><strong>Here - testing.md.</strong></a>https://github.com/AndyMc3000/ci-ms2-party-chef/blob/64ce133eb8b56d1dba8d335c47b9f7f6aa89151f/testing.md
 
 #### Testing Headings ####
 1. Development Testing
@@ -242,13 +242,11 @@ Testing was completed under the below headings. A detailed testing document can 
 1. Device Testing
 1. Browser Testing
 
-#### Bugs Discovered ####
+#### Bugs Discovered/Remedies ####
 1. Issues remain with the functionality of forms when they are not completed in full.
 2. Issues remain with multiple alerts appearing when a product is removed from the MyMenu.
 3. The contact froms don't clear their contents once the send buttons are sent.
 4. The JavaScript code is not commented correctly.
-
-I ran out of time to fix these issues. These need to be addresses in the future.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
