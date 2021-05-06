@@ -1,6 +1,6 @@
 let map;
 let InfoObj = [];
-// This represent Ireland
+// This represents the centre coordinates for the map
 let centerCoords = {
     lat: 53.286462626348,
     lng: -8.193259451610158

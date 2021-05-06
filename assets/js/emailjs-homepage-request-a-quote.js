@@ -43,6 +43,6 @@ $(document).ready(function () {
                     console.log('FAILED...', error);
                 });
         });
-})
+});
 
 

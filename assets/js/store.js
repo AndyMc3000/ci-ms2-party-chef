@@ -83,8 +83,6 @@ function updateMenuIndicatorNumber() {
 	alert("This Menu item has been added to your MyMenu!");
 }
 
-'mobile-quantity-indicator-span'
-
 function updateCartTotal() {
 	let cartItemContainer = document.getElementsByClassName('cart-items')[0];
 	let cartRows = cartItemContainer.getElementsByClassName('cart-row');

@@ -30,10 +30,10 @@ $(document).ready(function () {
                     $(form).removeClass('was-validated');
                     form.reset();
                     console.log('SUCCESS!', response.status, response.text);
-                    alert('Message Sent Successfully')
+                    alert('Message Sent Successfully');
                 }, function (error) {
                     console.log('FAILED...', error);
                 });
         });
-})
+});
 
