@@ -210,16 +210,17 @@ I drew up a process to follow for developing the Party Chef website. This is lis
 
 I used the following technologies, services, and devices to develop, style, deploy, and test the Pary Chef website;
 <br>
-* HTML5 - The site was develop using HTML5 markup language.
+* HTML5 - The site was developed using HTML5 markup language.
 * CSS3 - The site was styled and in some cases made responsive using CSS3.
 * JavaScript - Used for MyMenu functionality, Google Map, and EmailJS service.
-* Bootstrap - I used the Bootstrap framework for implementing some sections and features.
-* EmailJS - Used to send Form and MyMenu list data by email to users and to Party Chef.
+* Bootstrap - I used the Bootstrap framework for implementing some sections and features of the website.
+* EmailJS - I used the EmailJS email service to send Form and MyMenu list data by email to users and to Party Chef.
 * GitHub - I set up a free repository on GitHub.com to maintain a master of all website files, content, and resources.
 * GitPod - I used the free GitPod.io Integrated Development Environment to write and develop the code for the website.
-* Github Pages - I used the free GitHub Pages to deploy/publish the live website on the web.
+* Github Pages - I used the free GitHub Pages hosting service to deploy/publish the live website on the internet.
 * Balsamiq - I used the Balsamiq application to create the website sitemap and webpage wireframes.
-* W3C validators - used to validate HTML5 and CSS3 code.
+* W3C validators - I used the W3C HTML5 and CSS3 code validators to validate my HTML and CSS.
+* JSHint - I used jshint.com to validate my JavaScript code.
 * Responsive Viewer - I used a Chrome Browser Extension called Responsive Viewer to emulate the presentation of the website on multiple device sizes and types.
 * AmIResponsive - I used the [AmIResponsive](http://ami.responsivedesign.is/) webpage to view site responsiveness across devices.
 * Apple Preview - I used the Apple Preview image editor application to crop and resize photo's and images. 
@@ -242,11 +243,11 @@ Testing was completed under the below headings. A detailed testing document can 
 1. Device Testing
 1. Browser Testing
 
-#### Bugs Discovered/Remedies ####
-1. Issues remain with the functionality of forms when they are not completed in full.
-2. Issues remain with multiple alerts appearing when a product is removed from the MyMenu.
-3. The contact froms don't clear their contents once the send buttons are sent.
-4. The JavaScript code is not commented correctly.
+#### Bugs Discovered & Remedies ####
+1. Issues remained with the functionality of forms when they are not completed in full. These validation erros have now been resolved with help from Tutor support.
+2. Issues remained with multiple alerts appearing when a product is removed from the MyMenu. This has now been resolved with help from my Mentor, Rueben Ferrante.
+3. The contact forms don't clear their contents once the send buttons are sent. This has now been resolved with help from my Mentor, Rueben Ferrante.
+4. The JavaScript code was not commented fully. This has been resolved.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
@@ -292,6 +293,10 @@ The working version of the Party Chef website deployed on GitHub Pages can be se
 
 1. Javascript Shoping Cart Plugin -  I used a Javascript plugin for the MyMenu feature on Party Chef. This was copied from code supplied by a GitHub user called WebDevSimplified who offers online coding course on YouTube. See that users profile here: [WebDevSimplified](https://github.com/WebDevSimplified). See the code repository for this plugin here: [Introduction to JavaScript Lesson 1](https://github.com/WebDevSimplified/Introduction-to-Web-Development/tree/master/Introduction%20to%20JavaScript/Lesson%201).
 
+1. jQuery code used to stop Bootstrap form validation after a form was submitted in emailjs-contact-page-contact-form.js - I had a bug with form submission where Bootstrap validated the form again after 'submit' and 'reset'. As the form had been reset, this resulted in validation errors appearing on the blank form. I found some jQuery code on a GitHub issues thread which fixed the problem when I applied the code to my EmailJS JavaScript file. This thread was owned by a GitHub user called Cina Saffary. See the GitHub thread here - ['Resetting form doesn't clear validation errors'](https://github.com/1000hz/bootstrap-validator/issues/68).
+
+1. EmailJS code - I copied relevant JavaScript code from the EmailJS website in order to create my 2 JavaScript files which send the emails from the forms on inde.html and contact.html.
+
 1. Google Map with custom markers and InfoWindows - I used a YouTube video to help with implementing the Google Map API and adding custom markers and InfoWindows. That video was created by Pradip Debnath. See Pradips GitHub profile here: [Pradip Debnath](https://github.com/itzpradip). See the YouTube video here: [Google Maps API Tutorial | Custom Marker Icon | Multiple Info Window](https://www.youtube.com/watch?v=Xptz0GQ2DO4)
 
 1. Colours - I used the Coolors.co website to help me decide on a colour scheme for the webite. This website allows you to create your own colour palettes or to use one of thiers. See more about the Coolors.co palette catalogue and tools here: [Coolors.co](https://coolors.co/). 
@@ -321,8 +326,8 @@ No. | Business Name | Website | Description
 ### Additonal Support ###
 
 I also received help and support from;
+* Reuben Ferrante - Code Institute Mentor - Slack Username: [reubenfer_mentor](https://code-institute-room.slack.com/team/UKD9L615F) - Reuben is my new Mentor and was hugely helpful with helping me with my JavaScript code, having jumped in at a late stage in the project. Reuben also helped me with fixing issues for the resubmission of my project.
 * Allen Thomas Varghese - GitHub username: @allentv - my initial mentor at Code Institute for this project.
-* Reuben Ferrante - Code Institute Mentor - Slack Username: [reubenfer_mentor](https://code-institute-room.slack.com/team/UKD9L615F) my new Mentor who was hugely helpful with my JavaScript having jumped in at a late stage in the project.
 * Anna Greaves - Full Stack Developer and Content Developer at Code Institute - GitHub profile here: [@AJGreaves](https://github.com/AJGreaves)
  - I took inspiration from Anna's Family Hub project on GitHub. In particular I found her README.md and Testing.md files very helpful. See that repository here: [FamilyHub](https://github.com/AJGreaves/familyhub)
 * The Student support team at Code Institute
