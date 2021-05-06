@@ -39,10 +39,11 @@ During the development process I manually tested elements and components after I
 
 * Added Bootstrap menu accordions to index.html. Found a bug where all accordions open and close at the same time. I realised I needed to give each accordion * unique control ID’s. That fixed the bug.
 * One one occassion I had an issue with launching the project master instance on GitPod. It wasn't loading completely - see screenshot. When trying to resolve the issue I ended up working on a branch of my Master. I found that the simplest course of action was to delete my GitPod instances (branch & master) and create an new instance by launching the site afresh from GitPod.
-<img src="/assets/readme-assets/gitpod-error-instance-not-loading.png">
+     <img src="/assets/readme-assets/gitpod-error-instance-not-loading.png">
 
 * I tried implement a Javascript shopping cart plugin for the MyMenu system but couldn’t get it to work. See GitHub the following repository for that code: [Asraf-Uddin-Ahmed /jquery.mycart](https://github.com/Asraf-Uddin-Ahmed/jquery.mycart). I decided to use a simpler alternative solution instead. See: [Introduction to JavaScript Lesson 1](https://github.com/WebDevSimplified/Introduction-to-Web-Development/tree/master/Introduction%20to%20JavaScript/Lesson%201). 
-* I had a bug with form submission. EmailJS was executing (sending email) before Bootstrap validation takes place. I git help from Tutor support to resolve this. 
+* I had a bug with form submission. EmailJS was executing (sending email) before Bootstrap validation takes place. I git help from Tutor support to resolve this.
+* I had a bug with form submission where Bootstrap validated the form again after 'submit' and 'reset'. As the form had been rest, this resulted in validation errors appearing on the blank form. This might give a user the impression that their message/form had not been sent even though an Alert was sent to the browser to confirm it had been sent. This is a known issue with Bootstrap. With help from Tutor support I found some jQuery code on a GitHub issues thread which fixed the problem when I applied the code to my EmailJS JavaScript file. See the GitHub thread here - ['Resetting form doesn't clear validation errors'](https://github.com/1000hz/bootstrap-validator/issues/68).  
 * I had an issue on the MyModal form with here I couldn't put a placeholder in for the options dropdown input. The first option in the list 'Choose and option' was acting as the placeholder but was also selectable, which doesn't make sense. I eventually found a solution on StackOverflow whihc allow me to add a class to the first option so that it would not be selectable.
 
 
