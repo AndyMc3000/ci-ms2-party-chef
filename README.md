@@ -233,7 +233,7 @@ I used the following technologies, services, and devices to develop, style, depl
 
 ## 6. <a name="testing">Testing</a> ##
 
-Testing was completed under the below headings. A detailed testing document can be seen <a href="/assets/readme-assets/testing.md"><strong>Here - testing.md.</strong></a>https://github.com/AndyMc3000/ci-ms2-party-chef/blob/64ce133eb8b56d1dba8d335c47b9f7f6aa89151f/testing.md
+Testing was completed under the below headings. A detailed testing document can be seen <a href="https://github.com/AndyMc3000/ci-ms2-party-chef/blob/64ce133eb8b56d1dba8d335c47b9f7f6aa89151f/testing.md"><strong>Here - testing.md.</strong></a>
 
 #### Testing Headings ####
 1. Development Testing
