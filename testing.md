@@ -11,40 +11,40 @@ During the development process I manually tested elements and components after I
 #### Tests ####
 
 * Added Bootstrap Navbar to index.html and contact.html. Tested navigation links - Home, Contact, and Logo. All worked as expected. 
-* Tested Sticky Navbar functionality. I had to add a large image to the body to test this, but once done It worked as expected.
+* Tested Sticky Navbar functionality. I had to add a large image to the body to test this, and once done it worked as expected.
 * Added Jumbotron to index.html and contact.html. Tested button on index.html jumbotron. It worked as expected and directed me to contact.html.
 * Added photo gallery section and bootstrap modal gallery. Tested ‘Open Gallery’ button (I removed this button subsequently), and tested clicking on photo to open the modal gallery. Both opened the modal carousel gallery as expected. The carousel controls on the modal gallery also worked as expected.
 * Added Testimonial and Footer sections. Tested responsiveness of both and they reacted as expected.
 * Add Google Map using Google Maps API. Map worked as expected.
-* Added test marker to Google Map. Marker orked as expected.
-* Added second test marker to Google Map in order to test marker clustering functionality. Clustering worked as expected (I subsequently removed clustering as I decided to use customer markers with InfoWindows - I could not find a way to cluster this type of marker).
+* Added test marker to Google Map. Marker worked as expected.
+* Added second test marker to Google Map in order to test marker clustering functionality. Clustering worked as expected. I subsequently removed clustering as I decided to use custome markers with InfoWindows, and I could not find a way to cluster custom markers.
 * Added Google Maps ‘Info Window’ functionality. So if a user clicks on a marker an Info Window will pop-up to show contact details for a local Party Chef kitchen/office. This worked as expected.
-* Added custom markers to Google Maps. They worked as expected (however as mentioned above, they stopped clustering from working).
-* Add code for Info Window so that if a second marker is clicked on, the previous Info Window will close and the new one will open. Tested this and it worked as expected.
+* Added custom markers to Google Maps. They worked as expected (however as mentioned above, I could not find a solution to cluster these markers).
+* Added code for Info Window so that if a second marker is clicked on, the previous Info Window will close and the new one will open. Tested this and it worked as expected.
 * Styled content appearing in InfoWindow on Google Map. Tested this and it rendered as expected.
 * Added additional locations to Google Maps. Tested each location marker as I saved the location data to maps.js.
 * Tested Email links on InfoWindows on Google Map to check if they opened my desktop email client once clicked. They all worked as expected.
 * Created a modal to contain the MyMenu 'shopping cart' system. That opened as expected.
-* Added ‘Add to cart’ button to index.html to test WebDevSimplified JavaScript shopping cart code. I then added a store.js file to contain JavaScript code from the plugin. I then a div with an ID to call the JS code to the modal. I then tested adding an item to the MyMenu modal/cart and it worked as expected.
-* Tested increasing/decreasing quantities of items in the MyMenu, and removing items from MyMenu. Worked as expected.
+* Added ‘Add to cart’ button to index.html to test WebDevSimplified JavaScript shopping cart code. I then added a store.js file to contain JavaScript code from the plugin. I then added a div with an ID to call the JS code to the modal. I then tested adding an item to the MyMenu modal/cart and it worked as expected.
+* Tested increasing/decreasing quantities of items in the MyMenu, and removing items from MyMenu. Both worked as expected.
 * Added EmailJS javascript file for 'Request a quote' form code on MyMenu/Cart. Tested it and it worked as expected.
 * Added Bootstrap form validation to form on MyMenu. Tested it and it worked as expected.
-* Added content to menu items. Tested ‘Add to MyMenu’ button functionality for each item as I went along. All worke as expected.
-* Added images to Bootsrap gallery. I tested calling the gallery, and the modal controls. All worked as expected.
-* Added wmailjs Contact Form send functionality. Teste it and it worked as expected.
+* Added content to menu items. I tested ‘Add to MyMenu’ button functionality for each item as I added items. All worked as expected.
+* Added images to Bootsrap gallery. I tested calling the gallery and the modal controls. All worked as expected.
+* Added EmailJS Contact Form send functionality. Tested it and it worked as expected.
 * Added MyMenu cart item indicator to MyMenu button in navbar. Tested it and it worked as expected. 
 
 
 #### Tests with Bugs ####
 
 * Added Bootstrap menu accordions to index.html. Found a bug where all accordions open and close at the same time. I realised I needed to give each accordion * unique control ID’s. That fixed the bug.
-* One one occassion I had an issue with launching the project master instance on GitPod. It wasn't loading completely - see screenshot. When trying to resolve the issue I ended up working on a branch of my Master. I found that the simplest course of action was to delete my GitPod instances (branch & master) and create an new instance by launching the site afresh from GitPod.
+* On one occassion I had an issue with launching the project master instance on GitPod. It wasn't loading completely (see screenshot). When trying to resolve the issue I somehow ended up working on a branch of my Master. I found that the simplest course of action was to delete my GitPod instances (branch & master) and create an new instance by launching the site afresh from GitPod.
      <img src="/assets/readme-assets/gitpod-error-instance-not-loading.png">
 
-* I tried implement a Javascript shopping cart plugin for the MyMenu system but couldn’t get it to work. See GitHub the following repository for that code: [Asraf-Uddin-Ahmed /jquery.mycart](https://github.com/Asraf-Uddin-Ahmed/jquery.mycart). I decided to use a simpler alternative solution instead. See: [Introduction to JavaScript Lesson 1](https://github.com/WebDevSimplified/Introduction-to-Web-Development/tree/master/Introduction%20to%20JavaScript/Lesson%201). 
-* I had a bug with form submission. EmailJS was executing (sending email) before Bootstrap validation takes place. I git help from Tutor support to resolve this.
-* I had a bug with form submission where Bootstrap validated the form again after 'submit' and 'reset'. As the form had been rest, this resulted in validation errors appearing on the blank form. This might give a user the impression that their message/form had not been sent even though an Alert was sent to the browser to confirm it had been sent. This is a known issue with Bootstrap. With help from Tutor support I found some jQuery code on a GitHub issues thread which fixed the problem when I applied the code to my EmailJS JavaScript file. See the GitHub thread here - ['Resetting form doesn't clear validation errors'](https://github.com/1000hz/bootstrap-validator/issues/68).  
-* I had an issue on the MyModal form with here I couldn't put a placeholder in for the options dropdown input. The first option in the list 'Choose and option' was acting as the placeholder but was also selectable, which doesn't make sense. I eventually found a solution on StackOverflow whihc allow me to add a class to the first option so that it would not be selectable.
+* I tried implementing a Javascript shopping cart plugin for the MyMenu system but couldn’t get it to work. See GitHub and the following repository for that code: [Asraf-Uddin-Ahmed /jquery.mycart](https://github.com/Asraf-Uddin-Ahmed/jquery.mycart). I decided to use a simpler alternative solution instead. See the following for that code: [Introduction to JavaScript Lesson 1](https://github.com/WebDevSimplified/Introduction-to-Web-Development/tree/master/Introduction%20to%20JavaScript/Lesson%201). 
+* I had a bug with form submission. The EmailJS code was executing (sending an email) before Bootstrap validation was taking place. I got help from Tutor support to resolve this.
+* I had a bug with form submission where Bootstrap validated the form again after 'submit' and 'reset'. As the form had been reset, this resulted in validation errors appearing on the blank form. This may have given a user the impression that their message/form had not been sent, even though an Alert was sent to the browser to confirm the message had been sent. This is a known issue with Bootstrap. With help from Tutor support and a Google search I found some jQuery code on a GitHub issues thread which fixed the problem. When I added the code to my EmailJS JavaScript file it fixed the problem. See that GitHub thread here - ['Resetting form doesn't clear validation errors'](https://github.com/1000hz/bootstrap-validator/issues/68).  
+* I had an issue on the MyModal form with here I couldn't put a placeholder in for the 'options' dropdown input (the last form field). The first option in the list, 'Choose and option', was acting as the placeholder but was also selectable, which doesn't make sense. I eventually found a solution on StackOverflow which allowed me to add a class to the first option so that it would not be selectable.
 
 
 ## 2. User & Client Stories Testing ##
@@ -63,17 +63,15 @@ During the development process I manually tested elements and components after I
 1. “The website must detail the various menu's on offer, and the cost of food/drink items on each menu.” 
       * The website shows 5 menu types in accordions on index.html - a Canapés menu, a Starters menu, a Main Course menu, a Desserts menu, and a Drinks menu.
 1. “The website must allow people to easily contact Party Chef to arrange a party planning consultation.”
-      * The website has a map which shows the contact details for all kitchens/offices where a customer can arrange a consultation. Each map location marker         gives the address, email, and telephone number for a specific kitchen when clicked.
+      * The website has a map which shows the contact details for all kitchens/offices. Each map location marker gives the address, email, and telephone number for a specific kitchen when clicked.
       * The website shows the contact details of the Party Chef head office - address, telephone and email.
       * The website highlights links to its social media channels.
       * The website allows a user to requat a quote by completing a form on the MyMenu modal.
       * The website allows a user to send a question or query via a contact form on contact.html.
 1. “The website must allow users to create their own menu from the items available, in order to get an idea of food/drinks costs for their party.”
       * The website allows user to pick items from the food & drink menus and add them to a 'MyMenu modal where they can calculate costs for their menu                   choices based on the quantity of guets that are attending their party.   
-1. “The website must allow users to send a copy of their personal menu to an email address. A copy of this should also be sent to the business owner so they             can better understan what items users prefer.”
-      * This functionality was not included. It is listed as a future development.
 1. “The website must also allow users to request a quote, based on their menu, having supplied further relevant information about their event. The quote             request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
-      * The website allows a user to request a quote by ansering questions on a form on the MyMenu modal.
+      * The website allows a user to request a quote by answering questions on a form on the MyMenu modal.
 3. “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called a 'kitchens'             on the website).”
       * The website has a Google Map with custom markers. When clicked the InfoWindows display the contact details (address, email, and telephone number)                 for a specific kitchen/office.     
 4. “The website must promote Party Chef's social media channels.”
@@ -100,11 +98,10 @@ During the development process I manually tested elements and components after I
       * The website has a gallery section on index.html which shows picture of previous events.
 1. “I want to be able to see pricing for menu items.”
       * The website has a list of menus on index.html. These menus include per-person pricing for each item."
-1. “I want to be able to create my own menu from the menu's of items offerred. And I want to be able to email a copy of my menu to myself.”
+1. “I want to be able to create my own menu from the menu's of items offerred.”
       * The website allows user to create their own menu within the MyMenu modal.
-      * The ability to send a MyMenu list by email was not added. This feature is listed as a future feature.
 5. “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my         event, and to get a detailed quote inclusive of all costs”.
-      * The website includes the ability to request a quote based on questions answered on a form on the MyMenu form. The ability to add the MyMenu items to            a request was not included.
+      * The website includes the ability to request a quote based on questions answered on a form on the MyMenu form. The request will also include all items in the users MyMenu list.
 7. “I want to find the Party Chef social media channels.”
       * The website has links to the Party Chef social media channels in the footer of index.html and contact.html.
       * The website has links to the Party Chef socia media channels in a specific section on contact.html.
@@ -142,7 +139,7 @@ The validator highlighted the following errors in style.css;
 
 All errors were fixed by making necessary changes.
 
-The validator also highlighted 2 x Errors and 768 x Warnings relating to the bootstrap.min.css style sheet. I queried this with Student support and was advised that as I have no control over the Bootstrap style sheet as I am using a CDN to access the file, these were acceptable.
+The validator also highlighted 2 x Errors and 768 x Warnings relating to the bootstrap.min.css style sheet. I queried this with Student support and was advised that as I have no control over the Bootstrap style sheet as I am using a CDN to access the file, these were acceptable issues.
 
 #### JavaScript ####
 
@@ -154,7 +151,7 @@ emailjs-homepage-request-a-quote.js
 emailjs-contact-page-contact-form.js
 bootstrap-form-validation.js
 
-Once I configued the validator to accept jQuery and JavaScript ES6, no errors were listed.
+Once I configued the validator to accept jQuery and JavaScript ES6, no Errors were listed.
 
 ## 3. Manual Testing ##
 
@@ -212,7 +209,7 @@ I manually tested all website elements/components under the following headings;
 * When I try to reduce the item quantity using the quantity controls I am stopped from reducing the quantity to zero as expected.
 * When I increase the item quantity using the quantity controls the Total price increases correctly as expected.
 * When I reduce the item quantity the Total price figure reduces correctly as expected.
-* When I click on the remove item buttom the item disappears and an alert appears. BUG - the incorrect message appears and the alert appears twice.
+* When I click on the remove item buttom the item disappears and an alert appears.
 
 #### Reast-A-Quote Form ####
 * When I click on the Contact Us link in the Request A Quote introduction section contact.html loads as expected.
@@ -231,7 +228,7 @@ I manually tested all website elements/components under the following headings;
 #### Google Map ####
 * When Google Map controls work expected - Pan, Zoom in/out, Pegman, Map/Satellite views, and Full screen mode.
 * When Click on a Party Chef marker and InfoWindow pops up with kitchen contact details as expected. All markers worked as expected.
-* When I click on a new marker while an InfroWindow is already open, the existing InfoWindow closes and the new one opens as expected.
+* When I click on a new marker while an InfoWindow is already open, the existing InfoWindow closes and the new one opens as expected.
 
 #### Social Media Section ####
 * When I hover over a social media icon it grows as expected.
@@ -240,7 +237,7 @@ I manually tested all website elements/components under the following headings;
 #### Contact Form ####
 * When I complete the form correctly the fields are highlighted in green as expected.
 * When I complete the form correctly and hit the 'Send Message' button I get a 'Message Sent Successfully' alert.
-* When I close the 'Message Sent Successfully' alert the form does not clear. BUG
+* When I close the 'Message Sent Successfully' alert the form clears as expected.
 * When I complete the form correctly and hit the 'Send Message' button I receive an email to the Party Chef email and my personal email address as expected.
 
 #### Footer ####
@@ -254,13 +251,13 @@ I manually tested all website elements/components under the following headings;
 I completed the above manual testing on the following browsers;
 
 ### Chrome ###
-* All tests ran OK (I completed the above manual testing using Chrome).
+* All tests ran OK.
 
 ### Firefox ###
-* All tests ran OK 
+* All tests ran OK. 
 
 ### Safari ###
-* All tests ran OK 
+* All tests ran OK. 
 
 
 
