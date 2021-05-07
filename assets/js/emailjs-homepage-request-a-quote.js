@@ -1,3 +1,6 @@
+/*
+ * EmailJS code for sending form data and MyMenu list items from modal on index.html by email.
+ */
 $(document).ready(function () {
     const btn = document.getElementById('email-button');
 
@@ -12,6 +15,8 @@ $(document).ready(function () {
                 return;
             }
 
+            // This captures the MyMenu list items and inserts them as a string into the hidden
+            // 'cart_items' form field on the 'Request a Quote' form on the MyMenu modal on index.html
             let cartHTMLString = "";
             $.each(cartContents, function(itemTitle){
                 let price = cartContents[itemTitle].price;
@@ -20,6 +25,7 @@ $(document).ready(function () {
                 cartHTMLString += `${itemTitle}: Quantity (${quantity}), Item Price €${price}, Total Price €${total} ------- `;
             });
 
+            // This assigns form field id's to EmailJS email template parameters
             let templateParams = {
                 from_name: document.getElementById('from_name').value,
                 surname: document.getElementById('surname').value,
@@ -33,7 +39,8 @@ $(document).ready(function () {
 
             emailjs.send('default_service', 'template_cewgm4l', templateParams)
                 .then(function (response) {
-                    // this resets the form and stops the from validating
+                    // this resets the form and stops the form from validating again on submit 
+                    // The jQuery code below was copied from Cina Saffary's GitHub issue thread relating to Bootstrap validation. 
                     var form = $('#form')[0];
                     $(form).removeClass('was-validated');
                     form.reset();
