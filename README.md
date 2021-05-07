@@ -1,10 +1,10 @@
 <a name="top-of-page">![Party Chef Logo created using FreeLogoDesign.org](/assets/readme-assets/party-chef-logo-readme.png)</a>
 
-# Website: PartyChef.ie :cocktail: #
-## Business: Professional Private Caterers ## 
-## Project: Diploma in Software Development, Code Institute - Milestone Project 2 - Interactive Frontend Development ##
-### Student Developer: Andrew McDonald - Contact me on GitHub :octocat: - <a href="https://github.com/AndyMc3000"><strong>AndyMc3000</strong></a> ###
-### Party Chef Website: [Click Here](https://andymc3000.github.io/ci-ms2-party-chef/)
+# PartyChef.ie :cocktail: #
+## A website for Professional Private Caterers ## 
+## Purpose: Interactive Frontend Development Project (Milestone Project 2) for Diploma in Software Development course at [Code Institute](https://codeinstitute.net/) ##
+### Developer: Andrew McDonald - Contact me on GitHub :octocat: @ <a href="https://github.com/AndyMc3000"><strong>AndyMc3000</strong></a> ###
+### Website deployed on GitHub Pages: [Click Me!](https://andymc3000.github.io/ci-ms2-party-chef/)
 
 <hr>
 <img src="assets/readme-assets/party-chef-am-i-responsive-screenshot.png" width="900">
@@ -26,7 +26,7 @@
 
 The Party Chef website is my Milestone 2 (MS2) project for the Diploma in Fullstack Software Development course at Code Institute. The underlying goal of the project is to meet and exceed the requirements laid out for the MS2 project by Code Institute. The high-level requirement of the MS2 project is to "..build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals." 
 
-This README refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owner to meet certain criteria (see UX section below). The principle technologies to be used in the development of the site are; HTML5, CSS3, and JavaScript. Other technologies include; the Bootstrap front-end framework, jQuery library, and the EmailJS email service.
+This README refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owners to meet certain criteria (see UX section below). The principle technologies used in the development of the site are; HTML5, CSS3, and JavaScript. Other technologies include; the Bootstrap front-end framework, the jQuery library, and the EmailJS email service.
 
 Party Chef is a private catering business with multiple office locations around Ireland. Party Chef is run by a professional team of chef's, service personnel, and party planners. The businesses offices are referred to as 'kitchens' on the website, as this is where food is prepared before being delivered to event/party locations. Customers can vist the kitchens in order to discuss and plan their events with the Party Chef team. 
 
@@ -36,11 +36,11 @@ Party Chef is a private catering business with multiple office locations around 
 
 # 2. <a name="user-experience-design">User Experience Design (UX)</a> #
 
-The design of the Party Chef site was determined by assessing and quantifying the goals and objectives of the business owner ('client stories'), as well as the requirements of end users who will visit and use the site ('user stories'). Following the determination of client and user stories and their subsequent technical requirements, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each design plane is outlinined below.
+The design of the Party Chef site was determined by assessing and quantifying the goals and objectives of the business owner ('client stories'), as well as the requirements of end users who will visit and use the site ('user stories'). Following the determination of client and user stories and their subsequent technical requirements, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each of the 5 design planes is outlinined below.
 
 ### 1. The Strategy Plane ###
 
-The Strategy Plane is, as defined by Jesse James Garrett "..incorporates not only what the people running the site want to get out of it but what the users want to get out of the site as well." 
+The Strategy Plane, as defined by Jesse James Garrett "..incorporates not only what the people running the site want to get out of it but what the users want to get out of the site as well." 
 
 Please see below details of the 'Client Stories' to detail the requirements of the Pary Chef business owner, and the 'User Stories' which highlight the requiremnts of end users of the Party Chef website.
 
@@ -61,11 +61,11 @@ Please see below details of the 'Client Stories' to detail the requirements of t
 > - [x] “I want to see what kind of services Party Chef offers.”
 > - [x] “I want to see what kind of menu's (food & drink) Party Chef offer.”
 > - [x] “I want to find out where their 'kitchens' (offices) are located, and which is the closest office to me.”
-> - [x] “I want to see photo's of the dishes in Party Chef menu's.”
-> - [x] “I want to see photo's of previous events serviced by Party Chef.”
+> - [x] “I want to see photos of the dishes in Party Chef menu's.”
+> - [x] “I want to see photos of previous events serviced by Party Chef.”
 > - [x] “I want to be able to see pricing for menu items.”
 > - [x] “I want to be able to create my own menu from the menu's of items offerred.”
-> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs."
+> - [x] “I want to be able to send my menu along with details about my planned event to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs."
 > - [x] “I want to be able to find links to the Party Chef social media channels.”
 
 
@@ -80,7 +80,7 @@ Based on the outcomes from the Strategy Plane, The Scope Plane determines what f
 * The Homepage should include a 'Features' section highlighting the Party Chef services.
 * The Homepage should show various menu's (canpapes, starters, main course, something sweet, and drinks menus) each showing menu items listed within an accordian. 
 * Shopping cart functionality should be built in so that menu items can be added to a 'MyMenu' list of items. The MyMenu should then be accessed via a button in the homepage Nav bar. Once clicked, the MyMenu list of items appears on a modal. Users can ammend quantites of the items they have selected in the MyMenu to get a total price for their food/drink selection. 
-* The MyMenu should also have the facility to request a quote for an event. The request should include the food/drink items in a MyMenu list plus additional information about the event (date/time, location, etc.). The request will be sent to Party Chef by email. A copy of the request should also be sent to the user email address.
+* The MyMenu should also have the facility to request a quote for an event/party. The request should include the food/drink items in a MyMenu list plus additional information about the event (date/time, location, etc.). The request will be sent to Party Chef by email. A copy of the request should also be sent to the user email address.
 * The Homepage should include a Photo Gallery using a carousel to show dishes and menu items in party settings.
 * The contact page must include all contact information for the Party Chef headquarters.
 * The contact page should include an interactive map showing all the kitchen locations across Ireland. By implementing features of the Google Maps API, a user should be able to select an individual kitchen marker to get a pop-up of contact information for that particular kitchen.
@@ -104,9 +104,9 @@ Interaction design is defined as the "..development of application flows to faci
 1. The Homepage;
 * It should have a navigation bar with individual links to each page and a 'MyMenu' modal. The navigation bar should also be fixed to the top of the page view.
 * It should contain a call-to-action and button to allow a user to contact Party Chef. This should link to the contact page.
-* It should contain a features/benefits section containing 4 principle featires under the following headings; 'Who We Are', 'Our Services', 'Our Menu's', and 'Talk to us'.
+* It should contain a features/benefits section containing 4 principle features under the following rough heading titles; 'Who We Are', 'Our Services', 'Our Menu's', and 'What people say about us'.
 * It should contain a list of menu's (each within its own accordion) under the following headings; 'Canapés', 'Starters', 'Main Course', 'Something Sweet', and 'Drinks'. 
-* The menu accordions should contain a list of menu item to include a photo, description, and an 'Add to MyMenu' button. When the 'Add to MyMenu' button is clicked, an item is added to the users MyMenu (i.e. shopping cart). 
+* The menu accordions should contain a list of menu item to include a photo, description, and an 'Add to MyMenu' button. When the 'Add to MyMenu' button is clicked, an item is added to the users MyMenu (i.e. a shopping cart modal). 
 * The users MyMenu (a modal) can be accessed by clicking on the MyModal button in the Nav bar. Within the MyMenu modal, a user can change the quantity of an item or remove an item.
 * A user can also send a copy of the menu to Party Chef, along with additional information which must be included, in order to request a quote and confirm availablity. The extra information will come from a form in the MyMenu modal which a user must complete. The form will ask for; Name, Email, Telephone number, Party date, Party start time, Location, Service Type. A copy of the quote request will also be sent to the user by email.
 * It should contain a gallery of photographs highlighting recent events and food displays.
@@ -121,7 +121,7 @@ Interaction design is defined as the "..development of application flows to faci
 
 #### Information Architecture: ####
 
-Infromation Architechture is defined as; "The structural design of the information space to facilitate intuitive access to content" (Copyright 2000 James Garrett). As such Party Chef was designed to allows a user to find the information they need easily. For example, the navigation bar is fixed to the top of the page view so is always immediately accessible, and buttons and links are clearly visible and communicate their purpose in an unambiguous way.
+Information Architechture is defined as; "The structural design of the information space to facilitate intuitive access to content" (Copyright 2000 James Garrett). As such Party Chef was designed to allows a user to find the information they need easily. For example, the navigation bar is fixed to the top of the page view so is always immediately accessible, and buttons and links are clearly visible and communicate their purpose in an unambiguous way.
 
 The structure of the website and outline of page sections is outlined in the Sitemap. Click the link to view the <a href="assets/readme-assets/party-chef-sitemap.png"><strong>Sitemap.</strong></a>
 
@@ -328,9 +328,9 @@ I also received help and support from;
 * Reuben Ferrante - Code Institute Mentor - Slack Username: [reubenfer_mentor](https://code-institute-room.slack.com/team/UKD9L615F) - Reuben is my new Mentor and was hugely helpful with helping me with my JavaScript code, having jumped in at a late stage in the project. Reuben also helped me with fixing issues for the resubmission of my project.
 * Allen Thomas Varghese - GitHub username: @allentv - my initial mentor at Code Institute for this project.
 * Anna Greaves - Full Stack Developer and Content Developer at Code Institute - GitHub profile here: [@AJGreaves](https://github.com/AJGreaves)
- - I took inspiration from Anna's Family Hub project on GitHub. In particular I found her README.md and Testing.md files very helpful. See that repository here: [FamilyHub](https://github.com/AJGreaves/familyhub)
-* The Student support team at Code Institute
-* The tutor team at Code Institute
+ - I took inspiration from Anna's Family Hub project on GitHub. In particular I found Anne's README.md and Testing.md files very helpful. See that repository here: [FamilyHub](https://github.com/AJGreaves/familyhub)
+* The Student Support team at Code Institute.
+* The Tutor team at Code Institute.
 
 #### [Back To Top ^ ](#top-of-page) ####
 
