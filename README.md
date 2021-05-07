@@ -24,9 +24,11 @@
 
 # 1. <a name="introduction-heading">Introduction</a> #
 
-This Party Chef website is my Milestone 2 (MS2) project for my Diploma in Fullstack Software Development course at Code Institute. This README refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owner to meet certain criteria (see UX section below). However, the underlying goal of the project is to meet and exceed the requirements laid out for the MS2 project by Code Institute. The high-level requirement of the MS2 is to "..build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals." The principle technologies to be used are HTML5, CSS3, and JavaScript. Other technologies being used are; the Bootstrap front-end framework, the jQuery library, and EmailJS.
+The Party Chef website is my Milestone 2 (MS2) project for the Diploma in Fullstack Software Development course at Code Institute. The underlying goal of the project is to meet and exceed the requirements laid out for the MS2 project by Code Institute. The high-level requirement of the MS2 project is to "..build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals." 
 
-Party Chef is a private catering business with multiple office locations around Ireland. Party Chef is run by a professional team of chef's, service personnel, and party planners. The offices are referred to as 'kitchens' on the website, as this is where food is prepared before being delivered to event/party sites. Customers can vists the kitchens in order to discuss and plan their events with the Party Chef team. 
+This README refers to Party Chef as a fictional client of mine, where I have been hired to develop a website for the business owner to meet certain criteria (see UX section below). The principle technologies to be used in the development of the site are; HTML5, CSS3, and JavaScript. Other technologies include; the Bootstrap front-end framework, jQuery library, and the EmailJS email service.
+
+Party Chef is a private catering business with multiple office locations around Ireland. Party Chef is run by a professional team of chef's, service personnel, and party planners. The businesses offices are referred to as 'kitchens' on the website, as this is where food is prepared before being delivered to event/party locations. Customers can vist the kitchens in order to discuss and plan their events with the Party Chef team. 
 
 #### [Back To Top ^ ](#top-of-page) ####
 
@@ -34,8 +36,7 @@ Party Chef is a private catering business with multiple office locations around 
 
 # 2. <a name="user-experience-design">User Experience Design (UX)</a> #
 
-The design of this website was determined by assessing and quantifying the goals and objectives of the business owner, as well as the requirements of end users who will visit and use the website. Following the determination of 'Client' and 'User' stories and their subsequent technical requirements, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each design plane is outlinined below.
-
+The design of the Party Chef site was determined by assessing and quantifying the goals and objectives of the business owner ('client stories'), as well as the requirements of end users who will visit and use the site ('user stories'). Following the determination of client and user stories and their subsequent technical requirements, the site was designed using the principles of Jesse James Garrett's '5 Planes of UX Design'. The outcome or tasks created for each design plane is outlinined below.
 
 ### 1. The Strategy Plane ###
 
@@ -48,9 +49,9 @@ Please see below details of the 'Client Stories' to detail the requirements of t
 > - [x] “The website must show and promote the services which Party Chef provides.”
 > - [x] “The website must detail the various menu's on offer, and the cost of food/drink items on each menu.” 
 > - [x] “The website must allow people to easily contact Party Chef.”
-> - [x] “The website must allow users to create their own menu from the items available, in order to get an idea of food/drinks costs for their party.”
-> - [x] “The website must also allow users to request a quote, based on their MyMenu items and other relevant information about their event (Party Date, Party Location). The quote request information should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
-> - [x] “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called 'kitchens' on the website).”
+> - [x] “The website must allow users to create their own menu from the menu items available, in order to get an idea of food/drinks costs for their party.”
+> - [x] “The website must also allow users to request a quote, based on their MyMenu items and other relevant information about their event (Party Date, Party Location). The quote request information (including items in the active MyMenu list of menu items) should be sent by email to the business owner. A copy of the quote request should also be sent to the user.”
+> - [x] “The website must allow users to find contact details for their local kitchen/office using an interactive Google Map (offices are called 'kitchens' on the site).”
 > - [x] “The website must promote links to Party Chef's social media channels.”
 > - [x] “The website must show photos of previous events.” 
 > - [x] “The website must show customer testimonial quotes.”
@@ -64,8 +65,8 @@ Please see below details of the 'Client Stories' to detail the requirements of t
 > - [x] “I want to see photo's of previous events serviced by Party Chef.”
 > - [x] “I want to be able to see pricing for menu items.”
 > - [x] “I want to be able to create my own menu from the menu's of items offerred.”
-> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs”.
-> - [x] “I want to find the Party Chef social media channels.”
+> - [x] “I want to be able to send my menu, along with details about my planned event, to the Party Chef team in order to confirm their availability to service my event, and to get a detailed quote inclusive of all costs."
+> - [x] “I want to be able to find links to the Party Chef social media channels.”
 
 
 ### 2. The Scope Plane ###
@@ -73,23 +74,23 @@ Please see below details of the 'Client Stories' to detail the requirements of t
 Based on the outcomes from the Strategy Plane, The Scope Plane determines what features, functionality, and types of content should be included within the scope of the project. Listed below are the functional specifications and content requirements decided upon for the Party Chef website. 
 
 #### Functional Specifications: ####
-* Build a responsive Website with 2 pages - Homepage and Contact page.
-* Navigation bar to highlight currently accessed page.
-* Both pages should have a Jumbotron at the top of the page with relevant call-out messaging. The Homepage Jumbotron to include link to contact page in order to arrange a meeting for a no-obligation consultation.
+* Build a responsive Website with 2 pages - a Homepage and a Contact page.
+* Include a Navigation bar to highlight currently accessed page.
+* Both pages should have a Jumbotron at the top of the page with relevant call-out messaging. The Homepage Jumbotron to include link to contact page in order to allow a user to find Party Chef contact details, and to send a query via a contact form.
 * The Homepage should include a 'Features' section highlighting the Party Chef services.
-* The Homepage should show various menu's (canpapes, starters, main course, something sweet, drinks) each showing menu items listed within an accordian. Items on the menu can be added to a MyMenu cart (a Bootstrap modal).
-* Shopping cart functionality should be built in so that menu items can be added to a 'MyMenu' list of items. The MyMenu should then be accessed via links in the Nav bar. Once clicked, the MyMenu list of items appears on a modal. User can ammend quantites of the items they have selected in the MyMenu to get a price for their food/drink selection. 
+* The Homepage should show various menu's (canpapes, starters, main course, something sweet, and drinks menus) each showing menu items listed within an accordian. 
+* Shopping cart functionality should be built in so that menu items can be added to a 'MyMenu' list of items. The MyMenu should then be accessed via a button in the homepage Nav bar. Once clicked, the MyMenu list of items appears on a modal. Users can ammend quantites of the items they have selected in the MyMenu to get a total price for their food/drink selection. 
 * The MyMenu should also have the facility to request a quote for an event. The request should include the food/drink items in a MyMenu list plus additional information about the event (date/time, location, etc.). The request will be sent to Party Chef by email. A copy of the request should also be sent to the user email address.
-* The Homepage should include a photo Gallery using a carousel on the Homepage to show menu items. A similar gallery on the contact page showing photos from past events should also be included.
+* The Homepage should include a Photo Gallery using a carousel to show dishes and menu items in party settings.
 * The contact page must include all contact information for the Party Chef headquarters.
 * The contact page should include an interactive map showing all the kitchen locations across Ireland. By implementing features of the Google Maps API, a user should be able to select an individual kitchen marker to get a pop-up of contact information for that particular kitchen.
 * The contact page should also include a section highlighting social media channels.
-* The contact page should also include a contact form so a user can ask a specific question of the party Chef team.
+* The contact page should also include a contact form so a user can ask a specific question of the Party Chef team.
 
 #### Content Requirements: ####
-* Both Jumbotrons should show images conveying people haveing fun at a great party. Appropriate messaging should also be used to convey the key values of Party Chef.
+* Both Jumbotrons should show images conveying people having fun at a party. Appropriate messaging should also be used to convey the key values of Party Chef.
 * The features section on the Homepage should briefly, but completely, convey what the main services are and the the benefits of using them.
-* Menu items should include a photo, a description, and the price per single serving of each item on the menu's.
+* Menu items should include a photo, a description, and the price per single serving of each item on the menus.
 * Both photo galleries should show quality photos of impressive food layouts (Homepage Gallery) and recent events (Contact page gallery).
 * Homepage should show the most glowing but brief Testimonial quotes along with the customer details.
 
@@ -102,18 +103,18 @@ Interaction design is defined as the "..development of application flows to faci
 
 1. The Homepage;
 * It should have a navigation bar with individual links to each page and a 'MyMenu' modal. The navigation bar should also be fixed to the top of the page view.
-* It should contain a call-to-action to promote a no-oblidgation consultation. This should link to the contact page.
+* It should contain a call-to-action and button to allow a user to contact Party Chef. This should link to the contact page.
 * It should contain a features/benefits section containing 4 principle featires under the following headings; 'Who We Are', 'Our Services', 'Our Menu's', and 'Talk to us'.
 * It should contain a list of menu's (each within its own accordion) under the following headings; 'Canapés', 'Starters', 'Main Course', 'Something Sweet', and 'Drinks'. 
 * The menu accordions should contain a list of menu item to include a photo, description, and an 'Add to MyMenu' button. When the 'Add to MyMenu' button is clicked, an item is added to the users MyMenu (i.e. shopping cart). 
 * The users MyMenu (a modal) can be accessed by clicking on the MyModal button in the Nav bar. Within the MyMenu modal, a user can change the quantity of an item or remove an item.
-* A user can also send a copy of the menu to Party Chef, along with additional information which must be included, in order to request a quote an confirm availablity. The extra information will come from a form in the MyMenu modal which a user must complete. The form will ask for; Name, Email, Telephone number, Party date, Party start time, Location, Service Type. A copy of the quote request will also be sent to the user by email.
+* A user can also send a copy of the menu to Party Chef, along with additional information which must be included, in order to request a quote and confirm availablity. The extra information will come from a form in the MyMenu modal which a user must complete. The form will ask for; Name, Email, Telephone number, Party date, Party start time, Location, Service Type. A copy of the quote request will also be sent to the user by email.
 * It should contain a gallery of photographs highlighting recent events and food displays.
 * It should contain a section to show Testimonial quotes.
 * It should have a further navigation section in the footer. The footer will also contain links to all Party Chef's social media channels.
 
 2. The Contact page;
-* It should have a navigation bar with individual links to each page and a 'MyMenu' modal.
+* It should have a navigation bar with individual links to each site page.
 * It should contain a section to show the address and phone number of the Party Chef Headquarters.
 * It should include a Google Map with markers to show the individual Party Chef offices around the country. And when a user clicks on a marker, and 'info window' should popup to show the contacts details and address for that office.
 * It should also contain a contact form to allow a user to submit a query to Party Chef.
@@ -143,7 +144,7 @@ Having completed the previous 4 stages in the UX design process, I moved on to m
 1. Colours - The color scheme for the website was chosen from a selection of colours I considered using tools on the [Coolors.co](https://coolors.co/) website. The color schemes chosen, along with their HEX values, is shown here;
 <img src="assets/readme-assets/party-chef-coolors-pallette.png" width="450">
 
-1. Font - I used the Google Fonts website to help me decide on a font to use on the MAXFIT website. I wanted something simple yet modern at the same time - not too bold, and something a little different. I decided upon a font called 'Blinker' for headings, and the 'Montserrat' font for paragraph texts. An example of these fonts can be seen here;   
+1. Font - I used the Google Fonts website to help me decide on a font to use. I wanted something simple yet modern at the same time - not too bold, and something a little different. I decided upon a font called 'Blinker' for headings, and the 'Montserrat' font for paragraph texts. An example of these fonts can be seen here;   
 <img src="assets/readme-assets/party-chef-google-fonts-blinker.png" width="220">
 <img src="assets/readme-assets/party-chef-google-fonts-montserrat.png" width="220">
 
@@ -168,12 +169,12 @@ I drew up a process to follow for developing the Party Chef website. This is lis
 
 1. Design - I firstly designed the site based on the Client/User Stories requirements, and by creating wireframes/sketches.
 2. Structure - I then wrote the HTML code for all pages including; navigation, footers, sections, modal gallery, forms, and Google Maps section.
-3. Interactive Functionality - I added in any JavaScript elements to the site. Those being; the Google Maps API for a map with custom markers and 'infoWindows'.    Add a JavaScript Shopping Cart plugin. And adding in JavaScript to send form data via email using the EmailJS service.
+3. Interactive Functionality - I added in any JavaScript elements to the site. Those being; the Google Maps API for a map with custom markers and 'infoWindows'.    A JavaScript Shopping Cart plugin. JavaScript to send form data via email using the EmailJS service. And Bootstrap JavaScript to manage form validation.
 4. Content - I then added text content to sections (lorem ipsum/placeholder text), and images to galleries. 
 5. Style - I then added colours and fonts and wrote CSS rule sets and media queries in order to style the website and make it responsive.
 6. Responsive - I made sure all texts/headings, images, and container elements transform approprately and look good when viewed on different devices such as:        mobile phones, tablets, laptops, large screen PC's, and large TV's. 
 7. Review - I did a last review of all code (formatting, beautifying etc) and content, fixing anys bugs/typo's etc as I did so.
-8. Testing - I validated my HTML and CSS code, and tested functionality of site elements across a range of different devices and browsers, and fixed any bugs.
+8. Testing - I validated my HTML, CSS, and JavaScript code, and tested functionality of site elements across a range of different devices and browsers. I then fixed any bugs found.
 
 
 #### [Back To Top ^ ](#top-of-page) ####
